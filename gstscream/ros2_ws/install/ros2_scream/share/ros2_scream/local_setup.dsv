@@ -1,0 +1,2 @@
+source;share/ros2_scream/environment/ament_prefix_path.sh
+source;share/ros2_scream/environment/path.sh

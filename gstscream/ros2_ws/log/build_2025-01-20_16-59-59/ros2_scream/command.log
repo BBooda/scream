@@ -1,0 +1,2 @@
+Invoking command in '/home/makis-wsl/githubs/simple_scream_ros_integration/scream/gstscream/ros2_ws/build/ros2_scream': /usr/bin/cmake --build /home/makis-wsl/githubs/simple_scream_ros_integration/scream/gstscream/ros2_ws/build/ros2_scream -- -j8 -l8
+Invoked command in '/home/makis-wsl/githubs/simple_scream_ros_integration/scream/gstscream/ros2_ws/build/ros2_scream' returned '2': /usr/bin/cmake --build /home/makis-wsl/githubs/simple_scream_ros_integration/scream/gstscream/ros2_ws/build/ros2_scream -- -j8 -l8

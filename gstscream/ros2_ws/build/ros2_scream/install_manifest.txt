@@ -1,0 +1,17 @@
+/home/makis-wsl/githubs/simple_scream_ros_integration/scream/gstscream/ros2_ws/install/ros2_scream/lib/ros2_scream/fake_video.py
+/home/makis-wsl/githubs/simple_scream_ros_integration/scream/gstscream/ros2_ws/install/ros2_scream/lib/ros2_scream/simple_ros.py
+/home/makis-wsl/githubs/simple_scream_ros_integration/scream/gstscream/ros2_ws/install/ros2_scream/share/ament_index/resource_index/package_run_dependencies/ros2_scream
+/home/makis-wsl/githubs/simple_scream_ros_integration/scream/gstscream/ros2_ws/install/ros2_scream/share/ament_index/resource_index/parent_prefix_path/ros2_scream
+/home/makis-wsl/githubs/simple_scream_ros_integration/scream/gstscream/ros2_ws/install/ros2_scream/share/ros2_scream/environment/ament_prefix_path.sh
+/home/makis-wsl/githubs/simple_scream_ros_integration/scream/gstscream/ros2_ws/install/ros2_scream/share/ros2_scream/environment/ament_prefix_path.dsv
+/home/makis-wsl/githubs/simple_scream_ros_integration/scream/gstscream/ros2_ws/install/ros2_scream/share/ros2_scream/environment/path.sh
+/home/makis-wsl/githubs/simple_scream_ros_integration/scream/gstscream/ros2_ws/install/ros2_scream/share/ros2_scream/environment/path.dsv
+/home/makis-wsl/githubs/simple_scream_ros_integration/scream/gstscream/ros2_ws/install/ros2_scream/share/ros2_scream/local_setup.bash
+/home/makis-wsl/githubs/simple_scream_ros_integration/scream/gstscream/ros2_ws/install/ros2_scream/share/ros2_scream/local_setup.sh
+/home/makis-wsl/githubs/simple_scream_ros_integration/scream/gstscream/ros2_ws/install/ros2_scream/share/ros2_scream/local_setup.zsh
+/home/makis-wsl/githubs/simple_scream_ros_integration/scream/gstscream/ros2_ws/install/ros2_scream/share/ros2_scream/local_setup.dsv
+/home/makis-wsl/githubs/simple_scream_ros_integration/scream/gstscream/ros2_ws/install/ros2_scream/share/ros2_scream/package.dsv
+/home/makis-wsl/githubs/simple_scream_ros_integration/scream/gstscream/ros2_ws/install/ros2_scream/share/ament_index/resource_index/packages/ros2_scream
+/home/makis-wsl/githubs/simple_scream_ros_integration/scream/gstscream/ros2_ws/install/ros2_scream/share/ros2_scream/cmake/ros2_screamConfig.cmake
+/home/makis-wsl/githubs/simple_scream_ros_integration/scream/gstscream/ros2_ws/install/ros2_scream/share/ros2_scream/cmake/ros2_screamConfig-version.cmake
+/home/makis-wsl/githubs/simple_scream_ros_integration/scream/gstscream/ros2_ws/install/ros2_scream/share/ros2_scream/package.xml
