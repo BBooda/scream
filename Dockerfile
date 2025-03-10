@@ -38,7 +38,12 @@ RUN apt-get update && apt-get install -y \
     gstreamer1.0-gtk3 \
     gstreamer1.0-qt5 \
     gstreamer1.0-pulseaudio \
-    --no-install-recommends && rm -rf /var/lib/apt/lists/* 
+    --no-install-recommends
+
+RUN apt-get install -y \
+    ros-${ROS_DISTRO}-librealsense2* \
+    ros-${ROS_DISTRO}-realsense2-* \
+    && rm -rf /var/lib/apt/lists/* 
 
 WORKDIR /home/ros/simple_scream_ros_integration/gstscream/
 
