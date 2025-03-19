@@ -1,12 +1,10 @@
 #!/usr/bin/env python3
 import rclpy
-from rclpy import publisher
 from rclpy.node import Node
 from sensor_msgs.msg import Image
 import gi
 import numpy as np
 from gi.repository import Gst, GLib, GObject
-from cv_bridge import CvBridge
 
 gi.require_version('Gst', '1.0')
 
@@ -30,14 +28,8 @@ class GStreamerROS2Bridge(Node):
             Image, topic_name, self.image_callback, 10
         )
 
-        self.publisher = self.create_publisher(
-           Image, 'test_gray_scale', 10
-        )
-
         # Start the GStreamer pipeline
         self.pipeline.set_state(Gst.State.PLAYING)
-
-        self.bridge = CvBridge()
 
     def image_callback(self, msg):
         """
@@ -53,12 +45,6 @@ class GStreamerROS2Bridge(Node):
             if frame.shape[0] != 720 or frame.shape[1] != 1280:
                 self.get_logger().error("Image size mismatch. Expected 320x240.")
                 return
-            
-            # transform to grayscale
-            channel_1_frame = frame[:,:,1]
-            self.publisher.publish(
-                self.bridge.cv2_to_imgmsg(channel_1_frame, encoding="mono8")
-            )
 
             # Create a GStreamer buffer from the frame
             buf = Gst.Buffer.new_wrapped(frame.tobytes())
@@ -80,7 +66,7 @@ def main():
     rclpy.init()
 
     # Create the node and pass the topic name
-    topic_name = 'depth_image_topic'
+    topic_name = 'video_frames'
     node = GStreamerROS2Bridge(topic_name)
 
     try:

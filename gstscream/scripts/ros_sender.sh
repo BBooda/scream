@@ -10,7 +10,7 @@ if (($USE_SCREAM == 1)); then
     #NOSUMMARY=" -nosummary"
 #
     
-    SCREAMTX0="queue ! screamtx name=\"screamtx0\" params=\"$NOSUMMARY -forceidr $SCREAMTX_PARAM_ECT -initrate $INIT_ENC_BITRATE  -minrate 200 -maxrate 8000\" ! queue !"
+    SCREAMTX0="queue ! screamtx name=\"screamtx0\" params=\"$NOSUMMARY -forceidr $SCREAMTX_PARAM_ECT -initrate $INIT_ENC_BITRATE  -minrate 2000 -maxrate 9000\" ! queue !"
     SCREAMTX0_RTCP="screamtx0.rtcp_sink screamtx0.rtcp_src !"
 else
     SCREAMTX0=""

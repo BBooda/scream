@@ -10,26 +10,33 @@ class VideoPublisher(Node):
         self.publisher_ = self.create_publisher(Image, '/received_frames', 10)
         self.bridge = CvBridge()
 
-        # Open GStreamer pipeline to receive UDP stream
+        print("CVBridge initialized")
+        # Open GStreamer pipeline (NO CHANGES TO PIPELINE)
         self.cap = cv2.VideoCapture(
             "udpsrc port=5004 ! application/x-rtp,encoding-name=JPEG,payload=26 ! rtpjpegdepay ! jpegdec ! videoconvert ! video/x-raw,format=BGR ! appsink",
             cv2.CAP_GSTREAMER
         )
 
+        # print("check if cap is open")
         if not self.cap.isOpened():
-            self.get_logger().error("Failed to open UDP GStreamer pipeline.")
+            self.get_logger().error("Failed to open GStreamer video source.")
             return
 
-        self.timer = self.create_timer(0.033, self.publish_frame)  # ~30 FPS
+        # Event-based frame publishing (No fixed timer)
+        self.run_event_loop()
 
-    def publish_frame(self):
-        ret, frame = self.cap.read()
-        if ret:
-            msg = self.bridge.cv2_to_imgmsg(frame, encoding="bgr8")
-            self.publisher_.publish(msg)
-            self.get_logger().info("Published a video frame.", throttle_duration_sec = 2)
+    def run_event_loop(self):
+        """Continuously checks for new frames and publishes them as soon as they arrive."""
+        while rclpy.ok():
+            ret, frame = self.cap.read()
+            # print(frame)
+            if ret:  # If a new frame is available
+                msg = self.bridge.cv2_to_imgmsg(frame, encoding="bgr8")
+                self.publisher_.publish(msg)
+                self.get_logger().info("Published a video frame.")
 
     def destroy_node(self):
+        """Cleanup on shutdown."""
         self.cap.release()
         super().destroy_node()
 
@@ -37,11 +44,10 @@ def main(args=None):
     rclpy.init(args=args)
     node = VideoPublisher()
     try:
-        rclpy.spin(node)
+        node.run_event_loop()  # Event-based loop runs instead of fixed timer
     except KeyboardInterrupt:
         pass
     finally:
-        print("Terminating script...")
         node.destroy_node()
         rclpy.shutdown()
 
