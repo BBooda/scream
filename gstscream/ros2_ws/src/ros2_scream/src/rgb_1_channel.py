@@ -5,27 +5,16 @@ from rclpy.node import Node
 from sensor_msgs.msg import Image
 import gi
 import numpy as np
-from gi.repository import Gst, GLib, GObject
 from cv_bridge import CvBridge
 
-gi.require_version('Gst', '1.0')
 
-class GStreamerROS2Bridge(Node):
+class RGB_to_gray(Node):
     def __init__(self, topic_name):
         super().__init__('gstreamer_ros2_bridge')
 
-        # Initialize GStreamer
-        Gst.init(None)
 
-        # Define the GStreamer pipeline
-        pipeline_str = """
-            appsrc name=mysource is-live=true format=TIME caps=video/x-raw,format=RGB,width=1280,height=720,framerate=30/1 !
-            videoconvert ! x264enc tune=zerolatency ! rtph264pay ! udpsink host=127.0.0.1 port=3150
-        """
-        self.pipeline = Gst.parse_launch(pipeline_str)
-        self.appsrc = self.pipeline.get_by_name("mysource")
+        self.bridge = CvBridge()
 
-        # Subscribe to the ROS 2 topic
         self.subscription = self.create_subscription(
             Image, topic_name, self.image_callback, 10
         )
@@ -34,10 +23,6 @@ class GStreamerROS2Bridge(Node):
            Image, 'test_gray_scale', 10
         )
 
-        # Start the GStreamer pipeline
-        self.pipeline.set_state(Gst.State.PLAYING)
-
-        self.bridge = CvBridge()
 
     def image_callback(self, msg):
         """
@@ -53,36 +38,30 @@ class GStreamerROS2Bridge(Node):
             if frame.shape[0] != 720 or frame.shape[1] != 1280:
                 self.get_logger().error("Image size mismatch. Expected 320x240.")
                 return
-            
-            # # transform to grayscale
-            # channel_1_frame = frame[:,:,1]
-            # self.publisher.publish(
-            #     self.bridge.cv2_to_imgmsg(channel_1_frame, encoding="mono8")
-            # )
 
-            # Create a GStreamer buffer from the frame
-            buf = Gst.Buffer.new_wrapped(frame.tobytes())
-
-            # Push the buffer into the appsrc element
-            retval = self.appsrc.emit("push-buffer", buf)
-            if retval != Gst.FlowReturn.OK:
-                self.get_logger().error(f"Failed to push buffer: {retval}")
+            # transform to grayscale
+            channel_1_frame = frame[:,:,1]
+            gray_image_msg = self.bridge.cv2_to_imgmsg(channel_1_frame, encoding="mono8")
+            # self.get_logger().info(msg, once=True)
+            gray_image_msg.header = msg.header
+            print(gray_image_msg.header)
+            self.publisher.publish(
+               gray_image_msg 
+            )
 
         except Exception as e:
             self.get_logger().error(f"Error processing image: {e}")
 
-    def stop(self):
-        # Stop the GStreamer pipeline on shutdown
-        self.pipeline.set_state(Gst.State.NULL)
+
 
 def main():
     # Initialize ROS 2
     rclpy.init()
 
     # Create the node and pass the topic name
-    topic_name = 'depth_image_topic'
+    topic_name = 'husky1/camera/color/image_raw'
     # topic_name = 'husky1/camera/color/image_raw'
-    node = GStreamerROS2Bridge(topic_name)
+    node = RGB_to_gray(topic_name)
 
     try:
         # Spin the node to process ROS 2 messages
@@ -91,10 +70,12 @@ def main():
         pass
     finally:
         # Cleanup
-        node.stop()
         node.destroy_node()
         rclpy.shutdown()
 
 if __name__ == "__main__":
     main()
+
+
+
 

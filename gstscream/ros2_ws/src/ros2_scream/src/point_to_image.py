@@ -1,10 +1,10 @@
 import numpy as np
 
 def range_projection(points:np.ndarray,
-                     proj_fov_up:float=3.0,
-                     proj_fov_down:float=-24.9,
+                     proj_fov_up:float=22.5,
+                     proj_fov_down:float=-22.5,
                      proj_W:int=2048,
-                     proj_H:int=64,
+                     proj_H:int=32,
                      remissions:np.ndarray=None):
     """
     Project a point cloud into a spherical (range) image.
@@ -64,10 +64,10 @@ def range_projection(points:np.ndarray,
 
     
 def undo_projection(range_image:np.ndarray, 
-                    proj_fov_up:float=3.0, 
-                    proj_fov_down:float=-24.9, 
+                    proj_fov_up:float=22.5, 
+                    proj_fov_down:float=-22.5, 
                     proj_W:int=2048, 
-                    proj_H:int=64):
+                    proj_H:int=32):
     """
     Undo the projection of a range image back to a point cloud.
     
