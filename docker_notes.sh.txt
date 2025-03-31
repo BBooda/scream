@@ -1,0 +1,7 @@
+
+
+# enabled xhost for the docker container
+xhost +local:docker
+
+# execute with privileged ip and mounting the usb sensors
+docker run -it --privileged -e DISPLAY=$DISPLAY -v /tmp/.X11-unix:/tmp/.X11-unix -v /dev:/dev --network host --mount type=bind,src=.,dst=/media bbooda/ros2_scream_integration:v3 bash --
