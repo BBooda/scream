@@ -25,14 +25,15 @@
 export GST_PLUGIN_PATH=/usr/local/lib/gstreamer-1.0/
 
 # Settings for video encoding and streaming
-RECEIVER_IP=192.168.1.20 #Change to applicable receiver address
+RECEIVER_IP=192.168.1.80 #Change to applicable receiver address
 UDP_PORT_VIDEO=51000
 NETWORK_QUEUE_DELAY_TARGET=0.06
 MAX_TOTAL_RATE=60000
 
 # Select type of camera here
 #SOURCE="e-CAM50_CUNX"
-SOURCE="Raspberry-Pi-HQ_Camera_12MP"
+# SOURCE="Raspberry-Pi-HQ_Camera_12MP"
+SOURCE="byte train"
 #SOURCE="Movie"
 #SCREAM_VERSION="V1"
 SCREAM_VERSION="V2"
@@ -90,5 +91,8 @@ if [ "$SCREAM_VERSION" == "V1" ]; then
 ./scream/bin/scream_sender -ect 1 -delaytarget $NETWORK_QUEUE_DELAY_TARGET -priority 1.0:0.5 -ratemax 25000:25000 -ratemin 2000:2000 -rateinit 5000:5000 -ratescale 1.0:1.0 -cwvmem 60 -maxtotalrate  $MAX_TOTAL_RATE -pacingheadroom 1.2 2 $RECEIVER_IP $UDP_PORT_VIDEO &
 fi
 if [ "$SCREAM_VERSION" == "V2" ]; then
-./scream/bin/scream_sender -ect 1 -delaytarget $NETWORK_QUEUE_DELAY_TARGET -priority 1.0:0.5 -ratemax 25000:25000 -ratemin 2000:2000 -rateinit 5000:5000 -ratescale 1.0:1.0 -maxtotalrate  $MAX_TOTAL_RATE -pacingheadroom 1.5 2 $RECEIVER_IP $UDP_PORT_VIDEO &
+# ./scream/bin/scream_sender -ect 1 -delaytarget $NETWORK_QUEUE_DELAY_TARGET -priority 1.0:0.5 -ratemax 25000:25000 -ratemin 2000:2000 -rateinit 5000:5000 -ratescale 1.0:1.0 -maxtotalrate  $MAX_TOTAL_RATE -pacingheadroom 1.5 2 $RECEIVER_IP $UDP_PORT_VIDEO &
+./scream/bin/scream_sender -ect 1 -delaytarget $NETWORK_QUEUE_DELAY_TARGET -priority 1.0 -ratemax 25000 -ratemin 2000 -rateinit 5000 -ratescale 1.0 -maxtotalrate  $MAX_TOTAL_RATE -pacingheadroom 1.5 1 $RECEIVER_IP $UDP_PORT_VIDEO &
 fi
+
+

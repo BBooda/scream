@@ -1,0 +1,161 @@
+[0.007s] Invoking command in '/home/eamrgde/Documents/gitrepos/ros_scream_int/scream/gstscream/ros2_bridge/src/build/gst_bridge': AMENT_PREFIX_PATH=/home/eamrgde/Documents/gitrepos/ros_scream_int/scream/gstscream/ros2_bridge/src/install/audio_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/eamrgde/Documents/gitrepos/ros_scream_int/scream/gstscream/ros2_bridge/src/install/audio_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/eamrgde/Documents/gitrepos/ros_scream_int/scream/gstscream/ros2_bridge/src/install/audio_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/eamrgde/Documents/gitrepos/ros_scream_int/scream/gstscream/ros2_bridge/src/install/audio_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake /home/eamrgde/Documents/gitrepos/ros_scream_int/scream/gstscream/ros2_bridge/src/ros-gst-bridge/gst_bridge -DCMAKE_INSTALL_PREFIX=/home/eamrgde/Documents/gitrepos/ros_scream_int/scream/gstscream/ros2_bridge/src/install/gst_bridge
+[0.049s] -- The C compiler identification is GNU 11.4.0
+[0.092s] -- The CXX compiler identification is GNU 11.4.0
+[0.098s] -- Detecting C compiler ABI info
+[0.159s] -- Detecting C compiler ABI info - done
+[0.164s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.164s] -- Detecting C compile features
+[0.165s] -- Detecting C compile features - done
+[0.167s] -- Detecting CXX compiler ABI info
+[0.233s] -- Detecting CXX compiler ABI info - done
+[0.239s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.239s] -- Detecting CXX compile features
+[0.240s] -- Detecting CXX compile features - done
+[0.242s] -- Found ament_cmake: 1.3.11 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.362s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[0.441s] -- Found rclcpp: 16.0.12 (/opt/ros/humble/share/rclcpp/cmake)
+[0.473s] -- Found rosidl_generator_c: 3.1.6 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[0.476s] -- Found rosidl_adapter: 3.1.6 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.482s] -- Found rosidl_generator_cpp: 3.1.6 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[0.491s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.502s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.542s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[0.545s] -- Found rmw_fastrtps_cpp: 6.2.7 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[0.623s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  
+[0.644s] -- Found FastRTPS: /opt/ros/humble/include  
+[0.674s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[0.682s] -- Looking for pthread.h
+[0.742s] -- Looking for pthread.h - found
+[0.743s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[0.803s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+[0.804s] -- Found Threads: TRUE  
+[0.853s] -- Checking for module 'gstreamer-1.0 >= 1.8.3'
+[0.867s] --   Found gstreamer-1.0 , version 1.20.3
+[0.901s] -- Checking for module 'gstreamer-base-1.0 >= 1.8.3'
+[0.912s] --   Found gstreamer-base-1.0 , version 1.20.3
+[0.945s] -- Checking for module 'gstreamer-app-1.0 >= 1.8.3'
+[0.957s] --   Found gstreamer-app-1.0 , version 1.20.1
+[0.991s] -- Checking for module 'gstreamer-audio-1.0 >= 1.8.3'
+[1.003s] --   Found gstreamer-audio-1.0 , version 1.20.1
+[1.037s] -- Checking for module 'gstreamer-fft-1.0 >= 1.8.3'
+[1.048s] --   Found gstreamer-fft-1.0 , version 1.20.1
+[1.081s] -- Checking for module 'gstreamer-gl-1.0 >= 1.8.3'
+[1.097s] --   Found gstreamer-gl-1.0 , version 1.20.1
+[1.136s] -- Checking for module 'gstreamer-mpegts-1.0>=1.4.0'
+[1.148s] --   Found gstreamer-mpegts-1.0, version 1.20.3
+[1.184s] -- Checking for module 'gstreamer-pbutils-1.0 >= 1.8.3'
+[1.198s] --   Found gstreamer-pbutils-1.0 , version 1.20.1
+[1.233s] -- Checking for module 'gstreamer-tag-1.0 >= 1.8.3'
+[1.243s] --   Found gstreamer-tag-1.0 , version 1.20.1
+[1.276s] -- Checking for module 'gstreamer-video-1.0 >= 1.8.3'
+[1.288s] --   Found gstreamer-video-1.0 , version 1.20.1
+[1.323s] -- Checking for module 'gstreamer-codecparsers-1.0 >= 1.8.3'
+[1.343s] --   Found gstreamer-codecparsers-1.0 , version 1.20.3
+[1.379s] -- Found GStreamer: GSTREAMER_INCLUDE_DIRS;GSTREAMER_LIBRARIES;GSTREAMER_VERSION;GSTREAMER_BASE_INCLUDE_DIRS;GSTREAMER_BASE_LIBRARIES;GSTREAMER_APP_INCLUDE_DIRS;GSTREAMER_APP_LIBRARIES;GSTREAMER_PBUTILS_INCLUDE_DIRS;GSTREAMER_PBUTILS_LIBRARIES;GSTREAMER_AUDIO_INCLUDE_DIRS;GSTREAMER_AUDIO_LIBRARIES;GSTREAMER_FFT_INCLUDE_DIRS;GSTREAMER_FFT_LIBRARIES;GSTREAMER_NET_INCLUDE_DIRS;GSTREAMER_NET_LIBRARIES (Required is at least version "1.8.3") 
+[1.468s] -- Found GLIB: /usr/include/glib-2.0;/usr/lib/x86_64-linux-gnu/glib-2.0/include (found suitable version "2.72.4", minimum required is "2.28") 
+[1.469s] -- Found audio_msgs: 0.0.0 (/home/eamrgde/Documents/gitrepos/ros_scream_int/scream/gstscream/ros2_bridge/src/install/audio_msgs/share/audio_msgs/cmake)
+[1.480s] -- Found sensor_msgs: 4.8.0 (/opt/ros/humble/share/sensor_msgs/cmake)
+[1.698s] -- Configuring done
+[1.957s] -- Generating done
+[1.976s] -- Build files have been written to: /home/eamrgde/Documents/gitrepos/ros_scream_int/scream/gstscream/ros2_bridge/src/build/gst_bridge
+[1.986s] Invoked command in '/home/eamrgde/Documents/gitrepos/ros_scream_int/scream/gstscream/ros2_bridge/src/build/gst_bridge' returned '0': AMENT_PREFIX_PATH=/home/eamrgde/Documents/gitrepos/ros_scream_int/scream/gstscream/ros2_bridge/src/install/audio_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/eamrgde/Documents/gitrepos/ros_scream_int/scream/gstscream/ros2_bridge/src/install/audio_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/eamrgde/Documents/gitrepos/ros_scream_int/scream/gstscream/ros2_bridge/src/install/audio_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/eamrgde/Documents/gitrepos/ros_scream_int/scream/gstscream/ros2_bridge/src/install/audio_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake /home/eamrgde/Documents/gitrepos/ros_scream_int/scream/gstscream/ros2_bridge/src/ros-gst-bridge/gst_bridge -DCMAKE_INSTALL_PREFIX=/home/eamrgde/Documents/gitrepos/ros_scream_int/scream/gstscream/ros2_bridge/src/install/gst_bridge
+[1.989s] Invoking command in '/home/eamrgde/Documents/gitrepos/ros_scream_int/scream/gstscream/ros2_bridge/src/build/gst_bridge': AMENT_PREFIX_PATH=/home/eamrgde/Documents/gitrepos/ros_scream_int/scream/gstscream/ros2_bridge/src/install/audio_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/eamrgde/Documents/gitrepos/ros_scream_int/scream/gstscream/ros2_bridge/src/install/audio_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/eamrgde/Documents/gitrepos/ros_scream_int/scream/gstscream/ros2_bridge/src/install/audio_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/eamrgde/Documents/gitrepos/ros_scream_int/scream/gstscream/ros2_bridge/src/install/audio_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/eamrgde/Documents/gitrepos/ros_scream_int/scream/gstscream/ros2_bridge/src/build/gst_bridge -- -j8 -l8
+[2.047s] [  6%] [32mBuilding CXX object CMakeFiles/rosgstbridge.dir/src/rosgstbridgeplugin.cpp.o[0m
+[2.047s] [ 26%] [32mBuilding CXX object CMakeFiles/rosgstbridge.dir/src/rosbasesrc.cpp.o[0m
+[2.047s] [ 26%] [32mBuilding CXX object CMakeFiles/rosgstbridge.dir/src/gst_bridge.cpp.o[0m
+[2.047s] [ 26%] [32mBuilding CXX object CMakeFiles/rosgstbridge.dir/src/rosbasesink.cpp.o[0m
+[2.053s] [ 33%] [32mBuilding CXX object CMakeFiles/rosgstbridge.dir/src/rosimagesink.cpp.o[0m
+[2.053s] [ 46%] [32mBuilding CXX object CMakeFiles/rosgstbridge.dir/src/rostextsink.cpp.o[0m
+[2.053s] [ 53%] [32mBuilding CXX object CMakeFiles/rosgstbridge.dir/src/rosaudiosink.cpp.o[0m
+[2.053s] [ 53%] [32mBuilding CXX object CMakeFiles/gst_bridge.dir/src/gst_bridge.cpp.o[0m
+[5.900s] [01m[K/home/eamrgde/Documents/gitrepos/ros_scream_int/scream/gstscream/ros2_bridge/src/ros-gst-bridge/gst_bridge/src/rosimagesink.cpp:[m[K In function ‘[01m[KGstFlowReturn rosimagesink_render(RosBaseSink*, GstBuffer*, rclcpp::Time)[m[K’:
+[5.900s] [01m[K/home/eamrgde/Documents/gitrepos/ros_scream_int/scream/gstscream/ros2_bridge/src/ros-gst-bridge/gst_bridge/src/rosimagesink.cpp:315:102:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kmsg_time[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[5.900s]   315 | static GstFlowReturn rosimagesink_render (RosBaseSink * ros_base_sink, GstBuffer * buf, [01;35m[Krclcpp::Time msg_time[m[K)
+[5.900s]       |                                                                                         [01;35m[K~~~~~~~~~~~~~^~~~~~~~[m[K
+[7.269s] [ 60%] [32m[1mLinking CXX shared library libgst_bridge.so[0m
+[7.373s] [ 66%] [32mBuilding CXX object CMakeFiles/rosgstbridge.dir/src/rosimusink.cpp.o[0m
+[7.774s] [ 73%] [32mBuilding CXX object CMakeFiles/rosgstbridge.dir/src/rosaudiosrc.cpp.o[0m
+[7.971s] [ 80%] [32mBuilding CXX object CMakeFiles/rosgstbridge.dir/src/rosimagesrc.cpp.o[0m
+[8.194s] [ 86%] [32mBuilding CXX object CMakeFiles/rosgstbridge.dir/src/rostextsrc.cpp.o[0m
+[8.964s] [ 86%] Built target gst_bridge
+[8.978s] [ 93%] [32mBuilding CXX object CMakeFiles/rosgstbridge.dir/src/rosimusrc.cpp.o[0m
+[11.691s] [01m[K/home/eamrgde/Documents/gitrepos/ros_scream_int/scream/gstscream/ros2_bridge/src/ros-gst-bridge/gst_bridge/src/rosimusink.cpp:[m[K In function ‘[01m[KGstFlowReturn rosimusink_render(RosBaseSink*, GstBuffer*, rclcpp::Time)[m[K’:
+[11.691s] [01m[K/home/eamrgde/Documents/gitrepos/ros_scream_int/scream/gstscream/ros2_bridge/src/ros-gst-bridge/gst_bridge/src/rosimusink.cpp:205:100:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kmsg_time[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[11.691s]   205 | static GstFlowReturn rosimusink_render (RosBaseSink * ros_base_sink, GstBuffer * buf, [01;35m[Krclcpp::Time msg_time[m[K)
+[11.691s]       |                                                                                       [01;35m[K~~~~~~~~~~~~~^~~~~~~~[m[K
+[12.394s] In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/logging.hpp:24[m[K,
+[12.394s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40[m[K,
+[12.395s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+[12.395s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+[12.395s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+[12.395s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+[12.395s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+[12.395s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+[12.395s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+[12.395s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+[12.395s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+[12.395s]                  from [01m[K/home/eamrgde/Documents/gitrepos/ros_scream_int/scream/gstscream/ros2_bridge/src/ros-gst-bridge/gst_bridge/include/gst_bridge/gst_bridge.h:27[m[K,
+[12.395s]                  from [01m[K/home/eamrgde/Documents/gitrepos/ros_scream_int/scream/gstscream/ros2_bridge/src/ros-gst-bridge/gst_bridge/include/gst_bridge/rosaudiosrc.h:24[m[K,
+[12.395s]                  from [01m[K/home/eamrgde/Documents/gitrepos/ros_scream_int/scream/gstscream/ros2_bridge/src/ros-gst-bridge/gst_bridge/src/rosaudiosrc.cpp:33[m[K:
+[12.396s] [01m[K/home/eamrgde/Documents/gitrepos/ros_scream_int/scream/gstscream/ros2_bridge/src/ros-gst-bridge/gst_bridge/src/rosaudiosrc.cpp:[m[K In function ‘[01m[Kvoid rosaudiosrc_sub_cb(Rosaudiosrc*, audio_msgs::msg::Audio_<std::allocator<void> >::ConstSharedPtr)[m[K’:
+[12.396s] [01m[K/home/eamrgde/Documents/gitrepos/ros_scream_int/scream/gstscream/ros2_bridge/src/ros-gst-bridge/gst_bridge/src/rosaudiosrc.cpp:559:42:[m[K [01;35m[Kwarning: [m[Kformat ‘[01m[K%s[m[K’ expects argument of type ‘[01m[Kchar*[m[K’, but argument 5 has type ‘[01m[Kstd::string[m[K’ {aka ‘[01m[Kstd::__cxx11::basic_string<char>[m[K’} [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wformat=-Wformat=]8;;[m[K]
+[12.396s]   559 |       RCLCPP_ERROR(ros_base_src->logger, [01;35m[K"audio format changed during playback, encoding %s != %s"[m[K,
+[12.396s]       |                                          [01;35m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[12.396s]   560 |         [32m[Kgst_bridge::getRosEncoding(GST_AUDIO_INFO_FORMAT(&(src->audio_info)))[m[K, msg->encoding.c_str()); // XXX account for the override
+[12.396s]       |         [32m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[12.396s]       |                                   [32m[K|[m[K
+[12.396s]       |                                   [32m[Kstd::string {aka std::__cxx11::basic_string<char>}[m[K
+[12.396s] [01m[K/home/eamrgde/Documents/gitrepos/ros_scream_int/scream/gstscream/ros2_bridge/src/ros-gst-bridge/gst_bridge/src/rosaudiosrc.cpp:559:7:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[KRCLCPP_ERROR[m[K’
+[12.396s]   559 |       [01;36m[KRCLCPP_ERROR[m[K(ros_base_src->logger, "audio format changed during playback, encoding %s != %s",
+[12.396s]       |       [01;36m[K^~~~~~~~~~~~[m[K
+[12.396s] [01m[K/home/eamrgde/Documents/gitrepos/ros_scream_int/scream/gstscream/ros2_bridge/src/ros-gst-bridge/gst_bridge/src/rosaudiosrc.cpp:559:91:[m[K [01;36m[Knote: [m[Kformat string is defined here
+[12.396s]   559 |       RCLCPP_ERROR(ros_base_src->logger, "audio format changed during playback, encoding [01;36m[K%s[m[K != %s",
+[12.397s]       |                                                                                          [01;36m[K~^[m[K
+[12.397s]       |                                                                                           [01;36m[K|[m[K
+[12.397s]       |                                                                                           [01;36m[Kchar*[m[K
+[25.076s] [100%] [32m[1mLinking CXX shared library librosgstbridge.so[0m
+[26.516s] [100%] Built target rosgstbridge
+[26.526s] Invoked command in '/home/eamrgde/Documents/gitrepos/ros_scream_int/scream/gstscream/ros2_bridge/src/build/gst_bridge' returned '0': AMENT_PREFIX_PATH=/home/eamrgde/Documents/gitrepos/ros_scream_int/scream/gstscream/ros2_bridge/src/install/audio_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/eamrgde/Documents/gitrepos/ros_scream_int/scream/gstscream/ros2_bridge/src/install/audio_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/eamrgde/Documents/gitrepos/ros_scream_int/scream/gstscream/ros2_bridge/src/install/audio_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/eamrgde/Documents/gitrepos/ros_scream_int/scream/gstscream/ros2_bridge/src/install/audio_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/eamrgde/Documents/gitrepos/ros_scream_int/scream/gstscream/ros2_bridge/src/build/gst_bridge -- -j8 -l8
+[26.528s] Invoking command in '/home/eamrgde/Documents/gitrepos/ros_scream_int/scream/gstscream/ros2_bridge/src/build/gst_bridge': AMENT_PREFIX_PATH=/home/eamrgde/Documents/gitrepos/ros_scream_int/scream/gstscream/ros2_bridge/src/install/audio_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/eamrgde/Documents/gitrepos/ros_scream_int/scream/gstscream/ros2_bridge/src/install/audio_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/eamrgde/Documents/gitrepos/ros_scream_int/scream/gstscream/ros2_bridge/src/install/audio_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/eamrgde/Documents/gitrepos/ros_scream_int/scream/gstscream/ros2_bridge/src/install/audio_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --install /home/eamrgde/Documents/gitrepos/ros_scream_int/scream/gstscream/ros2_bridge/src/build/gst_bridge
+[26.536s] -- Install configuration: "RelWithDebInfo"
+[26.536s] -- Installing: /home/eamrgde/Documents/gitrepos/ros_scream_int/scream/gstscream/ros2_bridge/src/install/gst_bridge/share/gst_bridge/environment/library_path.sh
+[26.536s] -- Installing: /home/eamrgde/Documents/gitrepos/ros_scream_int/scream/gstscream/ros2_bridge/src/install/gst_bridge/share/gst_bridge/environment/library_path.dsv
+[26.536s] -- Installing: /home/eamrgde/Documents/gitrepos/ros_scream_int/scream/gstscream/ros2_bridge/src/install/gst_bridge/include
+[26.536s] -- Installing: /home/eamrgde/Documents/gitrepos/ros_scream_int/scream/gstscream/ros2_bridge/src/install/gst_bridge/include/gst_bridge
+[26.536s] -- Installing: /home/eamrgde/Documents/gitrepos/ros_scream_int/scream/gstscream/ros2_bridge/src/install/gst_bridge/include/gst_bridge/rosbasesink.h
+[26.536s] -- Installing: /home/eamrgde/Documents/gitrepos/ros_scream_int/scream/gstscream/ros2_bridge/src/install/gst_bridge/include/gst_bridge/rosaudiosink.h
+[26.536s] -- Installing: /home/eamrgde/Documents/gitrepos/ros_scream_int/scream/gstscream/ros2_bridge/src/install/gst_bridge/include/gst_bridge/rosimagesink.h
+[26.536s] -- Installing: /home/eamrgde/Documents/gitrepos/ros_scream_int/scream/gstscream/ros2_bridge/src/install/gst_bridge/include/gst_bridge/gst_bridge.h
+[26.537s] -- Installing: /home/eamrgde/Documents/gitrepos/ros_scream_int/scream/gstscream/ros2_bridge/src/install/gst_bridge/include/gst_bridge/rosimagesrc.h
+[26.537s] -- Installing: /home/eamrgde/Documents/gitrepos/ros_scream_int/scream/gstscream/ros2_bridge/src/install/gst_bridge/include/gst_bridge/rosbasesrc.h
+[26.537s] -- Installing: /home/eamrgde/Documents/gitrepos/ros_scream_int/scream/gstscream/ros2_bridge/src/install/gst_bridge/include/gst_bridge/rostextsrc.h
+[26.537s] -- Installing: /home/eamrgde/Documents/gitrepos/ros_scream_int/scream/gstscream/ros2_bridge/src/install/gst_bridge/include/gst_bridge/rosimusrc.h
+[26.537s] -- Installing: /home/eamrgde/Documents/gitrepos/ros_scream_int/scream/gstscream/ros2_bridge/src/install/gst_bridge/include/gst_bridge/rosimusink.h
+[26.537s] -- Installing: /home/eamrgde/Documents/gitrepos/ros_scream_int/scream/gstscream/ros2_bridge/src/install/gst_bridge/include/gst_bridge/rosaudiosrc.h
+[26.537s] -- Installing: /home/eamrgde/Documents/gitrepos/ros_scream_int/scream/gstscream/ros2_bridge/src/install/gst_bridge/include/gst_bridge/rostextsink.h
+[26.538s] -- Installing: /home/eamrgde/Documents/gitrepos/ros_scream_int/scream/gstscream/ros2_bridge/src/install/gst_bridge/share/gst_bridge/config
+[26.538s] -- Installing: /home/eamrgde/Documents/gitrepos/ros_scream_int/scream/gstscream/ros2_bridge/src/install/gst_bridge/share/gst_bridge/config/example.config.yaml
+[26.538s] -- Installing: /home/eamrgde/Documents/gitrepos/ros_scream_int/scream/gstscream/ros2_bridge/src/install/gst_bridge/share/gst_bridge/launch
+[26.538s] -- Installing: /home/eamrgde/Documents/gitrepos/ros_scream_int/scream/gstscream/ros2_bridge/src/install/gst_bridge/share/gst_bridge/launch/example.launch.py
+[26.538s] -- Installing: /home/eamrgde/Documents/gitrepos/ros_scream_int/scream/gstscream/ros2_bridge/src/install/gst_bridge/lib/libgst_bridge.so
+[26.539s] -- Set runtime path of "/home/eamrgde/Documents/gitrepos/ros_scream_int/scream/gstscream/ros2_bridge/src/install/gst_bridge/lib/libgst_bridge.so" to ""
+[26.539s] -- Installing: /home/eamrgde/Documents/gitrepos/ros_scream_int/scream/gstscream/ros2_bridge/src/install/gst_bridge/lib/gst_bridge/librosgstbridge.so
+[26.569s] -- Set runtime path of "/home/eamrgde/Documents/gitrepos/ros_scream_int/scream/gstscream/ros2_bridge/src/install/gst_bridge/lib/gst_bridge/librosgstbridge.so" to ""
+[26.569s] -- Installing: /home/eamrgde/Documents/gitrepos/ros_scream_int/scream/gstscream/ros2_bridge/src/install/gst_bridge/share/ament_index/resource_index/package_run_dependencies/gst_bridge
+[26.569s] -- Installing: /home/eamrgde/Documents/gitrepos/ros_scream_int/scream/gstscream/ros2_bridge/src/install/gst_bridge/share/ament_index/resource_index/parent_prefix_path/gst_bridge
+[26.570s] -- Installing: /home/eamrgde/Documents/gitrepos/ros_scream_int/scream/gstscream/ros2_bridge/src/install/gst_bridge/share/gst_bridge/environment/ament_prefix_path.sh
+[26.570s] -- Installing: /home/eamrgde/Documents/gitrepos/ros_scream_int/scream/gstscream/ros2_bridge/src/install/gst_bridge/share/gst_bridge/environment/ament_prefix_path.dsv
+[26.570s] -- Installing: /home/eamrgde/Documents/gitrepos/ros_scream_int/scream/gstscream/ros2_bridge/src/install/gst_bridge/share/gst_bridge/environment/path.sh
+[26.570s] -- Installing: /home/eamrgde/Documents/gitrepos/ros_scream_int/scream/gstscream/ros2_bridge/src/install/gst_bridge/share/gst_bridge/environment/path.dsv
+[26.570s] -- Installing: /home/eamrgde/Documents/gitrepos/ros_scream_int/scream/gstscream/ros2_bridge/src/install/gst_bridge/share/gst_bridge/local_setup.bash
+[26.571s] -- Installing: /home/eamrgde/Documents/gitrepos/ros_scream_int/scream/gstscream/ros2_bridge/src/install/gst_bridge/share/gst_bridge/local_setup.sh
+[26.571s] -- Installing: /home/eamrgde/Documents/gitrepos/ros_scream_int/scream/gstscream/ros2_bridge/src/install/gst_bridge/share/gst_bridge/local_setup.zsh
+[26.571s] -- Installing: /home/eamrgde/Documents/gitrepos/ros_scream_int/scream/gstscream/ros2_bridge/src/install/gst_bridge/share/gst_bridge/local_setup.dsv
+[26.571s] -- Installing: /home/eamrgde/Documents/gitrepos/ros_scream_int/scream/gstscream/ros2_bridge/src/install/gst_bridge/share/gst_bridge/package.dsv
+[26.571s] -- Installing: /home/eamrgde/Documents/gitrepos/ros_scream_int/scream/gstscream/ros2_bridge/src/install/gst_bridge/share/ament_index/resource_index/packages/gst_bridge
+[26.572s] -- Installing: /home/eamrgde/Documents/gitrepos/ros_scream_int/scream/gstscream/ros2_bridge/src/install/gst_bridge/share/gst_bridge/cmake/ament_cmake_export_include_directories-extras.cmake
+[26.572s] -- Installing: /home/eamrgde/Documents/gitrepos/ros_scream_int/scream/gstscream/ros2_bridge/src/install/gst_bridge/share/gst_bridge/cmake/ament_cmake_export_libraries-extras.cmake
+[26.572s] -- Installing: /home/eamrgde/Documents/gitrepos/ros_scream_int/scream/gstscream/ros2_bridge/src/install/gst_bridge/share/gst_bridge/cmake/gst_bridgeConfig.cmake
+[26.572s] -- Installing: /home/eamrgde/Documents/gitrepos/ros_scream_int/scream/gstscream/ros2_bridge/src/install/gst_bridge/share/gst_bridge/cmake/gst_bridgeConfig-version.cmake
+[26.572s] -- Installing: /home/eamrgde/Documents/gitrepos/ros_scream_int/scream/gstscream/ros2_bridge/src/install/gst_bridge/share/gst_bridge/package.xml
+[26.575s] Invoked command in '/home/eamrgde/Documents/gitrepos/ros_scream_int/scream/gstscream/ros2_bridge/src/build/gst_bridge' returned '0': AMENT_PREFIX_PATH=/home/eamrgde/Documents/gitrepos/ros_scream_int/scream/gstscream/ros2_bridge/src/install/audio_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/eamrgde/Documents/gitrepos/ros_scream_int/scream/gstscream/ros2_bridge/src/install/audio_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/eamrgde/Documents/gitrepos/ros_scream_int/scream/gstscream/ros2_bridge/src/install/audio_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/eamrgde/Documents/gitrepos/ros_scream_int/scream/gstscream/ros2_bridge/src/install/audio_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --install /home/eamrgde/Documents/gitrepos/ros_scream_int/scream/gstscream/ros2_bridge/src/build/gst_bridge

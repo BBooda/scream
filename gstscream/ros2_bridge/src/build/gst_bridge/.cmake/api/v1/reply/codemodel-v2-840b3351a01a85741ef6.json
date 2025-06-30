@@ -1,0 +1,88 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-.-RelWithDebInfo-27f4e7ca2dbaf15a6c91.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.12"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3
+					]
+				}
+			],
+			"name" : "RelWithDebInfo",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "gst_bridge",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "gst_bridge::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-gst_bridge-RelWithDebInfo-575e218a9789343c37bf.json",
+					"name" : "gst_bridge",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "gst_bridge_uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-gst_bridge_uninstall-RelWithDebInfo-f5ea86515b1ac93cb759.json",
+					"name" : "gst_bridge_uninstall",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "rosgstbridge::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-rosgstbridge-RelWithDebInfo-d60318927efc5cbc3bcc.json",
+					"name" : "rosgstbridge",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-uninstall-RelWithDebInfo-f5e3da985656a40232a1.json",
+					"name" : "uninstall",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/home/eamrgde/Documents/gitrepos/ros_scream_int/scream/gstscream/ros2_bridge/src/build/gst_bridge",
+		"source" : "/home/eamrgde/Documents/gitrepos/ros_scream_int/scream/gstscream/ros2_bridge/src/ros-gst-bridge/gst_bridge"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 3
+	}
+}

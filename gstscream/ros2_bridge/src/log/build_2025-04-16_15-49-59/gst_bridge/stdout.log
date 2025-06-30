@@ -1,0 +1,117 @@
+-- The C compiler identification is GNU 11.4.0
+-- The CXX compiler identification is GNU 11.4.0
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /usr/bin/cc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /usr/bin/c++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Found ament_cmake: 1.3.11 (/opt/ros/humble/share/ament_cmake/cmake)
+-- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+-- Found rclcpp: 16.0.12 (/opt/ros/humble/share/rclcpp/cmake)
+-- Found rosidl_generator_c: 3.1.6 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+-- Found rosidl_adapter: 3.1.6 (/opt/ros/humble/share/rosidl_adapter/cmake)
+-- Found rosidl_generator_cpp: 3.1.6 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+-- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+-- Found rmw_fastrtps_cpp: 6.2.7 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+-- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  
+-- Found FastRTPS: /opt/ros/humble/include  
+-- Using RMW implementation 'rmw_fastrtps_cpp' as default
+-- Looking for pthread.h
+-- Looking for pthread.h - found
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+-- Found Threads: TRUE  
+-- Checking for module 'gstreamer-1.0 >= 1.8.3'
+--   Found gstreamer-1.0 , version 1.20.3
+-- Checking for module 'gstreamer-base-1.0 >= 1.8.3'
+--   Found gstreamer-base-1.0 , version 1.20.3
+-- Checking for module 'gstreamer-app-1.0 >= 1.8.3'
+--   Found gstreamer-app-1.0 , version 1.20.1
+-- Checking for module 'gstreamer-audio-1.0 >= 1.8.3'
+--   Found gstreamer-audio-1.0 , version 1.20.1
+-- Checking for module 'gstreamer-fft-1.0 >= 1.8.3'
+--   Found gstreamer-fft-1.0 , version 1.20.1
+-- Checking for module 'gstreamer-gl-1.0 >= 1.8.3'
+--   Found gstreamer-gl-1.0 , version 1.20.1
+-- Checking for module 'gstreamer-mpegts-1.0>=1.4.0'
+--   Found gstreamer-mpegts-1.0, version 1.20.3
+-- Checking for module 'gstreamer-pbutils-1.0 >= 1.8.3'
+--   Found gstreamer-pbutils-1.0 , version 1.20.1
+-- Checking for module 'gstreamer-tag-1.0 >= 1.8.3'
+--   Found gstreamer-tag-1.0 , version 1.20.1
+-- Checking for module 'gstreamer-video-1.0 >= 1.8.3'
+--   Found gstreamer-video-1.0 , version 1.20.1
+-- Checking for module 'gstreamer-codecparsers-1.0 >= 1.8.3'
+--   Found gstreamer-codecparsers-1.0 , version 1.20.3
+-- Found GStreamer: GSTREAMER_INCLUDE_DIRS;GSTREAMER_LIBRARIES;GSTREAMER_VERSION;GSTREAMER_BASE_INCLUDE_DIRS;GSTREAMER_BASE_LIBRARIES;GSTREAMER_APP_INCLUDE_DIRS;GSTREAMER_APP_LIBRARIES;GSTREAMER_PBUTILS_INCLUDE_DIRS;GSTREAMER_PBUTILS_LIBRARIES;GSTREAMER_AUDIO_INCLUDE_DIRS;GSTREAMER_AUDIO_LIBRARIES;GSTREAMER_FFT_INCLUDE_DIRS;GSTREAMER_FFT_LIBRARIES;GSTREAMER_NET_INCLUDE_DIRS;GSTREAMER_NET_LIBRARIES (Required is at least version "1.8.3") 
+-- Found GLIB: /usr/include/glib-2.0;/usr/lib/x86_64-linux-gnu/glib-2.0/include (found suitable version "2.72.4", minimum required is "2.28") 
+-- Found audio_msgs: 0.0.0 (/home/eamrgde/Documents/gitrepos/ros_scream_int/scream/gstscream/ros2_bridge/src/install/audio_msgs/share/audio_msgs/cmake)
+-- Found sensor_msgs: 4.8.0 (/opt/ros/humble/share/sensor_msgs/cmake)
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/eamrgde/Documents/gitrepos/ros_scream_int/scream/gstscream/ros2_bridge/src/build/gst_bridge
+[  6%] [32mBuilding CXX object CMakeFiles/rosgstbridge.dir/src/rosgstbridgeplugin.cpp.o[0m
+[ 26%] [32mBuilding CXX object CMakeFiles/rosgstbridge.dir/src/rosbasesrc.cpp.o[0m
+[ 26%] [32mBuilding CXX object CMakeFiles/rosgstbridge.dir/src/gst_bridge.cpp.o[0m
+[ 26%] [32mBuilding CXX object CMakeFiles/rosgstbridge.dir/src/rosbasesink.cpp.o[0m
+[ 33%] [32mBuilding CXX object CMakeFiles/rosgstbridge.dir/src/rosimagesink.cpp.o[0m
+[ 46%] [32mBuilding CXX object CMakeFiles/rosgstbridge.dir/src/rostextsink.cpp.o[0m
+[ 53%] [32mBuilding CXX object CMakeFiles/rosgstbridge.dir/src/rosaudiosink.cpp.o[0m
+[ 53%] [32mBuilding CXX object CMakeFiles/gst_bridge.dir/src/gst_bridge.cpp.o[0m
+[ 60%] [32m[1mLinking CXX shared library libgst_bridge.so[0m
+[ 66%] [32mBuilding CXX object CMakeFiles/rosgstbridge.dir/src/rosimusink.cpp.o[0m
+[ 73%] [32mBuilding CXX object CMakeFiles/rosgstbridge.dir/src/rosaudiosrc.cpp.o[0m
+[ 80%] [32mBuilding CXX object CMakeFiles/rosgstbridge.dir/src/rosimagesrc.cpp.o[0m
+[ 86%] [32mBuilding CXX object CMakeFiles/rosgstbridge.dir/src/rostextsrc.cpp.o[0m
+[ 86%] Built target gst_bridge
+[ 93%] [32mBuilding CXX object CMakeFiles/rosgstbridge.dir/src/rosimusrc.cpp.o[0m
+[100%] [32m[1mLinking CXX shared library librosgstbridge.so[0m
+[100%] Built target rosgstbridge
+-- Install configuration: "RelWithDebInfo"
+-- Installing: /home/eamrgde/Documents/gitrepos/ros_scream_int/scream/gstscream/ros2_bridge/src/install/gst_bridge/share/gst_bridge/environment/library_path.sh
+-- Installing: /home/eamrgde/Documents/gitrepos/ros_scream_int/scream/gstscream/ros2_bridge/src/install/gst_bridge/share/gst_bridge/environment/library_path.dsv
+-- Installing: /home/eamrgde/Documents/gitrepos/ros_scream_int/scream/gstscream/ros2_bridge/src/install/gst_bridge/include
+-- Installing: /home/eamrgde/Documents/gitrepos/ros_scream_int/scream/gstscream/ros2_bridge/src/install/gst_bridge/include/gst_bridge
+-- Installing: /home/eamrgde/Documents/gitrepos/ros_scream_int/scream/gstscream/ros2_bridge/src/install/gst_bridge/include/gst_bridge/rosbasesink.h
+-- Installing: /home/eamrgde/Documents/gitrepos/ros_scream_int/scream/gstscream/ros2_bridge/src/install/gst_bridge/include/gst_bridge/rosaudiosink.h
+-- Installing: /home/eamrgde/Documents/gitrepos/ros_scream_int/scream/gstscream/ros2_bridge/src/install/gst_bridge/include/gst_bridge/rosimagesink.h
+-- Installing: /home/eamrgde/Documents/gitrepos/ros_scream_int/scream/gstscream/ros2_bridge/src/install/gst_bridge/include/gst_bridge/gst_bridge.h
+-- Installing: /home/eamrgde/Documents/gitrepos/ros_scream_int/scream/gstscream/ros2_bridge/src/install/gst_bridge/include/gst_bridge/rosimagesrc.h
+-- Installing: /home/eamrgde/Documents/gitrepos/ros_scream_int/scream/gstscream/ros2_bridge/src/install/gst_bridge/include/gst_bridge/rosbasesrc.h
+-- Installing: /home/eamrgde/Documents/gitrepos/ros_scream_int/scream/gstscream/ros2_bridge/src/install/gst_bridge/include/gst_bridge/rostextsrc.h
+-- Installing: /home/eamrgde/Documents/gitrepos/ros_scream_int/scream/gstscream/ros2_bridge/src/install/gst_bridge/include/gst_bridge/rosimusrc.h
+-- Installing: /home/eamrgde/Documents/gitrepos/ros_scream_int/scream/gstscream/ros2_bridge/src/install/gst_bridge/include/gst_bridge/rosimusink.h
+-- Installing: /home/eamrgde/Documents/gitrepos/ros_scream_int/scream/gstscream/ros2_bridge/src/install/gst_bridge/include/gst_bridge/rosaudiosrc.h
+-- Installing: /home/eamrgde/Documents/gitrepos/ros_scream_int/scream/gstscream/ros2_bridge/src/install/gst_bridge/include/gst_bridge/rostextsink.h
+-- Installing: /home/eamrgde/Documents/gitrepos/ros_scream_int/scream/gstscream/ros2_bridge/src/install/gst_bridge/share/gst_bridge/config
+-- Installing: /home/eamrgde/Documents/gitrepos/ros_scream_int/scream/gstscream/ros2_bridge/src/install/gst_bridge/share/gst_bridge/config/example.config.yaml
+-- Installing: /home/eamrgde/Documents/gitrepos/ros_scream_int/scream/gstscream/ros2_bridge/src/install/gst_bridge/share/gst_bridge/launch
+-- Installing: /home/eamrgde/Documents/gitrepos/ros_scream_int/scream/gstscream/ros2_bridge/src/install/gst_bridge/share/gst_bridge/launch/example.launch.py
+-- Installing: /home/eamrgde/Documents/gitrepos/ros_scream_int/scream/gstscream/ros2_bridge/src/install/gst_bridge/lib/libgst_bridge.so
+-- Set runtime path of "/home/eamrgde/Documents/gitrepos/ros_scream_int/scream/gstscream/ros2_bridge/src/install/gst_bridge/lib/libgst_bridge.so" to ""
+-- Installing: /home/eamrgde/Documents/gitrepos/ros_scream_int/scream/gstscream/ros2_bridge/src/install/gst_bridge/lib/gst_bridge/librosgstbridge.so
+-- Set runtime path of "/home/eamrgde/Documents/gitrepos/ros_scream_int/scream/gstscream/ros2_bridge/src/install/gst_bridge/lib/gst_bridge/librosgstbridge.so" to ""
+-- Installing: /home/eamrgde/Documents/gitrepos/ros_scream_int/scream/gstscream/ros2_bridge/src/install/gst_bridge/share/ament_index/resource_index/package_run_dependencies/gst_bridge
+-- Installing: /home/eamrgde/Documents/gitrepos/ros_scream_int/scream/gstscream/ros2_bridge/src/install/gst_bridge/share/ament_index/resource_index/parent_prefix_path/gst_bridge
+-- Installing: /home/eamrgde/Documents/gitrepos/ros_scream_int/scream/gstscream/ros2_bridge/src/install/gst_bridge/share/gst_bridge/environment/ament_prefix_path.sh
+-- Installing: /home/eamrgde/Documents/gitrepos/ros_scream_int/scream/gstscream/ros2_bridge/src/install/gst_bridge/share/gst_bridge/environment/ament_prefix_path.dsv
+-- Installing: /home/eamrgde/Documents/gitrepos/ros_scream_int/scream/gstscream/ros2_bridge/src/install/gst_bridge/share/gst_bridge/environment/path.sh
+-- Installing: /home/eamrgde/Documents/gitrepos/ros_scream_int/scream/gstscream/ros2_bridge/src/install/gst_bridge/share/gst_bridge/environment/path.dsv
+-- Installing: /home/eamrgde/Documents/gitrepos/ros_scream_int/scream/gstscream/ros2_bridge/src/install/gst_bridge/share/gst_bridge/local_setup.bash
+-- Installing: /home/eamrgde/Documents/gitrepos/ros_scream_int/scream/gstscream/ros2_bridge/src/install/gst_bridge/share/gst_bridge/local_setup.sh
+-- Installing: /home/eamrgde/Documents/gitrepos/ros_scream_int/scream/gstscream/ros2_bridge/src/install/gst_bridge/share/gst_bridge/local_setup.zsh
+-- Installing: /home/eamrgde/Documents/gitrepos/ros_scream_int/scream/gstscream/ros2_bridge/src/install/gst_bridge/share/gst_bridge/local_setup.dsv
+-- Installing: /home/eamrgde/Documents/gitrepos/ros_scream_int/scream/gstscream/ros2_bridge/src/install/gst_bridge/share/gst_bridge/package.dsv
+-- Installing: /home/eamrgde/Documents/gitrepos/ros_scream_int/scream/gstscream/ros2_bridge/src/install/gst_bridge/share/ament_index/resource_index/packages/gst_bridge
+-- Installing: /home/eamrgde/Documents/gitrepos/ros_scream_int/scream/gstscream/ros2_bridge/src/install/gst_bridge/share/gst_bridge/cmake/ament_cmake_export_include_directories-extras.cmake
+-- Installing: /home/eamrgde/Documents/gitrepos/ros_scream_int/scream/gstscream/ros2_bridge/src/install/gst_bridge/share/gst_bridge/cmake/ament_cmake_export_libraries-extras.cmake
+-- Installing: /home/eamrgde/Documents/gitrepos/ros_scream_int/scream/gstscream/ros2_bridge/src/install/gst_bridge/share/gst_bridge/cmake/gst_bridgeConfig.cmake
+-- Installing: /home/eamrgde/Documents/gitrepos/ros_scream_int/scream/gstscream/ros2_bridge/src/install/gst_bridge/share/gst_bridge/cmake/gst_bridgeConfig-version.cmake
+-- Installing: /home/eamrgde/Documents/gitrepos/ros_scream_int/scream/gstscream/ros2_bridge/src/install/gst_bridge/share/gst_bridge/package.xml

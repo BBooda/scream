@@ -1,0 +1,56 @@
+[0.623s] Invoking command in '/home/eamrgde/Documents/gitrepos/ros_scream_int/scream/gstscream/ros2_bridge/src/ros-gst-bridge/gst_pipeline': PYTHONPATH=/home/eamrgde/Documents/gitrepos/ros_scream_int/scream/gstscream/ros2_bridge/src/build/gst_pipeline/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/eamrgde/Documents/gitrepos/ros_scream_int/scream/gstscream/ros2_bridge/src/install/gst_pipeline/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/gst_pipeline build --build-base /home/eamrgde/Documents/gitrepos/ros_scream_int/scream/gstscream/ros2_bridge/src/build/gst_pipeline/build install --record /home/eamrgde/Documents/gitrepos/ros_scream_int/scream/gstscream/ros2_bridge/src/build/gst_pipeline/install.log --install-scripts $base/lib/gst_pipeline --single-version-externally-managed install_data
+[0.813s] /usr/lib/python3/dist-packages/setuptools/dist.py:723: UserWarning: Usage of dash-separated 'script-dir' will not be supported in future versions. Please use the underscore name 'script_dir' instead
+[0.813s]   warnings.warn(
+[0.820s] running egg_info
+[0.821s] creating ../../build/gst_pipeline/gst_pipeline.egg-info
+[0.821s] writing ../../build/gst_pipeline/gst_pipeline.egg-info/PKG-INFO
+[0.821s] writing dependency_links to ../../build/gst_pipeline/gst_pipeline.egg-info/dependency_links.txt
+[0.821s] writing entry points to ../../build/gst_pipeline/gst_pipeline.egg-info/entry_points.txt
+[0.822s] writing requirements to ../../build/gst_pipeline/gst_pipeline.egg-info/requires.txt
+[0.822s] writing top-level names to ../../build/gst_pipeline/gst_pipeline.egg-info/top_level.txt
+[0.822s] writing manifest file '../../build/gst_pipeline/gst_pipeline.egg-info/SOURCES.txt'
+[0.824s] reading manifest file '../../build/gst_pipeline/gst_pipeline.egg-info/SOURCES.txt'
+[0.824s] adding license file 'LICENSE.md'
+[0.824s] writing manifest file '../../build/gst_pipeline/gst_pipeline.egg-info/SOURCES.txt'
+[0.825s] running build
+[0.825s] running build_py
+[0.825s] creating /home/eamrgde/Documents/gitrepos/ros_scream_int/scream/gstscream/ros2_bridge/src/build/gst_pipeline/build
+[0.825s] creating /home/eamrgde/Documents/gitrepos/ros_scream_int/scream/gstscream/ros2_bridge/src/build/gst_pipeline/build/lib
+[0.825s] creating /home/eamrgde/Documents/gitrepos/ros_scream_int/scream/gstscream/ros2_bridge/src/build/gst_pipeline/build/lib/gst_pipeline
+[0.825s] copying gst_pipeline/webrtc_sigchan.py -> /home/eamrgde/Documents/gitrepos/ros_scream_int/scream/gstscream/ros2_bridge/src/build/gst_pipeline/build/lib/gst_pipeline
+[0.825s] copying gst_pipeline/pipeline_node.py -> /home/eamrgde/Documents/gitrepos/ros_scream_int/scream/gstscream/ros2_bridge/src/build/gst_pipeline/build/lib/gst_pipeline
+[0.825s] copying gst_pipeline/pipeline.py -> /home/eamrgde/Documents/gitrepos/ros_scream_int/scream/gstscream/ros2_bridge/src/build/gst_pipeline/build/lib/gst_pipeline
+[0.825s] copying gst_pipeline/simplebin.py -> /home/eamrgde/Documents/gitrepos/ros_scream_int/scream/gstscream/ros2_bridge/src/build/gst_pipeline/build/lib/gst_pipeline
+[0.825s] copying gst_pipeline/webrtc_pipes.py -> /home/eamrgde/Documents/gitrepos/ros_scream_int/scream/gstscream/ros2_bridge/src/build/gst_pipeline/build/lib/gst_pipeline
+[0.826s] copying gst_pipeline/webrtc_transport_ws.py -> /home/eamrgde/Documents/gitrepos/ros_scream_int/scream/gstscream/ros2_bridge/src/build/gst_pipeline/build/lib/gst_pipeline
+[0.826s] copying gst_pipeline/__init__.py -> /home/eamrgde/Documents/gitrepos/ros_scream_int/scream/gstscream/ros2_bridge/src/build/gst_pipeline/build/lib/gst_pipeline
+[0.826s] running install
+[0.826s] running install_lib
+[0.827s] creating /home/eamrgde/Documents/gitrepos/ros_scream_int/scream/gstscream/ros2_bridge/src/install/gst_pipeline/lib/python3.10/site-packages/gst_pipeline
+[0.827s] copying /home/eamrgde/Documents/gitrepos/ros_scream_int/scream/gstscream/ros2_bridge/src/build/gst_pipeline/build/lib/gst_pipeline/webrtc_sigchan.py -> /home/eamrgde/Documents/gitrepos/ros_scream_int/scream/gstscream/ros2_bridge/src/install/gst_pipeline/lib/python3.10/site-packages/gst_pipeline
+[0.827s] copying /home/eamrgde/Documents/gitrepos/ros_scream_int/scream/gstscream/ros2_bridge/src/build/gst_pipeline/build/lib/gst_pipeline/pipeline_node.py -> /home/eamrgde/Documents/gitrepos/ros_scream_int/scream/gstscream/ros2_bridge/src/install/gst_pipeline/lib/python3.10/site-packages/gst_pipeline
+[0.827s] copying /home/eamrgde/Documents/gitrepos/ros_scream_int/scream/gstscream/ros2_bridge/src/build/gst_pipeline/build/lib/gst_pipeline/pipeline.py -> /home/eamrgde/Documents/gitrepos/ros_scream_int/scream/gstscream/ros2_bridge/src/install/gst_pipeline/lib/python3.10/site-packages/gst_pipeline
+[0.828s] copying /home/eamrgde/Documents/gitrepos/ros_scream_int/scream/gstscream/ros2_bridge/src/build/gst_pipeline/build/lib/gst_pipeline/simplebin.py -> /home/eamrgde/Documents/gitrepos/ros_scream_int/scream/gstscream/ros2_bridge/src/install/gst_pipeline/lib/python3.10/site-packages/gst_pipeline
+[0.828s] copying /home/eamrgde/Documents/gitrepos/ros_scream_int/scream/gstscream/ros2_bridge/src/build/gst_pipeline/build/lib/gst_pipeline/webrtc_pipes.py -> /home/eamrgde/Documents/gitrepos/ros_scream_int/scream/gstscream/ros2_bridge/src/install/gst_pipeline/lib/python3.10/site-packages/gst_pipeline
+[0.828s] copying /home/eamrgde/Documents/gitrepos/ros_scream_int/scream/gstscream/ros2_bridge/src/build/gst_pipeline/build/lib/gst_pipeline/webrtc_transport_ws.py -> /home/eamrgde/Documents/gitrepos/ros_scream_int/scream/gstscream/ros2_bridge/src/install/gst_pipeline/lib/python3.10/site-packages/gst_pipeline
+[0.828s] copying /home/eamrgde/Documents/gitrepos/ros_scream_int/scream/gstscream/ros2_bridge/src/build/gst_pipeline/build/lib/gst_pipeline/__init__.py -> /home/eamrgde/Documents/gitrepos/ros_scream_int/scream/gstscream/ros2_bridge/src/install/gst_pipeline/lib/python3.10/site-packages/gst_pipeline
+[0.829s] byte-compiling /home/eamrgde/Documents/gitrepos/ros_scream_int/scream/gstscream/ros2_bridge/src/install/gst_pipeline/lib/python3.10/site-packages/gst_pipeline/webrtc_sigchan.py to webrtc_sigchan.cpython-310.pyc
+[0.830s] byte-compiling /home/eamrgde/Documents/gitrepos/ros_scream_int/scream/gstscream/ros2_bridge/src/install/gst_pipeline/lib/python3.10/site-packages/gst_pipeline/pipeline_node.py to pipeline_node.cpython-310.pyc
+[0.830s] byte-compiling /home/eamrgde/Documents/gitrepos/ros_scream_int/scream/gstscream/ros2_bridge/src/install/gst_pipeline/lib/python3.10/site-packages/gst_pipeline/pipeline.py to pipeline.cpython-310.pyc
+[0.832s] byte-compiling /home/eamrgde/Documents/gitrepos/ros_scream_int/scream/gstscream/ros2_bridge/src/install/gst_pipeline/lib/python3.10/site-packages/gst_pipeline/simplebin.py to simplebin.cpython-310.pyc
+[0.832s] byte-compiling /home/eamrgde/Documents/gitrepos/ros_scream_int/scream/gstscream/ros2_bridge/src/install/gst_pipeline/lib/python3.10/site-packages/gst_pipeline/webrtc_pipes.py to webrtc_pipes.cpython-310.pyc
+[0.834s] byte-compiling /home/eamrgde/Documents/gitrepos/ros_scream_int/scream/gstscream/ros2_bridge/src/install/gst_pipeline/lib/python3.10/site-packages/gst_pipeline/webrtc_transport_ws.py to webrtc_transport_ws.cpython-310.pyc
+[0.835s] byte-compiling /home/eamrgde/Documents/gitrepos/ros_scream_int/scream/gstscream/ros2_bridge/src/install/gst_pipeline/lib/python3.10/site-packages/gst_pipeline/__init__.py to __init__.cpython-310.pyc
+[0.835s] running install_data
+[0.835s] creating /home/eamrgde/Documents/gitrepos/ros_scream_int/scream/gstscream/ros2_bridge/src/install/gst_pipeline/share/ament_index
+[0.835s] creating /home/eamrgde/Documents/gitrepos/ros_scream_int/scream/gstscream/ros2_bridge/src/install/gst_pipeline/share/ament_index/resource_index
+[0.835s] creating /home/eamrgde/Documents/gitrepos/ros_scream_int/scream/gstscream/ros2_bridge/src/install/gst_pipeline/share/ament_index/resource_index/packages
+[0.835s] copying resource/gst_pipeline -> /home/eamrgde/Documents/gitrepos/ros_scream_int/scream/gstscream/ros2_bridge/src/install/gst_pipeline/share/ament_index/resource_index/packages
+[0.836s] copying package.xml -> /home/eamrgde/Documents/gitrepos/ros_scream_int/scream/gstscream/ros2_bridge/src/install/gst_pipeline/share/gst_pipeline
+[0.836s] creating /home/eamrgde/Documents/gitrepos/ros_scream_int/scream/gstscream/ros2_bridge/src/install/gst_pipeline/share/gst_pipeline/config
+[0.836s] running install_egg_info
+[0.837s] Copying ../../build/gst_pipeline/gst_pipeline.egg-info to /home/eamrgde/Documents/gitrepos/ros_scream_int/scream/gstscream/ros2_bridge/src/install/gst_pipeline/lib/python3.10/site-packages/gst_pipeline-0.0.0-py3.10.egg-info
+[0.838s] running install_scripts
+[0.854s] Installing pipeline_node script to /home/eamrgde/Documents/gitrepos/ros_scream_int/scream/gstscream/ros2_bridge/src/install/gst_pipeline/lib/gst_pipeline
+[0.854s] writing list of installed files to '/home/eamrgde/Documents/gitrepos/ros_scream_int/scream/gstscream/ros2_bridge/src/build/gst_pipeline/install.log'
+[0.877s] Invoked command in '/home/eamrgde/Documents/gitrepos/ros_scream_int/scream/gstscream/ros2_bridge/src/ros-gst-bridge/gst_pipeline' returned '0': PYTHONPATH=/home/eamrgde/Documents/gitrepos/ros_scream_int/scream/gstscream/ros2_bridge/src/build/gst_pipeline/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/eamrgde/Documents/gitrepos/ros_scream_int/scream/gstscream/ros2_bridge/src/install/gst_pipeline/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/gst_pipeline build --build-base /home/eamrgde/Documents/gitrepos/ros_scream_int/scream/gstscream/ros2_bridge/src/build/gst_pipeline/build install --record /home/eamrgde/Documents/gitrepos/ros_scream_int/scream/gstscream/ros2_bridge/src/build/gst_pipeline/install.log --install-scripts $base/lib/gst_pipeline --single-version-externally-managed install_data

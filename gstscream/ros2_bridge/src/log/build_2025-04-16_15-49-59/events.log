@@ -1,0 +1,767 @@
+[0.000000] (-) TimerEvent: {}
+[0.000324] (audio_msgs) JobQueued: {'identifier': 'audio_msgs', 'dependencies': OrderedDict()}
+[0.000444] (gst_pipeline) JobQueued: {'identifier': 'gst_pipeline', 'dependencies': OrderedDict()}
+[0.000482] (gst_bridge) JobQueued: {'identifier': 'gst_bridge', 'dependencies': OrderedDict([('audio_msgs', '/home/eamrgde/Documents/gitrepos/ros_scream_int/scream/gstscream/ros2_bridge/src/install/audio_msgs')])}
+[0.000533] (audio_msgs) JobStarted: {'identifier': 'audio_msgs'}
+[0.006101] (gst_pipeline) JobStarted: {'identifier': 'gst_pipeline'}
+[0.011725] (audio_msgs) JobProgress: {'identifier': 'audio_msgs', 'progress': 'cmake'}
+[0.012133] (audio_msgs) Command: {'cmd': ['/usr/bin/cmake', '/home/eamrgde/Documents/gitrepos/ros_scream_int/scream/gstscream/ros2_bridge/src/ros-gst-bridge/audio_msgs', '-DCMAKE_INSTALL_PREFIX=/home/eamrgde/Documents/gitrepos/ros_scream_int/scream/gstscream/ros2_bridge/src/install/audio_msgs'], 'cwd': '/home/eamrgde/Documents/gitrepos/ros_scream_int/scream/gstscream/ros2_bridge/src/build/audio_msgs', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('TMUX', '/tmp/tmux-7462898/default,21252,0'), ('LANGUAGE', 'en_AU:en'), ('USER', 'eamrgde'), ('LC_TIME', 'sv_SE.UTF-8'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '2'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/eamrgde'), ('OLDPWD', '/home/eamrgde/Documents/gitrepos/ros_scream_int/scream/gstscream/ros2_bridge/src/ros-gst-bridge'), ('TERM_PROGRAM_VERSION', '3.2a'), ('DESKTOP_SESSION', 'ubuntu'), ('CUPS_USER', 'gerasimos.damigos@ericsson.com'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'sv_SE.UTF-8'), ('SYSTEMD_EXEC_PID', '8929'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/7462898/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'eamrgde'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'eamrgde'), ('TERM', 'screen'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/home/eamrgde/.local/bin:/opt/ros/humble/bin:/home/eamrgde/.cargo/bin:/home/eamrgde/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin:/usr/bin:/opt/puppetlabs/bin:/usr/bin'), ('SESSION_MANAGER', 'local/elx-5cg2292ctb:@/tmp/.ICE-unix/3802,unix/elx-5cg2292ctb:/tmp/.ICE-unix/3802'), ('PAPERSIZE', 'a4'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'sv_SE.UTF-8'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/2e7ebc78_9bc3_4fe7_88be_8a8007f59e80'), ('XDG_RUNTIME_DIR', '/run/user/7462898'), ('DISPLAY', ':1'), ('LANG', 'en_AU.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'sv_SE.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/7462898/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.119'), ('TERM_PROGRAM', 'tmux'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/7462898/keyring/ssh'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'sv_SE.UTF-8'), ('KRB5CCNAME', 'FILE:/var/tmp/krb5cc_7462898_4P2mdm'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'sv_SE.UTF-8'), ('GPG_AGENT_INFO', '/run/user/7462898/gnupg/S.gpg-agent:0:1'), ('LC_IDENTIFICATION', 'sv_SE.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/eamrgde/Documents/gitrepos/ros_scream_int/scream/gstscream/ros2_bridge/src/build/audio_msgs'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'sv_SE.UTF-8'), ('LC_PAPER', 'sv_SE.UTF-8'), ('COLCON', '1'), ('MANPATH', ':/opt/puppetlabs/puppet/share/man'), ('VTE_VERSION', '6800'), ('TMUX_PANE', '%3'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[0.099609] (-) TimerEvent: {}
+[0.142314] (audio_msgs) StdoutLine: {'line': b'-- The C compiler identification is GNU 11.4.0\n'}
+[0.199702] (-) TimerEvent: {}
+[0.299954] (-) TimerEvent: {}
+[0.317019] (audio_msgs) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 11.4.0\n'}
+[0.325569] (audio_msgs) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[0.387347] (audio_msgs) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[0.392709] (audio_msgs) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[0.393092] (audio_msgs) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[0.393642] (audio_msgs) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[0.396647] (audio_msgs) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[0.400043] (-) TimerEvent: {}
+[0.463541] (audio_msgs) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[0.469121] (audio_msgs) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[0.469352] (audio_msgs) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[0.469766] (audio_msgs) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[0.478123] (audio_msgs) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.11 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[0.500151] (-) TimerEvent: {}
+[0.600399] (-) TimerEvent: {}
+[0.606908] (audio_msgs) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter \n'}
+[0.627233] (gst_pipeline) Command: {'cmd': ['/usr/bin/python3', '-W', 'ignore:setup.py install is deprecated', '-W', 'ignore:easy_install command is deprecated', 'setup.py', 'egg_info', '--egg-base', '../../build/gst_pipeline', 'build', '--build-base', '/home/eamrgde/Documents/gitrepos/ros_scream_int/scream/gstscream/ros2_bridge/src/build/gst_pipeline/build', 'install', '--record', '/home/eamrgde/Documents/gitrepos/ros_scream_int/scream/gstscream/ros2_bridge/src/build/gst_pipeline/install.log', '--install-scripts', '$base/lib/gst_pipeline', '--single-version-externally-managed', 'install_data'], 'cwd': '/home/eamrgde/Documents/gitrepos/ros_scream_int/scream/gstscream/ros2_bridge/src/ros-gst-bridge/gst_pipeline', 'env': {'LESSOPEN': '| /usr/bin/lesspipe %s', 'TMUX': '/tmp/tmux-7462898/default,21252,0', 'LANGUAGE': 'en_AU:en', 'USER': 'eamrgde', 'LC_TIME': 'sv_SE.UTF-8', 'XDG_SESSION_TYPE': 'x11', 'SHLVL': '2', 'LD_LIBRARY_PATH': '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib', 'HOME': '/home/eamrgde', 'OLDPWD': '/home/eamrgde/Documents/gitrepos/ros_scream_int/scream/gstscream/ros2_bridge/src/ros-gst-bridge', 'TERM_PROGRAM_VERSION': '3.2a', 'DESKTOP_SESSION': 'ubuntu', 'CUPS_USER': 'gerasimos.damigos@ericsson.com', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'LC_MONETARY': 'sv_SE.UTF-8', 'SYSTEMD_EXEC_PID': '8929', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/7462898/bus', 'COLORTERM': 'truecolor', 'IM_CONFIG_PHASE': '1', 'ROS_DISTRO': 'humble', 'GTK_IM_MODULE': 'ibus', 'LOGNAME': 'eamrgde', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'USERNAME': 'eamrgde', 'TERM': 'screen', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'ROS_LOCALHOST_ONLY': '0', 'WINDOWPATH': '2', 'PATH': '/home/eamrgde/.local/bin:/opt/ros/humble/bin:/home/eamrgde/.cargo/bin:/home/eamrgde/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin:/usr/bin:/opt/puppetlabs/bin:/usr/bin', 'SESSION_MANAGER': 'local/elx-5cg2292ctb:@/tmp/.ICE-unix/3802,unix/elx-5cg2292ctb:/tmp/.ICE-unix/3802', 'PAPERSIZE': 'a4', 'XDG_MENU_PREFIX': 'gnome-', 'LC_ADDRESS': 'sv_SE.UTF-8', 'GNOME_TERMINAL_SCREEN': '/org/gnome/Terminal/screen/2e7ebc78_9bc3_4fe7_88be_8a8007f59e80', 'XDG_RUNTIME_DIR': '/run/user/7462898', 'DISPLAY': ':1', 'LANG': 'en_AU.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'LC_TELEPHONE': 'sv_SE.UTF-8', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/7462898/gdm/Xauthority', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'GNOME_TERMINAL_SERVICE': ':1.119', 'TERM_PROGRAM': 'tmux', 'SSH_AGENT_LAUNCHER': 'gnome-keyring', 'SSH_AUTH_SOCK': '/run/user/7462898/keyring/ssh', 'AMENT_PREFIX_PATH': '/opt/ros/humble', 'SHELL': '/bin/bash', 'LC_NAME': 'sv_SE.UTF-8', 'KRB5CCNAME': 'FILE:/var/tmp/krb5cc_7462898_4P2mdm', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'LC_MEASUREMENT': 'sv_SE.UTF-8', 'GPG_AGENT_INFO': '/run/user/7462898/gnupg/S.gpg-agent:0:1', 'LC_IDENTIFICATION': 'sv_SE.UTF-8', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/eamrgde/Documents/gitrepos/ros_scream_int/scream/gstscream/ros2_bridge/src/build/gst_pipeline', 'LC_ALL': 'en_US.UTF-8', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/eamrgde/Documents/gitrepos/ros_scream_int/scream/gstscream/ros2_bridge/src/build/gst_pipeline/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/eamrgde/Documents/gitrepos/ros_scream_int/scream/gstscream/ros2_bridge/src/install/gst_pipeline/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages', 'LC_NUMERIC': 'sv_SE.UTF-8', 'LC_PAPER': 'sv_SE.UTF-8', 'COLCON': '1', 'MANPATH': ':/opt/puppetlabs/puppet/share/man', 'VTE_VERSION': '6800', 'TMUX_PANE': '%3'}, 'shell': False}
+[0.689025] (audio_msgs) StdoutLine: {'line': b'-- Found std_msgs: 4.8.0 (/opt/ros/humble/share/std_msgs/cmake)\n'}
+[0.700472] (-) TimerEvent: {}
+[0.725735] (audio_msgs) StdoutLine: {'line': b'-- Found rosidl_generator_c: 3.1.6 (/opt/ros/humble/share/rosidl_generator_c/cmake)\n'}
+[0.730925] (audio_msgs) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.6 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[0.739436] (audio_msgs) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 3.1.6 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)\n'}
+[0.754035] (audio_msgs) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[0.769004] (audio_msgs) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[0.792914] (audio_msgs) StdoutLine: {'line': b'-- Found sensor_msgs: 4.8.0 (/opt/ros/humble/share/sensor_msgs/cmake)\n'}
+[0.800530] (-) TimerEvent: {}
+[0.819365] (gst_pipeline) StderrLine: {'line': b"/usr/lib/python3/dist-packages/setuptools/dist.py:723: UserWarning: Usage of dash-separated 'script-dir' will not be supported in future versions. Please use the underscore name 'script_dir' instead\n"}
+[0.819537] (gst_pipeline) StderrLine: {'line': b'  warnings.warn(\n'}
+[0.823998] (audio_msgs) StdoutLine: {'line': b'-- Found rosidl_default_generators: 1.2.0 (/opt/ros/humble/share/rosidl_default_generators/cmake)\n'}
+[0.826412] (gst_pipeline) StdoutLine: {'line': b'running egg_info\n'}
+[0.827077] (gst_pipeline) StdoutLine: {'line': b'creating ../../build/gst_pipeline/gst_pipeline.egg-info\n'}
+[0.827265] (gst_pipeline) StdoutLine: {'line': b'writing ../../build/gst_pipeline/gst_pipeline.egg-info/PKG-INFO\n'}
+[0.827530] (gst_pipeline) StdoutLine: {'line': b'writing dependency_links to ../../build/gst_pipeline/gst_pipeline.egg-info/dependency_links.txt\n'}
+[0.827672] (gst_pipeline) StdoutLine: {'line': b'writing entry points to ../../build/gst_pipeline/gst_pipeline.egg-info/entry_points.txt\n'}
+[0.827783] (gst_pipeline) StdoutLine: {'line': b'writing requirements to ../../build/gst_pipeline/gst_pipeline.egg-info/requires.txt\n'}
+[0.827927] (gst_pipeline) StdoutLine: {'line': b'writing top-level names to ../../build/gst_pipeline/gst_pipeline.egg-info/top_level.txt\n'}
+[0.828138] (gst_pipeline) StdoutLine: {'line': b"writing manifest file '../../build/gst_pipeline/gst_pipeline.egg-info/SOURCES.txt'\n"}
+[0.829842] (gst_pipeline) StdoutLine: {'line': b"reading manifest file '../../build/gst_pipeline/gst_pipeline.egg-info/SOURCES.txt'\n"}
+[0.830047] (gst_pipeline) StdoutLine: {'line': b"adding license file 'LICENSE.md'\n"}
+[0.830562] (gst_pipeline) StdoutLine: {'line': b"writing manifest file '../../build/gst_pipeline/gst_pipeline.egg-info/SOURCES.txt'\n"}
+[0.830705] (gst_pipeline) StdoutLine: {'line': b'running build\n'}
+[0.830806] (gst_pipeline) StdoutLine: {'line': b'running build_py\n'}
+[0.830880] (gst_pipeline) StdoutLine: {'line': b'creating /home/eamrgde/Documents/gitrepos/ros_scream_int/scream/gstscream/ros2_bridge/src/build/gst_pipeline/build\n'}
+[0.830957] (gst_pipeline) StdoutLine: {'line': b'creating /home/eamrgde/Documents/gitrepos/ros_scream_int/scream/gstscream/ros2_bridge/src/build/gst_pipeline/build/lib\n'}
+[0.831023] (gst_pipeline) StdoutLine: {'line': b'creating /home/eamrgde/Documents/gitrepos/ros_scream_int/scream/gstscream/ros2_bridge/src/build/gst_pipeline/build/lib/gst_pipeline\n'}
+[0.831078] (gst_pipeline) StdoutLine: {'line': b'copying gst_pipeline/webrtc_sigchan.py -> /home/eamrgde/Documents/gitrepos/ros_scream_int/scream/gstscream/ros2_bridge/src/build/gst_pipeline/build/lib/gst_pipeline\n'}
+[0.831163] (gst_pipeline) StdoutLine: {'line': b'copying gst_pipeline/pipeline_node.py -> /home/eamrgde/Documents/gitrepos/ros_scream_int/scream/gstscream/ros2_bridge/src/build/gst_pipeline/build/lib/gst_pipeline\n'}
+[0.831284] (gst_pipeline) StdoutLine: {'line': b'copying gst_pipeline/pipeline.py -> /home/eamrgde/Documents/gitrepos/ros_scream_int/scream/gstscream/ros2_bridge/src/build/gst_pipeline/build/lib/gst_pipeline\n'}
+[0.831418] (gst_pipeline) StdoutLine: {'line': b'copying gst_pipeline/simplebin.py -> /home/eamrgde/Documents/gitrepos/ros_scream_int/scream/gstscream/ros2_bridge/src/build/gst_pipeline/build/lib/gst_pipeline\n'}
+[0.831556] (gst_pipeline) StdoutLine: {'line': b'copying gst_pipeline/webrtc_pipes.py -> /home/eamrgde/Documents/gitrepos/ros_scream_int/scream/gstscream/ros2_bridge/src/build/gst_pipeline/build/lib/gst_pipeline\n'}
+[0.831768] (gst_pipeline) StdoutLine: {'line': b'copying gst_pipeline/webrtc_transport_ws.py -> /home/eamrgde/Documents/gitrepos/ros_scream_int/scream/gstscream/ros2_bridge/src/build/gst_pipeline/build/lib/gst_pipeline\n'}
+[0.831914] (gst_pipeline) StdoutLine: {'line': b'copying gst_pipeline/__init__.py -> /home/eamrgde/Documents/gitrepos/ros_scream_int/scream/gstscream/ros2_bridge/src/build/gst_pipeline/build/lib/gst_pipeline\n'}
+[0.832103] (gst_pipeline) StdoutLine: {'line': b'running install\n'}
+[0.832429] (gst_pipeline) StdoutLine: {'line': b'running install_lib\n'}
+[0.833129] (gst_pipeline) StdoutLine: {'line': b'creating /home/eamrgde/Documents/gitrepos/ros_scream_int/scream/gstscream/ros2_bridge/src/install/gst_pipeline/lib/python3.10/site-packages/gst_pipeline\n'}
+[0.833220] (gst_pipeline) StdoutLine: {'line': b'copying /home/eamrgde/Documents/gitrepos/ros_scream_int/scream/gstscream/ros2_bridge/src/build/gst_pipeline/build/lib/gst_pipeline/webrtc_sigchan.py -> /home/eamrgde/Documents/gitrepos/ros_scream_int/scream/gstscream/ros2_bridge/src/install/gst_pipeline/lib/python3.10/site-packages/gst_pipeline\n'}
+[0.833348] (gst_pipeline) StdoutLine: {'line': b'copying /home/eamrgde/Documents/gitrepos/ros_scream_int/scream/gstscream/ros2_bridge/src/build/gst_pipeline/build/lib/gst_pipeline/pipeline_node.py -> /home/eamrgde/Documents/gitrepos/ros_scream_int/scream/gstscream/ros2_bridge/src/install/gst_pipeline/lib/python3.10/site-packages/gst_pipeline\n'}
+[0.833613] (gst_pipeline) StdoutLine: {'line': b'copying /home/eamrgde/Documents/gitrepos/ros_scream_int/scream/gstscream/ros2_bridge/src/build/gst_pipeline/build/lib/gst_pipeline/pipeline.py -> /home/eamrgde/Documents/gitrepos/ros_scream_int/scream/gstscream/ros2_bridge/src/install/gst_pipeline/lib/python3.10/site-packages/gst_pipeline\n'}
+[0.833831] (gst_pipeline) StdoutLine: {'line': b'copying /home/eamrgde/Documents/gitrepos/ros_scream_int/scream/gstscream/ros2_bridge/src/build/gst_pipeline/build/lib/gst_pipeline/simplebin.py -> /home/eamrgde/Documents/gitrepos/ros_scream_int/scream/gstscream/ros2_bridge/src/install/gst_pipeline/lib/python3.10/site-packages/gst_pipeline\n'}
+[0.834093] (gst_pipeline) StdoutLine: {'line': b'copying /home/eamrgde/Documents/gitrepos/ros_scream_int/scream/gstscream/ros2_bridge/src/build/gst_pipeline/build/lib/gst_pipeline/webrtc_pipes.py -> /home/eamrgde/Documents/gitrepos/ros_scream_int/scream/gstscream/ros2_bridge/src/install/gst_pipeline/lib/python3.10/site-packages/gst_pipeline\n'}
+[0.834184] (gst_pipeline) StdoutLine: {'line': b'copying /home/eamrgde/Documents/gitrepos/ros_scream_int/scream/gstscream/ros2_bridge/src/build/gst_pipeline/build/lib/gst_pipeline/webrtc_transport_ws.py -> /home/eamrgde/Documents/gitrepos/ros_scream_int/scream/gstscream/ros2_bridge/src/install/gst_pipeline/lib/python3.10/site-packages/gst_pipeline\n'}
+[0.834256] (gst_pipeline) StdoutLine: {'line': b'copying /home/eamrgde/Documents/gitrepos/ros_scream_int/scream/gstscream/ros2_bridge/src/build/gst_pipeline/build/lib/gst_pipeline/__init__.py -> /home/eamrgde/Documents/gitrepos/ros_scream_int/scream/gstscream/ros2_bridge/src/install/gst_pipeline/lib/python3.10/site-packages/gst_pipeline\n'}
+[0.834757] (gst_pipeline) StdoutLine: {'line': b'byte-compiling /home/eamrgde/Documents/gitrepos/ros_scream_int/scream/gstscream/ros2_bridge/src/install/gst_pipeline/lib/python3.10/site-packages/gst_pipeline/webrtc_sigchan.py to webrtc_sigchan.cpython-310.pyc\n'}
+[0.835910] (gst_pipeline) StdoutLine: {'line': b'byte-compiling /home/eamrgde/Documents/gitrepos/ros_scream_int/scream/gstscream/ros2_bridge/src/install/gst_pipeline/lib/python3.10/site-packages/gst_pipeline/pipeline_node.py to pipeline_node.cpython-310.pyc\n'}
+[0.836562] (gst_pipeline) StdoutLine: {'line': b'byte-compiling /home/eamrgde/Documents/gitrepos/ros_scream_int/scream/gstscream/ros2_bridge/src/install/gst_pipeline/lib/python3.10/site-packages/gst_pipeline/pipeline.py to pipeline.cpython-310.pyc\n'}
+[0.837749] (gst_pipeline) StdoutLine: {'line': b'byte-compiling /home/eamrgde/Documents/gitrepos/ros_scream_int/scream/gstscream/ros2_bridge/src/install/gst_pipeline/lib/python3.10/site-packages/gst_pipeline/simplebin.py to simplebin.cpython-310.pyc\n'}
+[0.838621] (gst_pipeline) StdoutLine: {'line': b'byte-compiling /home/eamrgde/Documents/gitrepos/ros_scream_int/scream/gstscream/ros2_bridge/src/install/gst_pipeline/lib/python3.10/site-packages/gst_pipeline/webrtc_pipes.py to webrtc_pipes.cpython-310.pyc\n'}
+[0.839792] (gst_pipeline) StdoutLine: {'line': b'byte-compiling /home/eamrgde/Documents/gitrepos/ros_scream_int/scream/gstscream/ros2_bridge/src/install/gst_pipeline/lib/python3.10/site-packages/gst_pipeline/webrtc_transport_ws.py to webrtc_transport_ws.cpython-310.pyc\n'}
+[0.840942] (gst_pipeline) StdoutLine: {'line': b'byte-compiling /home/eamrgde/Documents/gitrepos/ros_scream_int/scream/gstscream/ros2_bridge/src/install/gst_pipeline/lib/python3.10/site-packages/gst_pipeline/__init__.py to __init__.cpython-310.pyc\n'}
+[0.841155] (gst_pipeline) StdoutLine: {'line': b'running install_data\n'}
+[0.841284] (gst_pipeline) StdoutLine: {'line': b'creating /home/eamrgde/Documents/gitrepos/ros_scream_int/scream/gstscream/ros2_bridge/src/install/gst_pipeline/share/ament_index\n'}
+[0.841427] (gst_pipeline) StdoutLine: {'line': b'creating /home/eamrgde/Documents/gitrepos/ros_scream_int/scream/gstscream/ros2_bridge/src/install/gst_pipeline/share/ament_index/resource_index\n'}
+[0.841519] (gst_pipeline) StdoutLine: {'line': b'creating /home/eamrgde/Documents/gitrepos/ros_scream_int/scream/gstscream/ros2_bridge/src/install/gst_pipeline/share/ament_index/resource_index/packages\n'}
+[0.841618] (gst_pipeline) StdoutLine: {'line': b'copying resource/gst_pipeline -> /home/eamrgde/Documents/gitrepos/ros_scream_int/scream/gstscream/ros2_bridge/src/install/gst_pipeline/share/ament_index/resource_index/packages\n'}
+[0.841703] (gst_pipeline) StdoutLine: {'line': b'copying package.xml -> /home/eamrgde/Documents/gitrepos/ros_scream_int/scream/gstscream/ros2_bridge/src/install/gst_pipeline/share/gst_pipeline\n'}
+[0.841806] (gst_pipeline) StdoutLine: {'line': b'creating /home/eamrgde/Documents/gitrepos/ros_scream_int/scream/gstscream/ros2_bridge/src/install/gst_pipeline/share/gst_pipeline/config\n'}
+[0.841902] (gst_pipeline) StdoutLine: {'line': b'running install_egg_info\n'}
+[0.843282] (gst_pipeline) StdoutLine: {'line': b'Copying ../../build/gst_pipeline/gst_pipeline.egg-info to /home/eamrgde/Documents/gitrepos/ros_scream_int/scream/gstscream/ros2_bridge/src/install/gst_pipeline/lib/python3.10/site-packages/gst_pipeline-0.0.0-py3.10.egg-info\n'}
+[0.844236] (gst_pipeline) StdoutLine: {'line': b'running install_scripts\n'}
+[0.859679] (gst_pipeline) StdoutLine: {'line': b'Installing pipeline_node script to /home/eamrgde/Documents/gitrepos/ros_scream_int/scream/gstscream/ros2_bridge/src/install/gst_pipeline/lib/gst_pipeline\n'}
+[0.860078] (gst_pipeline) StdoutLine: {'line': b"writing list of installed files to '/home/eamrgde/Documents/gitrepos/ros_scream_int/scream/gstscream/ros2_bridge/src/build/gst_pipeline/install.log'\n"}
+[0.883095] (gst_pipeline) CommandEnded: {'returncode': 0}
+[0.894273] (gst_pipeline) JobEnded: {'identifier': 'gst_pipeline', 'rc': 0}
+[0.900635] (-) TimerEvent: {}
+[1.000944] (-) TimerEvent: {}
+[1.048933] (audio_msgs) StdoutLine: {'line': b'-- Found ament_cmake_ros: 0.10.0 (/opt/ros/humble/share/ament_cmake_ros/cmake)\n'}
+[1.101032] (-) TimerEvent: {}
+[1.201301] (-) TimerEvent: {}
+[1.301540] (-) TimerEvent: {}
+[1.340104] (audio_msgs) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[1.401639] (-) TimerEvent: {}
+[1.452597] (audio_msgs) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[1.470719] (audio_msgs) StdoutLine: {'line': b'-- Found PythonInterp: /usr/bin/python3 (found suitable version "3.10.12", minimum required is "3.6") \n'}
+[1.472090] (audio_msgs) StdoutLine: {'line': b'-- Found python_cmake_module: 0.10.0 (/opt/ros/humble/share/python_cmake_module/cmake)\n'}
+[1.492771] (audio_msgs) StdoutLine: {'line': b'-- Found PythonLibs: /usr/lib/x86_64-linux-gnu/libpython3.10.so (found suitable version "3.10.12", minimum required is "3.5") \n'}
+[1.492937] (audio_msgs) StdoutLine: {'line': b'-- Using PYTHON_EXECUTABLE: /usr/bin/python3\n'}
+[1.492990] (audio_msgs) StdoutLine: {'line': b'-- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.10\n'}
+[1.493035] (audio_msgs) StdoutLine: {'line': b'-- Using PYTHON_LIBRARIES: /usr/lib/x86_64-linux-gnu/libpython3.10.so\n'}
+[1.501725] (-) TimerEvent: {}
+[1.509364] (audio_msgs) StdoutLine: {'line': b'-- Found PythonExtra: .so  \n'}
+[1.548818] (audio_msgs) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.12.12 (/opt/ros/humble/share/ament_lint_auto/cmake)\n'}
+[1.571454] (audio_msgs) StdoutLine: {'line': b"-- Added test 'copyright' to check source files copyright and LICENSE\n"}
+[1.573043] (audio_msgs) StdoutLine: {'line': b"-- Added test 'lint_cmake' to check CMake code style\n"}
+[1.573960] (audio_msgs) StdoutLine: {'line': b"-- Added test 'xmllint' to check XML markup files\n"}
+[1.576872] (audio_msgs) StdoutLine: {'line': b'-- Configuring done\n'}
+[1.601855] (-) TimerEvent: {}
+[1.607526] (audio_msgs) StdoutLine: {'line': b'-- Generating done\n'}
+[1.619084] (audio_msgs) StdoutLine: {'line': b'-- Build files have been written to: /home/eamrgde/Documents/gitrepos/ros_scream_int/scream/gstscream/ros2_bridge/src/build/audio_msgs\n'}
+[1.626661] (audio_msgs) CommandEnded: {'returncode': 0}
+[1.627117] (audio_msgs) JobProgress: {'identifier': 'audio_msgs', 'progress': 'build'}
+[1.627654] (audio_msgs) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/eamrgde/Documents/gitrepos/ros_scream_int/scream/gstscream/ros2_bridge/src/build/audio_msgs', '--', '-j8', '-l8'], 'cwd': '/home/eamrgde/Documents/gitrepos/ros_scream_int/scream/gstscream/ros2_bridge/src/build/audio_msgs', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('TMUX', '/tmp/tmux-7462898/default,21252,0'), ('LANGUAGE', 'en_AU:en'), ('USER', 'eamrgde'), ('LC_TIME', 'sv_SE.UTF-8'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '2'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/eamrgde'), ('OLDPWD', '/home/eamrgde/Documents/gitrepos/ros_scream_int/scream/gstscream/ros2_bridge/src/ros-gst-bridge'), ('TERM_PROGRAM_VERSION', '3.2a'), ('DESKTOP_SESSION', 'ubuntu'), ('CUPS_USER', 'gerasimos.damigos@ericsson.com'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'sv_SE.UTF-8'), ('SYSTEMD_EXEC_PID', '8929'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/7462898/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'eamrgde'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'eamrgde'), ('TERM', 'screen'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/home/eamrgde/.local/bin:/opt/ros/humble/bin:/home/eamrgde/.cargo/bin:/home/eamrgde/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin:/usr/bin:/opt/puppetlabs/bin:/usr/bin'), ('SESSION_MANAGER', 'local/elx-5cg2292ctb:@/tmp/.ICE-unix/3802,unix/elx-5cg2292ctb:/tmp/.ICE-unix/3802'), ('PAPERSIZE', 'a4'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'sv_SE.UTF-8'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/2e7ebc78_9bc3_4fe7_88be_8a8007f59e80'), ('XDG_RUNTIME_DIR', '/run/user/7462898'), ('DISPLAY', ':1'), ('LANG', 'en_AU.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'sv_SE.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/7462898/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.119'), ('TERM_PROGRAM', 'tmux'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/7462898/keyring/ssh'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'sv_SE.UTF-8'), ('KRB5CCNAME', 'FILE:/var/tmp/krb5cc_7462898_4P2mdm'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'sv_SE.UTF-8'), ('GPG_AGENT_INFO', '/run/user/7462898/gnupg/S.gpg-agent:0:1'), ('LC_IDENTIFICATION', 'sv_SE.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/eamrgde/Documents/gitrepos/ros_scream_int/scream/gstscream/ros2_bridge/src/build/audio_msgs'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'sv_SE.UTF-8'), ('LC_PAPER', 'sv_SE.UTF-8'), ('COLCON', '1'), ('MANPATH', ':/opt/puppetlabs/puppet/share/man'), ('VTE_VERSION', '6800'), ('TMUX_PANE', '%3'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[1.663734] (audio_msgs) StdoutLine: {'line': b'[  3%] \x1b[34m\x1b[1mGenerating C code for ROS interfaces\x1b[0m\n'}
+[1.671550] (audio_msgs) StdoutLine: {'line': b'[  6%] \x1b[34m\x1b[1mGenerating C++ code for ROS interfaces\x1b[0m\n'}
+[1.679861] (audio_msgs) StdoutLine: {'line': b'[  6%] Built target ament_cmake_python_copy_audio_msgs\n'}
+[1.701931] (-) TimerEvent: {}
+[1.802190] (-) TimerEvent: {}
+[1.884685] (audio_msgs) StdoutLine: {'line': b'running egg_info\n'}
+[1.885205] (audio_msgs) StdoutLine: {'line': b'creating audio_msgs.egg-info\n'}
+[1.885330] (audio_msgs) StdoutLine: {'line': b'writing audio_msgs.egg-info/PKG-INFO\n'}
+[1.885574] (audio_msgs) StdoutLine: {'line': b'writing dependency_links to audio_msgs.egg-info/dependency_links.txt\n'}
+[1.885727] (audio_msgs) StdoutLine: {'line': b'writing top-level names to audio_msgs.egg-info/top_level.txt\n'}
+[1.885979] (audio_msgs) StdoutLine: {'line': b"writing manifest file 'audio_msgs.egg-info/SOURCES.txt'\n"}
+[1.887667] (audio_msgs) StdoutLine: {'line': b"reading manifest file 'audio_msgs.egg-info/SOURCES.txt'\n"}
+[1.888072] (audio_msgs) StdoutLine: {'line': b"writing manifest file 'audio_msgs.egg-info/SOURCES.txt'\n"}
+[1.902320] (-) TimerEvent: {}
+[1.912812] (audio_msgs) StdoutLine: {'line': b'[  6%] Built target ament_cmake_python_build_audio_msgs_egg\n'}
+[1.972577] (audio_msgs) StdoutLine: {'line': b'[  6%] Built target audio_msgs__cpp\n'}
+[1.982941] (audio_msgs) StdoutLine: {'line': b'[ 12%] \x1b[34m\x1b[1mGenerating C++ type support for eProsima Fast-RTPS\x1b[0m\n'}
+[1.983161] (audio_msgs) StdoutLine: {'line': b'[ 12%] \x1b[34m\x1b[1mGenerating C++ introspection for ROS interfaces\x1b[0m\n'}
+[1.983233] (audio_msgs) StdoutLine: {'line': b'[ 19%] \x1b[32mBuilding C object CMakeFiles/audio_msgs__rosidl_generator_c.dir/rosidl_generator_c/audio_msgs/msg/detail/audio__functions.c.o\x1b[0m\n'}
+[1.983290] (audio_msgs) StdoutLine: {'line': b'[ 19%] \x1b[34m\x1b[1mGenerating C++ type support dispatch for ROS interfaces\x1b[0m\n'}
+[2.002392] (-) TimerEvent: {}
+[2.050586] (audio_msgs) StdoutLine: {'line': b'[ 22%] \x1b[32m\x1b[1mLinking C shared library libaudio_msgs__rosidl_generator_c.so\x1b[0m\n'}
+[2.082699] (audio_msgs) StdoutLine: {'line': b'[ 22%] Built target audio_msgs__rosidl_generator_c\n'}
+[2.094223] (audio_msgs) StdoutLine: {'line': b'[ 25%] \x1b[34m\x1b[1mGenerating C type support for eProsima Fast-RTPS\x1b[0m\n'}
+[2.094452] (audio_msgs) StdoutLine: {'line': b'[ 29%] \x1b[34m\x1b[1mGenerating C introspection for ROS interfaces\x1b[0m\n'}
+[2.094624] (audio_msgs) StdoutLine: {'line': b'[ 32%] \x1b[34m\x1b[1mGenerating C type support dispatch for ROS interfaces\x1b[0m\n'}
+[2.102749] (-) TimerEvent: {}
+[2.203156] (-) TimerEvent: {}
+[2.305123] (-) TimerEvent: {}
+[2.407167] (-) TimerEvent: {}
+[2.412733] (audio_msgs) StdoutLine: {'line': b'[ 35%] \x1b[32mBuilding CXX object CMakeFiles/audio_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/audio_msgs/msg/audio__type_support.cpp.o\x1b[0m\n'}
+[2.442927] (audio_msgs) StdoutLine: {'line': b'[ 38%] \x1b[32mBuilding C object CMakeFiles/audio_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/audio_msgs/msg/detail/audio__type_support.c.o\x1b[0m\n'}
+[2.472825] (audio_msgs) StdoutLine: {'line': b'[ 41%] \x1b[32mBuilding CXX object CMakeFiles/audio_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/audio_msgs/msg/detail/dds_fastrtps/audio__type_support.cpp.o\x1b[0m\n'}
+[2.476852] (audio_msgs) StdoutLine: {'line': b'[ 45%] \x1b[32mBuilding CXX object CMakeFiles/audio_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/audio_msgs/msg/detail/audio__type_support.cpp.o\x1b[0m\n'}
+[2.479707] (audio_msgs) StdoutLine: {'line': b'[ 48%] \x1b[32mBuilding CXX object CMakeFiles/audio_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/audio_msgs/msg/audio__type_support.cpp.o\x1b[0m\n'}
+[2.492918] (audio_msgs) StdoutLine: {'line': b'[ 51%] \x1b[32m\x1b[1mLinking C shared library libaudio_msgs__rosidl_typesupport_introspection_c.so\x1b[0m\n'}
+[2.507465] (-) TimerEvent: {}
+[2.513161] (audio_msgs) StdoutLine: {'line': b'[ 54%] \x1b[32mBuilding CXX object CMakeFiles/audio_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/audio_msgs/msg/detail/audio__type_support_c.cpp.o\x1b[0m\n'}
+[2.521470] (audio_msgs) StdoutLine: {'line': b'[ 58%] \x1b[32m\x1b[1mLinking CXX shared library libaudio_msgs__rosidl_typesupport_c.so\x1b[0m\n'}
+[2.531913] (audio_msgs) StdoutLine: {'line': b'[ 58%] Built target audio_msgs__rosidl_typesupport_introspection_c\n'}
+[2.572643] (audio_msgs) StdoutLine: {'line': b'[ 58%] Built target audio_msgs__rosidl_typesupport_c\n'}
+[2.607562] (-) TimerEvent: {}
+[2.693750] (audio_msgs) StdoutLine: {'line': b'[ 61%] \x1b[32m\x1b[1mLinking CXX shared library libaudio_msgs__rosidl_typesupport_cpp.so\x1b[0m\n'}
+[2.707685] (-) TimerEvent: {}
+[2.749820] (audio_msgs) StdoutLine: {'line': b'[ 61%] Built target audio_msgs__rosidl_typesupport_cpp\n'}
+[2.803666] (audio_msgs) StdoutLine: {'line': b'[ 64%] \x1b[32m\x1b[1mLinking CXX shared library libaudio_msgs__rosidl_typesupport_fastrtps_c.so\x1b[0m\n'}
+[2.807804] (-) TimerEvent: {}
+[2.824193] (audio_msgs) StdoutLine: {'line': b'[ 67%] \x1b[32m\x1b[1mLinking CXX shared library libaudio_msgs__rosidl_typesupport_introspection_cpp.so\x1b[0m\n'}
+[2.856943] (audio_msgs) StdoutLine: {'line': b'[ 70%] \x1b[32m\x1b[1mLinking CXX shared library libaudio_msgs__rosidl_typesupport_fastrtps_cpp.so\x1b[0m\n'}
+[2.879927] (audio_msgs) StdoutLine: {'line': b'[ 70%] Built target audio_msgs__rosidl_typesupport_fastrtps_c\n'}
+[2.903272] (audio_msgs) StdoutLine: {'line': b'[ 70%] Built target audio_msgs__rosidl_typesupport_introspection_cpp\n'}
+[2.907919] (-) TimerEvent: {}
+[2.926291] (audio_msgs) StdoutLine: {'line': b'[ 70%] Built target audio_msgs__rosidl_typesupport_fastrtps_cpp\n'}
+[2.945015] (audio_msgs) StdoutLine: {'line': b'[ 70%] Built target audio_msgs\n'}
+[2.962818] (audio_msgs) StdoutLine: {'line': b'[ 74%] \x1b[34m\x1b[1mGenerating Python code for ROS interfaces\x1b[0m\n'}
+[3.008029] (-) TimerEvent: {}
+[3.108299] (-) TimerEvent: {}
+[3.208626] (-) TimerEvent: {}
+[3.308888] (-) TimerEvent: {}
+[3.356514] (audio_msgs) StdoutLine: {'line': b'[ 74%] Built target audio_msgs__py\n'}
+[3.375395] (audio_msgs) StdoutLine: {'line': b'[ 77%] \x1b[32mBuilding C object CMakeFiles/audio_msgs__rosidl_generator_py.dir/rosidl_generator_py/audio_msgs/msg/_audio_s.c.o\x1b[0m\n'}
+[3.409007] (-) TimerEvent: {}
+[3.477758] (audio_msgs) StdoutLine: {'line': b'[ 80%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/audio_msgs/libaudio_msgs__rosidl_generator_py.so\x1b[0m\n'}
+[3.509121] (-) TimerEvent: {}
+[3.510799] (audio_msgs) StdoutLine: {'line': b'[ 80%] Built target audio_msgs__rosidl_generator_py\n'}
+[3.529760] (audio_msgs) StdoutLine: {'line': b'[ 90%] \x1b[32mBuilding C object CMakeFiles/audio_msgs__rosidl_typesupport_fastrtps_c__pyext.dir/rosidl_generator_py/audio_msgs/_audio_msgs_s.ep.rosidl_typesupport_fastrtps_c.c.o\x1b[0m\n'}
+[3.530010] (audio_msgs) StdoutLine: {'line': b'[ 90%] \x1b[32mBuilding C object CMakeFiles/audio_msgs__rosidl_typesupport_c__pyext.dir/rosidl_generator_py/audio_msgs/_audio_msgs_s.ep.rosidl_typesupport_c.c.o\x1b[0m\n'}
+[3.530095] (audio_msgs) StdoutLine: {'line': b'[ 90%] \x1b[32mBuilding C object CMakeFiles/audio_msgs__rosidl_typesupport_introspection_c__pyext.dir/rosidl_generator_py/audio_msgs/_audio_msgs_s.ep.rosidl_typesupport_introspection_c.c.o\x1b[0m\n'}
+[3.608406] (audio_msgs) StdoutLine: {'line': b'[ 93%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/audio_msgs/audio_msgs_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so\x1b[0m\n'}
+[3.609205] (-) TimerEvent: {}
+[3.624972] (audio_msgs) StdoutLine: {'line': b'[ 96%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/audio_msgs/audio_msgs_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so\x1b[0m\n'}
+[3.625407] (audio_msgs) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/audio_msgs/audio_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so\x1b[0m\n'}
+[3.644811] (audio_msgs) StdoutLine: {'line': b'[100%] Built target audio_msgs__rosidl_typesupport_introspection_c__pyext\n'}
+[3.660770] (audio_msgs) StdoutLine: {'line': b'[100%] Built target audio_msgs__rosidl_typesupport_c__pyext\n'}
+[3.660988] (audio_msgs) StdoutLine: {'line': b'[100%] Built target audio_msgs__rosidl_typesupport_fastrtps_c__pyext\n'}
+[3.670949] (audio_msgs) CommandEnded: {'returncode': 0}
+[3.671516] (audio_msgs) JobProgress: {'identifier': 'audio_msgs', 'progress': 'install'}
+[3.678735] (audio_msgs) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/eamrgde/Documents/gitrepos/ros_scream_int/scream/gstscream/ros2_bridge/src/build/audio_msgs'], 'cwd': '/home/eamrgde/Documents/gitrepos/ros_scream_int/scream/gstscream/ros2_bridge/src/build/audio_msgs', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('TMUX', '/tmp/tmux-7462898/default,21252,0'), ('LANGUAGE', 'en_AU:en'), ('USER', 'eamrgde'), ('LC_TIME', 'sv_SE.UTF-8'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '2'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/eamrgde'), ('OLDPWD', '/home/eamrgde/Documents/gitrepos/ros_scream_int/scream/gstscream/ros2_bridge/src/ros-gst-bridge'), ('TERM_PROGRAM_VERSION', '3.2a'), ('DESKTOP_SESSION', 'ubuntu'), ('CUPS_USER', 'gerasimos.damigos@ericsson.com'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'sv_SE.UTF-8'), ('SYSTEMD_EXEC_PID', '8929'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/7462898/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'eamrgde'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'eamrgde'), ('TERM', 'screen'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/home/eamrgde/.local/bin:/opt/ros/humble/bin:/home/eamrgde/.cargo/bin:/home/eamrgde/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin:/usr/bin:/opt/puppetlabs/bin:/usr/bin'), ('SESSION_MANAGER', 'local/elx-5cg2292ctb:@/tmp/.ICE-unix/3802,unix/elx-5cg2292ctb:/tmp/.ICE-unix/3802'), ('PAPERSIZE', 'a4'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'sv_SE.UTF-8'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/2e7ebc78_9bc3_4fe7_88be_8a8007f59e80'), ('XDG_RUNTIME_DIR', '/run/user/7462898'), ('DISPLAY', ':1'), ('LANG', 'en_AU.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'sv_SE.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/7462898/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.119'), ('TERM_PROGRAM', 'tmux'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/7462898/keyring/ssh'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'sv_SE.UTF-8'), ('KRB5CCNAME', 'FILE:/var/tmp/krb5cc_7462898_4P2mdm'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'sv_SE.UTF-8'), ('GPG_AGENT_INFO', '/run/user/7462898/gnupg/S.gpg-agent:0:1'), ('LC_IDENTIFICATION', 'sv_SE.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/eamrgde/Documents/gitrepos/ros_scream_int/scream/gstscream/ros2_bridge/src/build/audio_msgs'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'sv_SE.UTF-8'), ('LC_PAPER', 'sv_SE.UTF-8'), ('COLCON', '1'), ('MANPATH', ':/opt/puppetlabs/puppet/share/man'), ('VTE_VERSION', '6800'), ('TMUX_PANE', '%3'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[3.685663] (audio_msgs) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[3.685880] (audio_msgs) StdoutLine: {'line': b'-- Installing: /home/eamrgde/Documents/gitrepos/ros_scream_int/scream/gstscream/ros2_bridge/src/install/audio_msgs/share/ament_index/resource_index/rosidl_interfaces/audio_msgs\n'}
+[3.686033] (audio_msgs) StdoutLine: {'line': b'-- Installing: /home/eamrgde/Documents/gitrepos/ros_scream_int/scream/gstscream/ros2_bridge/src/install/audio_msgs/include/audio_msgs/audio_msgs\n'}
+[3.686157] (audio_msgs) StdoutLine: {'line': b'-- Installing: /home/eamrgde/Documents/gitrepos/ros_scream_int/scream/gstscream/ros2_bridge/src/install/audio_msgs/include/audio_msgs/audio_msgs/msg\n'}
+[3.686252] (audio_msgs) StdoutLine: {'line': b'-- Installing: /home/eamrgde/Documents/gitrepos/ros_scream_int/scream/gstscream/ros2_bridge/src/install/audio_msgs/include/audio_msgs/audio_msgs/msg/rosidl_generator_c__visibility_control.h\n'}
+[3.686376] (audio_msgs) StdoutLine: {'line': b'-- Installing: /home/eamrgde/Documents/gitrepos/ros_scream_int/scream/gstscream/ros2_bridge/src/install/audio_msgs/include/audio_msgs/audio_msgs/msg/audio.h\n'}
+[3.686543] (audio_msgs) StdoutLine: {'line': b'-- Installing: /home/eamrgde/Documents/gitrepos/ros_scream_int/scream/gstscream/ros2_bridge/src/install/audio_msgs/include/audio_msgs/audio_msgs/msg/detail\n'}
+[3.686635] (audio_msgs) StdoutLine: {'line': b'-- Installing: /home/eamrgde/Documents/gitrepos/ros_scream_int/scream/gstscream/ros2_bridge/src/install/audio_msgs/include/audio_msgs/audio_msgs/msg/detail/audio__functions.c\n'}
+[3.686840] (audio_msgs) StdoutLine: {'line': b'-- Installing: /home/eamrgde/Documents/gitrepos/ros_scream_int/scream/gstscream/ros2_bridge/src/install/audio_msgs/include/audio_msgs/audio_msgs/msg/detail/audio__struct.h\n'}
+[3.687006] (audio_msgs) StdoutLine: {'line': b'-- Installing: /home/eamrgde/Documents/gitrepos/ros_scream_int/scream/gstscream/ros2_bridge/src/install/audio_msgs/include/audio_msgs/audio_msgs/msg/detail/audio__functions.h\n'}
+[3.687187] (audio_msgs) StdoutLine: {'line': b'-- Installing: /home/eamrgde/Documents/gitrepos/ros_scream_int/scream/gstscream/ros2_bridge/src/install/audio_msgs/include/audio_msgs/audio_msgs/msg/detail/audio__type_support.h\n'}
+[3.687463] (audio_msgs) StdoutLine: {'line': b'-- Installing: /home/eamrgde/Documents/gitrepos/ros_scream_int/scream/gstscream/ros2_bridge/src/install/audio_msgs/share/audio_msgs/environment/library_path.sh\n'}
+[3.687685] (audio_msgs) StdoutLine: {'line': b'-- Installing: /home/eamrgde/Documents/gitrepos/ros_scream_int/scream/gstscream/ros2_bridge/src/install/audio_msgs/share/audio_msgs/environment/library_path.dsv\n'}
+[3.687951] (audio_msgs) StdoutLine: {'line': b'-- Installing: /home/eamrgde/Documents/gitrepos/ros_scream_int/scream/gstscream/ros2_bridge/src/install/audio_msgs/lib/libaudio_msgs__rosidl_generator_c.so\n'}
+[3.688389] (audio_msgs) StdoutLine: {'line': b'-- Set runtime path of "/home/eamrgde/Documents/gitrepos/ros_scream_int/scream/gstscream/ros2_bridge/src/install/audio_msgs/lib/libaudio_msgs__rosidl_generator_c.so" to ""\n'}
+[3.688504] (audio_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/eamrgde/Documents/gitrepos/ros_scream_int/scream/gstscream/ros2_bridge/src/install/audio_msgs/include/audio_msgs/audio_msgs\n'}
+[3.688559] (audio_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/eamrgde/Documents/gitrepos/ros_scream_int/scream/gstscream/ros2_bridge/src/install/audio_msgs/include/audio_msgs/audio_msgs/msg\n'}
+[3.688622] (audio_msgs) StdoutLine: {'line': b'-- Installing: /home/eamrgde/Documents/gitrepos/ros_scream_int/scream/gstscream/ros2_bridge/src/install/audio_msgs/include/audio_msgs/audio_msgs/msg/rosidl_typesupport_fastrtps_c__visibility_control.h\n'}
+[3.688705] (audio_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/eamrgde/Documents/gitrepos/ros_scream_int/scream/gstscream/ros2_bridge/src/install/audio_msgs/include/audio_msgs/audio_msgs/msg/detail\n'}
+[3.688774] (audio_msgs) StdoutLine: {'line': b'-- Installing: /home/eamrgde/Documents/gitrepos/ros_scream_int/scream/gstscream/ros2_bridge/src/install/audio_msgs/include/audio_msgs/audio_msgs/msg/detail/audio__rosidl_typesupport_fastrtps_c.h\n'}
+[3.688945] (audio_msgs) StdoutLine: {'line': b'-- Installing: /home/eamrgde/Documents/gitrepos/ros_scream_int/scream/gstscream/ros2_bridge/src/install/audio_msgs/lib/libaudio_msgs__rosidl_typesupport_fastrtps_c.so\n'}
+[3.689305] (audio_msgs) StdoutLine: {'line': b'-- Set runtime path of "/home/eamrgde/Documents/gitrepos/ros_scream_int/scream/gstscream/ros2_bridge/src/install/audio_msgs/lib/libaudio_msgs__rosidl_typesupport_fastrtps_c.so" to ""\n'}
+[3.689390] (audio_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/eamrgde/Documents/gitrepos/ros_scream_int/scream/gstscream/ros2_bridge/src/install/audio_msgs/include/audio_msgs/audio_msgs\n'}
+[3.689456] (audio_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/eamrgde/Documents/gitrepos/ros_scream_int/scream/gstscream/ros2_bridge/src/install/audio_msgs/include/audio_msgs/audio_msgs/msg\n'}
+[3.689511] (audio_msgs) StdoutLine: {'line': b'-- Installing: /home/eamrgde/Documents/gitrepos/ros_scream_int/scream/gstscream/ros2_bridge/src/install/audio_msgs/include/audio_msgs/audio_msgs/msg/rosidl_generator_cpp__visibility_control.hpp\n'}
+[3.689583] (audio_msgs) StdoutLine: {'line': b'-- Installing: /home/eamrgde/Documents/gitrepos/ros_scream_int/scream/gstscream/ros2_bridge/src/install/audio_msgs/include/audio_msgs/audio_msgs/msg/audio.hpp\n'}
+[3.689731] (audio_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/eamrgde/Documents/gitrepos/ros_scream_int/scream/gstscream/ros2_bridge/src/install/audio_msgs/include/audio_msgs/audio_msgs/msg/detail\n'}
+[3.689793] (audio_msgs) StdoutLine: {'line': b'-- Installing: /home/eamrgde/Documents/gitrepos/ros_scream_int/scream/gstscream/ros2_bridge/src/install/audio_msgs/include/audio_msgs/audio_msgs/msg/detail/audio__traits.hpp\n'}
+[3.689961] (audio_msgs) StdoutLine: {'line': b'-- Installing: /home/eamrgde/Documents/gitrepos/ros_scream_int/scream/gstscream/ros2_bridge/src/install/audio_msgs/include/audio_msgs/audio_msgs/msg/detail/audio__builder.hpp\n'}
+[3.690138] (audio_msgs) StdoutLine: {'line': b'-- Installing: /home/eamrgde/Documents/gitrepos/ros_scream_int/scream/gstscream/ros2_bridge/src/install/audio_msgs/include/audio_msgs/audio_msgs/msg/detail/audio__type_support.hpp\n'}
+[3.690302] (audio_msgs) StdoutLine: {'line': b'-- Installing: /home/eamrgde/Documents/gitrepos/ros_scream_int/scream/gstscream/ros2_bridge/src/install/audio_msgs/include/audio_msgs/audio_msgs/msg/detail/audio__struct.hpp\n'}
+[3.690524] (audio_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/eamrgde/Documents/gitrepos/ros_scream_int/scream/gstscream/ros2_bridge/src/install/audio_msgs/include/audio_msgs/audio_msgs\n'}
+[3.690611] (audio_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/eamrgde/Documents/gitrepos/ros_scream_int/scream/gstscream/ros2_bridge/src/install/audio_msgs/include/audio_msgs/audio_msgs/msg\n'}
+[3.690654] (audio_msgs) StdoutLine: {'line': b'-- Installing: /home/eamrgde/Documents/gitrepos/ros_scream_int/scream/gstscream/ros2_bridge/src/install/audio_msgs/include/audio_msgs/audio_msgs/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h\n'}
+[3.690737] (audio_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/eamrgde/Documents/gitrepos/ros_scream_int/scream/gstscream/ros2_bridge/src/install/audio_msgs/include/audio_msgs/audio_msgs/msg/detail\n'}
+[3.690811] (audio_msgs) StdoutLine: {'line': b'-- Installing: /home/eamrgde/Documents/gitrepos/ros_scream_int/scream/gstscream/ros2_bridge/src/install/audio_msgs/include/audio_msgs/audio_msgs/msg/detail/dds_fastrtps\n'}
+[3.690879] (audio_msgs) StdoutLine: {'line': b'-- Installing: /home/eamrgde/Documents/gitrepos/ros_scream_int/scream/gstscream/ros2_bridge/src/install/audio_msgs/include/audio_msgs/audio_msgs/msg/detail/audio__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[3.691055] (audio_msgs) StdoutLine: {'line': b'-- Installing: /home/eamrgde/Documents/gitrepos/ros_scream_int/scream/gstscream/ros2_bridge/src/install/audio_msgs/lib/libaudio_msgs__rosidl_typesupport_fastrtps_cpp.so\n'}
+[3.691591] (audio_msgs) StdoutLine: {'line': b'-- Set runtime path of "/home/eamrgde/Documents/gitrepos/ros_scream_int/scream/gstscream/ros2_bridge/src/install/audio_msgs/lib/libaudio_msgs__rosidl_typesupport_fastrtps_cpp.so" to ""\n'}
+[3.691670] (audio_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/eamrgde/Documents/gitrepos/ros_scream_int/scream/gstscream/ros2_bridge/src/install/audio_msgs/include/audio_msgs/audio_msgs\n'}
+[3.691738] (audio_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/eamrgde/Documents/gitrepos/ros_scream_int/scream/gstscream/ros2_bridge/src/install/audio_msgs/include/audio_msgs/audio_msgs/msg\n'}
+[3.691808] (audio_msgs) StdoutLine: {'line': b'-- Installing: /home/eamrgde/Documents/gitrepos/ros_scream_int/scream/gstscream/ros2_bridge/src/install/audio_msgs/include/audio_msgs/audio_msgs/msg/rosidl_typesupport_introspection_c__visibility_control.h\n'}
+[3.691906] (audio_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/eamrgde/Documents/gitrepos/ros_scream_int/scream/gstscream/ros2_bridge/src/install/audio_msgs/include/audio_msgs/audio_msgs/msg/detail\n'}
+[3.691971] (audio_msgs) StdoutLine: {'line': b'-- Installing: /home/eamrgde/Documents/gitrepos/ros_scream_int/scream/gstscream/ros2_bridge/src/install/audio_msgs/include/audio_msgs/audio_msgs/msg/detail/audio__rosidl_typesupport_introspection_c.h\n'}
+[3.692047] (audio_msgs) StdoutLine: {'line': b'-- Installing: /home/eamrgde/Documents/gitrepos/ros_scream_int/scream/gstscream/ros2_bridge/src/install/audio_msgs/include/audio_msgs/audio_msgs/msg/detail/audio__type_support.c\n'}
+[3.692219] (audio_msgs) StdoutLine: {'line': b'-- Installing: /home/eamrgde/Documents/gitrepos/ros_scream_int/scream/gstscream/ros2_bridge/src/install/audio_msgs/lib/libaudio_msgs__rosidl_typesupport_introspection_c.so\n'}
+[3.692517] (audio_msgs) StdoutLine: {'line': b'-- Set runtime path of "/home/eamrgde/Documents/gitrepos/ros_scream_int/scream/gstscream/ros2_bridge/src/install/audio_msgs/lib/libaudio_msgs__rosidl_typesupport_introspection_c.so" to ""\n'}
+[3.692628] (audio_msgs) StdoutLine: {'line': b'-- Installing: /home/eamrgde/Documents/gitrepos/ros_scream_int/scream/gstscream/ros2_bridge/src/install/audio_msgs/lib/libaudio_msgs__rosidl_typesupport_c.so\n'}
+[3.692948] (audio_msgs) StdoutLine: {'line': b'-- Set runtime path of "/home/eamrgde/Documents/gitrepos/ros_scream_int/scream/gstscream/ros2_bridge/src/install/audio_msgs/lib/libaudio_msgs__rosidl_typesupport_c.so" to ""\n'}
+[3.693015] (audio_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/eamrgde/Documents/gitrepos/ros_scream_int/scream/gstscream/ros2_bridge/src/install/audio_msgs/include/audio_msgs/audio_msgs\n'}
+[3.693090] (audio_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/eamrgde/Documents/gitrepos/ros_scream_int/scream/gstscream/ros2_bridge/src/install/audio_msgs/include/audio_msgs/audio_msgs/msg\n'}
+[3.693131] (audio_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/eamrgde/Documents/gitrepos/ros_scream_int/scream/gstscream/ros2_bridge/src/install/audio_msgs/include/audio_msgs/audio_msgs/msg/detail\n'}
+[3.693183] (audio_msgs) StdoutLine: {'line': b'-- Installing: /home/eamrgde/Documents/gitrepos/ros_scream_int/scream/gstscream/ros2_bridge/src/install/audio_msgs/include/audio_msgs/audio_msgs/msg/detail/audio__rosidl_typesupport_introspection_cpp.hpp\n'}
+[3.693322] (audio_msgs) StdoutLine: {'line': b'-- Installing: /home/eamrgde/Documents/gitrepos/ros_scream_int/scream/gstscream/ros2_bridge/src/install/audio_msgs/include/audio_msgs/audio_msgs/msg/detail/audio__type_support.cpp\n'}
+[3.693459] (audio_msgs) StdoutLine: {'line': b'-- Installing: /home/eamrgde/Documents/gitrepos/ros_scream_int/scream/gstscream/ros2_bridge/src/install/audio_msgs/lib/libaudio_msgs__rosidl_typesupport_introspection_cpp.so\n'}
+[3.693856] (audio_msgs) StdoutLine: {'line': b'-- Set runtime path of "/home/eamrgde/Documents/gitrepos/ros_scream_int/scream/gstscream/ros2_bridge/src/install/audio_msgs/lib/libaudio_msgs__rosidl_typesupport_introspection_cpp.so" to ""\n'}
+[3.693980] (audio_msgs) StdoutLine: {'line': b'-- Installing: /home/eamrgde/Documents/gitrepos/ros_scream_int/scream/gstscream/ros2_bridge/src/install/audio_msgs/lib/libaudio_msgs__rosidl_typesupport_cpp.so\n'}
+[3.694200] (audio_msgs) StdoutLine: {'line': b'-- Set runtime path of "/home/eamrgde/Documents/gitrepos/ros_scream_int/scream/gstscream/ros2_bridge/src/install/audio_msgs/lib/libaudio_msgs__rosidl_typesupport_cpp.so" to ""\n'}
+[3.694272] (audio_msgs) StdoutLine: {'line': b'-- Installing: /home/eamrgde/Documents/gitrepos/ros_scream_int/scream/gstscream/ros2_bridge/src/install/audio_msgs/share/audio_msgs/environment/pythonpath.sh\n'}
+[3.694456] (audio_msgs) StdoutLine: {'line': b'-- Installing: /home/eamrgde/Documents/gitrepos/ros_scream_int/scream/gstscream/ros2_bridge/src/install/audio_msgs/share/audio_msgs/environment/pythonpath.dsv\n'}
+[3.694652] (audio_msgs) StdoutLine: {'line': b'-- Installing: /home/eamrgde/Documents/gitrepos/ros_scream_int/scream/gstscream/ros2_bridge/src/install/audio_msgs/local/lib/python3.10/dist-packages/audio_msgs-0.0.0-py3.10.egg-info\n'}
+[3.694841] (audio_msgs) StdoutLine: {'line': b'-- Installing: /home/eamrgde/Documents/gitrepos/ros_scream_int/scream/gstscream/ros2_bridge/src/install/audio_msgs/local/lib/python3.10/dist-packages/audio_msgs-0.0.0-py3.10.egg-info/PKG-INFO\n'}
+[3.695011] (audio_msgs) StdoutLine: {'line': b'-- Installing: /home/eamrgde/Documents/gitrepos/ros_scream_int/scream/gstscream/ros2_bridge/src/install/audio_msgs/local/lib/python3.10/dist-packages/audio_msgs-0.0.0-py3.10.egg-info/dependency_links.txt\n'}
+[3.695206] (audio_msgs) StdoutLine: {'line': b'-- Installing: /home/eamrgde/Documents/gitrepos/ros_scream_int/scream/gstscream/ros2_bridge/src/install/audio_msgs/local/lib/python3.10/dist-packages/audio_msgs-0.0.0-py3.10.egg-info/SOURCES.txt\n'}
+[3.695389] (audio_msgs) StdoutLine: {'line': b'-- Installing: /home/eamrgde/Documents/gitrepos/ros_scream_int/scream/gstscream/ros2_bridge/src/install/audio_msgs/local/lib/python3.10/dist-packages/audio_msgs-0.0.0-py3.10.egg-info/top_level.txt\n'}
+[3.695593] (audio_msgs) StdoutLine: {'line': b'-- Installing: /home/eamrgde/Documents/gitrepos/ros_scream_int/scream/gstscream/ros2_bridge/src/install/audio_msgs/local/lib/python3.10/dist-packages/audio_msgs\n'}
+[3.695701] (audio_msgs) StdoutLine: {'line': b'-- Installing: /home/eamrgde/Documents/gitrepos/ros_scream_int/scream/gstscream/ros2_bridge/src/install/audio_msgs/local/lib/python3.10/dist-packages/audio_msgs/audio_msgs_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so\n'}
+[3.695915] (audio_msgs) StdoutLine: {'line': b'-- Installing: /home/eamrgde/Documents/gitrepos/ros_scream_int/scream/gstscream/ros2_bridge/src/install/audio_msgs/local/lib/python3.10/dist-packages/audio_msgs/_audio_msgs_s.ep.rosidl_typesupport_introspection_c.c\n'}
+[3.696103] (audio_msgs) StdoutLine: {'line': b'-- Installing: /home/eamrgde/Documents/gitrepos/ros_scream_int/scream/gstscream/ros2_bridge/src/install/audio_msgs/local/lib/python3.10/dist-packages/audio_msgs/audio_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so\n'}
+[3.696293] (audio_msgs) StdoutLine: {'line': b'-- Installing: /home/eamrgde/Documents/gitrepos/ros_scream_int/scream/gstscream/ros2_bridge/src/install/audio_msgs/local/lib/python3.10/dist-packages/audio_msgs/audio_msgs_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so\n'}
+[3.696480] (audio_msgs) StdoutLine: {'line': b'-- Installing: /home/eamrgde/Documents/gitrepos/ros_scream_int/scream/gstscream/ros2_bridge/src/install/audio_msgs/local/lib/python3.10/dist-packages/audio_msgs/libaudio_msgs__rosidl_generator_py.so\n'}
+[3.696696] (audio_msgs) StdoutLine: {'line': b'-- Installing: /home/eamrgde/Documents/gitrepos/ros_scream_int/scream/gstscream/ros2_bridge/src/install/audio_msgs/local/lib/python3.10/dist-packages/audio_msgs/_audio_msgs_s.ep.rosidl_typesupport_c.c\n'}
+[3.696883] (audio_msgs) StdoutLine: {'line': b'-- Installing: /home/eamrgde/Documents/gitrepos/ros_scream_int/scream/gstscream/ros2_bridge/src/install/audio_msgs/local/lib/python3.10/dist-packages/audio_msgs/_audio_msgs_s.ep.rosidl_typesupport_fastrtps_c.c\n'}
+[3.697044] (audio_msgs) StdoutLine: {'line': b'-- Installing: /home/eamrgde/Documents/gitrepos/ros_scream_int/scream/gstscream/ros2_bridge/src/install/audio_msgs/local/lib/python3.10/dist-packages/audio_msgs/msg\n'}
+[3.697140] (audio_msgs) StdoutLine: {'line': b'-- Installing: /home/eamrgde/Documents/gitrepos/ros_scream_int/scream/gstscream/ros2_bridge/src/install/audio_msgs/local/lib/python3.10/dist-packages/audio_msgs/msg/__init__.py\n'}
+[3.697322] (audio_msgs) StdoutLine: {'line': b'-- Installing: /home/eamrgde/Documents/gitrepos/ros_scream_int/scream/gstscream/ros2_bridge/src/install/audio_msgs/local/lib/python3.10/dist-packages/audio_msgs/msg/_audio_s.c\n'}
+[3.697521] (audio_msgs) StdoutLine: {'line': b'-- Installing: /home/eamrgde/Documents/gitrepos/ros_scream_int/scream/gstscream/ros2_bridge/src/install/audio_msgs/local/lib/python3.10/dist-packages/audio_msgs/msg/_audio.py\n'}
+[3.697702] (audio_msgs) StdoutLine: {'line': b'-- Installing: /home/eamrgde/Documents/gitrepos/ros_scream_int/scream/gstscream/ros2_bridge/src/install/audio_msgs/local/lib/python3.10/dist-packages/audio_msgs/__init__.py\n'}
+[3.709307] (-) TimerEvent: {}
+[3.724512] (audio_msgs) StdoutLine: {'line': b"Listing '/home/eamrgde/Documents/gitrepos/ros_scream_int/scream/gstscream/ros2_bridge/src/install/audio_msgs/local/lib/python3.10/dist-packages/audio_msgs'...\n"}
+[3.724664] (audio_msgs) StdoutLine: {'line': b"Compiling '/home/eamrgde/Documents/gitrepos/ros_scream_int/scream/gstscream/ros2_bridge/src/install/audio_msgs/local/lib/python3.10/dist-packages/audio_msgs/__init__.py'...\n"}
+[3.724724] (audio_msgs) StdoutLine: {'line': b"Listing '/home/eamrgde/Documents/gitrepos/ros_scream_int/scream/gstscream/ros2_bridge/src/install/audio_msgs/local/lib/python3.10/dist-packages/audio_msgs/msg'...\n"}
+[3.724768] (audio_msgs) StdoutLine: {'line': b"Compiling '/home/eamrgde/Documents/gitrepos/ros_scream_int/scream/gstscream/ros2_bridge/src/install/audio_msgs/local/lib/python3.10/dist-packages/audio_msgs/msg/__init__.py'...\n"}
+[3.724811] (audio_msgs) StdoutLine: {'line': b"Compiling '/home/eamrgde/Documents/gitrepos/ros_scream_int/scream/gstscream/ros2_bridge/src/install/audio_msgs/local/lib/python3.10/dist-packages/audio_msgs/msg/_audio.py'...\n"}
+[3.728459] (audio_msgs) StdoutLine: {'line': b'-- Installing: /home/eamrgde/Documents/gitrepos/ros_scream_int/scream/gstscream/ros2_bridge/src/install/audio_msgs/local/lib/python3.10/dist-packages/audio_msgs/audio_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so\n'}
+[3.728853] (audio_msgs) StdoutLine: {'line': b'-- Set runtime path of "/home/eamrgde/Documents/gitrepos/ros_scream_int/scream/gstscream/ros2_bridge/src/install/audio_msgs/local/lib/python3.10/dist-packages/audio_msgs/audio_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so" to ""\n'}
+[3.729019] (audio_msgs) StdoutLine: {'line': b'-- Installing: /home/eamrgde/Documents/gitrepos/ros_scream_int/scream/gstscream/ros2_bridge/src/install/audio_msgs/local/lib/python3.10/dist-packages/audio_msgs/audio_msgs_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so\n'}
+[3.729381] (audio_msgs) StdoutLine: {'line': b'-- Set runtime path of "/home/eamrgde/Documents/gitrepos/ros_scream_int/scream/gstscream/ros2_bridge/src/install/audio_msgs/local/lib/python3.10/dist-packages/audio_msgs/audio_msgs_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so" to ""\n'}
+[3.729548] (audio_msgs) StdoutLine: {'line': b'-- Installing: /home/eamrgde/Documents/gitrepos/ros_scream_int/scream/gstscream/ros2_bridge/src/install/audio_msgs/local/lib/python3.10/dist-packages/audio_msgs/audio_msgs_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so\n'}
+[3.729895] (audio_msgs) StdoutLine: {'line': b'-- Set runtime path of "/home/eamrgde/Documents/gitrepos/ros_scream_int/scream/gstscream/ros2_bridge/src/install/audio_msgs/local/lib/python3.10/dist-packages/audio_msgs/audio_msgs_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so" to ""\n'}
+[3.729974] (audio_msgs) StdoutLine: {'line': b'-- Installing: /home/eamrgde/Documents/gitrepos/ros_scream_int/scream/gstscream/ros2_bridge/src/install/audio_msgs/lib/libaudio_msgs__rosidl_generator_py.so\n'}
+[3.730308] (audio_msgs) StdoutLine: {'line': b'-- Set runtime path of "/home/eamrgde/Documents/gitrepos/ros_scream_int/scream/gstscream/ros2_bridge/src/install/audio_msgs/lib/libaudio_msgs__rosidl_generator_py.so" to ""\n'}
+[3.730402] (audio_msgs) StdoutLine: {'line': b'-- Installing: /home/eamrgde/Documents/gitrepos/ros_scream_int/scream/gstscream/ros2_bridge/src/install/audio_msgs/share/audio_msgs/msg/Audio.idl\n'}
+[3.730586] (audio_msgs) StdoutLine: {'line': b'-- Installing: /home/eamrgde/Documents/gitrepos/ros_scream_int/scream/gstscream/ros2_bridge/src/install/audio_msgs/share/audio_msgs/msg/Audio.msg\n'}
+[3.730786] (audio_msgs) StdoutLine: {'line': b'-- Installing: /home/eamrgde/Documents/gitrepos/ros_scream_int/scream/gstscream/ros2_bridge/src/install/audio_msgs/share/ament_index/resource_index/package_run_dependencies/audio_msgs\n'}
+[3.730977] (audio_msgs) StdoutLine: {'line': b'-- Installing: /home/eamrgde/Documents/gitrepos/ros_scream_int/scream/gstscream/ros2_bridge/src/install/audio_msgs/share/ament_index/resource_index/parent_prefix_path/audio_msgs\n'}
+[3.731150] (audio_msgs) StdoutLine: {'line': b'-- Installing: /home/eamrgde/Documents/gitrepos/ros_scream_int/scream/gstscream/ros2_bridge/src/install/audio_msgs/share/audio_msgs/environment/ament_prefix_path.sh\n'}
+[3.731297] (audio_msgs) StdoutLine: {'line': b'-- Installing: /home/eamrgde/Documents/gitrepos/ros_scream_int/scream/gstscream/ros2_bridge/src/install/audio_msgs/share/audio_msgs/environment/ament_prefix_path.dsv\n'}
+[3.731476] (audio_msgs) StdoutLine: {'line': b'-- Installing: /home/eamrgde/Documents/gitrepos/ros_scream_int/scream/gstscream/ros2_bridge/src/install/audio_msgs/share/audio_msgs/environment/path.sh\n'}
+[3.731670] (audio_msgs) StdoutLine: {'line': b'-- Installing: /home/eamrgde/Documents/gitrepos/ros_scream_int/scream/gstscream/ros2_bridge/src/install/audio_msgs/share/audio_msgs/environment/path.dsv\n'}
+[3.731838] (audio_msgs) StdoutLine: {'line': b'-- Installing: /home/eamrgde/Documents/gitrepos/ros_scream_int/scream/gstscream/ros2_bridge/src/install/audio_msgs/share/audio_msgs/local_setup.bash\n'}
+[3.732019] (audio_msgs) StdoutLine: {'line': b'-- Installing: /home/eamrgde/Documents/gitrepos/ros_scream_int/scream/gstscream/ros2_bridge/src/install/audio_msgs/share/audio_msgs/local_setup.sh\n'}
+[3.732218] (audio_msgs) StdoutLine: {'line': b'-- Installing: /home/eamrgde/Documents/gitrepos/ros_scream_int/scream/gstscream/ros2_bridge/src/install/audio_msgs/share/audio_msgs/local_setup.zsh\n'}
+[3.732432] (audio_msgs) StdoutLine: {'line': b'-- Installing: /home/eamrgde/Documents/gitrepos/ros_scream_int/scream/gstscream/ros2_bridge/src/install/audio_msgs/share/audio_msgs/local_setup.dsv\n'}
+[3.732617] (audio_msgs) StdoutLine: {'line': b'-- Installing: /home/eamrgde/Documents/gitrepos/ros_scream_int/scream/gstscream/ros2_bridge/src/install/audio_msgs/share/audio_msgs/package.dsv\n'}
+[3.732878] (audio_msgs) StdoutLine: {'line': b'-- Installing: /home/eamrgde/Documents/gitrepos/ros_scream_int/scream/gstscream/ros2_bridge/src/install/audio_msgs/share/ament_index/resource_index/packages/audio_msgs\n'}
+[3.733115] (audio_msgs) StdoutLine: {'line': b'-- Installing: /home/eamrgde/Documents/gitrepos/ros_scream_int/scream/gstscream/ros2_bridge/src/install/audio_msgs/share/audio_msgs/cmake/export_audio_msgs__rosidl_generator_cExport.cmake\n'}
+[3.733315] (audio_msgs) StdoutLine: {'line': b'-- Installing: /home/eamrgde/Documents/gitrepos/ros_scream_int/scream/gstscream/ros2_bridge/src/install/audio_msgs/share/audio_msgs/cmake/export_audio_msgs__rosidl_generator_cExport-noconfig.cmake\n'}
+[3.733532] (audio_msgs) StdoutLine: {'line': b'-- Installing: /home/eamrgde/Documents/gitrepos/ros_scream_int/scream/gstscream/ros2_bridge/src/install/audio_msgs/share/audio_msgs/cmake/export_audio_msgs__rosidl_typesupport_fastrtps_cExport.cmake\n'}
+[3.733741] (audio_msgs) StdoutLine: {'line': b'-- Installing: /home/eamrgde/Documents/gitrepos/ros_scream_int/scream/gstscream/ros2_bridge/src/install/audio_msgs/share/audio_msgs/cmake/export_audio_msgs__rosidl_typesupport_fastrtps_cExport-noconfig.cmake\n'}
+[3.733900] (audio_msgs) StdoutLine: {'line': b'-- Installing: /home/eamrgde/Documents/gitrepos/ros_scream_int/scream/gstscream/ros2_bridge/src/install/audio_msgs/share/audio_msgs/cmake/export_audio_msgs__rosidl_generator_cppExport.cmake\n'}
+[3.734091] (audio_msgs) StdoutLine: {'line': b'-- Installing: /home/eamrgde/Documents/gitrepos/ros_scream_int/scream/gstscream/ros2_bridge/src/install/audio_msgs/share/audio_msgs/cmake/export_audio_msgs__rosidl_typesupport_fastrtps_cppExport.cmake\n'}
+[3.734291] (audio_msgs) StdoutLine: {'line': b'-- Installing: /home/eamrgde/Documents/gitrepos/ros_scream_int/scream/gstscream/ros2_bridge/src/install/audio_msgs/share/audio_msgs/cmake/export_audio_msgs__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake\n'}
+[3.734468] (audio_msgs) StdoutLine: {'line': b'-- Installing: /home/eamrgde/Documents/gitrepos/ros_scream_int/scream/gstscream/ros2_bridge/src/install/audio_msgs/share/audio_msgs/cmake/audio_msgs__rosidl_typesupport_introspection_cExport.cmake\n'}
+[3.734658] (audio_msgs) StdoutLine: {'line': b'-- Installing: /home/eamrgde/Documents/gitrepos/ros_scream_int/scream/gstscream/ros2_bridge/src/install/audio_msgs/share/audio_msgs/cmake/audio_msgs__rosidl_typesupport_introspection_cExport-noconfig.cmake\n'}
+[3.734880] (audio_msgs) StdoutLine: {'line': b'-- Installing: /home/eamrgde/Documents/gitrepos/ros_scream_int/scream/gstscream/ros2_bridge/src/install/audio_msgs/share/audio_msgs/cmake/audio_msgs__rosidl_typesupport_cExport.cmake\n'}
+[3.735058] (audio_msgs) StdoutLine: {'line': b'-- Installing: /home/eamrgde/Documents/gitrepos/ros_scream_int/scream/gstscream/ros2_bridge/src/install/audio_msgs/share/audio_msgs/cmake/audio_msgs__rosidl_typesupport_cExport-noconfig.cmake\n'}
+[3.735273] (audio_msgs) StdoutLine: {'line': b'-- Installing: /home/eamrgde/Documents/gitrepos/ros_scream_int/scream/gstscream/ros2_bridge/src/install/audio_msgs/share/audio_msgs/cmake/audio_msgs__rosidl_typesupport_introspection_cppExport.cmake\n'}
+[3.735472] (audio_msgs) StdoutLine: {'line': b'-- Installing: /home/eamrgde/Documents/gitrepos/ros_scream_int/scream/gstscream/ros2_bridge/src/install/audio_msgs/share/audio_msgs/cmake/audio_msgs__rosidl_typesupport_introspection_cppExport-noconfig.cmake\n'}
+[3.735748] (audio_msgs) StdoutLine: {'line': b'-- Installing: /home/eamrgde/Documents/gitrepos/ros_scream_int/scream/gstscream/ros2_bridge/src/install/audio_msgs/share/audio_msgs/cmake/audio_msgs__rosidl_typesupport_cppExport.cmake\n'}
+[3.735954] (audio_msgs) StdoutLine: {'line': b'-- Installing: /home/eamrgde/Documents/gitrepos/ros_scream_int/scream/gstscream/ros2_bridge/src/install/audio_msgs/share/audio_msgs/cmake/audio_msgs__rosidl_typesupport_cppExport-noconfig.cmake\n'}
+[3.736187] (audio_msgs) StdoutLine: {'line': b'-- Installing: /home/eamrgde/Documents/gitrepos/ros_scream_int/scream/gstscream/ros2_bridge/src/install/audio_msgs/share/audio_msgs/cmake/export_audio_msgs__rosidl_generator_pyExport.cmake\n'}
+[3.736404] (audio_msgs) StdoutLine: {'line': b'-- Installing: /home/eamrgde/Documents/gitrepos/ros_scream_int/scream/gstscream/ros2_bridge/src/install/audio_msgs/share/audio_msgs/cmake/export_audio_msgs__rosidl_generator_pyExport-noconfig.cmake\n'}
+[3.736584] (audio_msgs) StdoutLine: {'line': b'-- Installing: /home/eamrgde/Documents/gitrepos/ros_scream_int/scream/gstscream/ros2_bridge/src/install/audio_msgs/share/audio_msgs/cmake/rosidl_cmake-extras.cmake\n'}
+[3.736743] (audio_msgs) StdoutLine: {'line': b'-- Installing: /home/eamrgde/Documents/gitrepos/ros_scream_int/scream/gstscream/ros2_bridge/src/install/audio_msgs/share/audio_msgs/cmake/ament_cmake_export_dependencies-extras.cmake\n'}
+[3.736920] (audio_msgs) StdoutLine: {'line': b'-- Installing: /home/eamrgde/Documents/gitrepos/ros_scream_int/scream/gstscream/ros2_bridge/src/install/audio_msgs/share/audio_msgs/cmake/ament_cmake_export_include_directories-extras.cmake\n'}
+[3.737061] (audio_msgs) StdoutLine: {'line': b'-- Installing: /home/eamrgde/Documents/gitrepos/ros_scream_int/scream/gstscream/ros2_bridge/src/install/audio_msgs/share/audio_msgs/cmake/ament_cmake_export_libraries-extras.cmake\n'}
+[3.737271] (audio_msgs) StdoutLine: {'line': b'-- Installing: /home/eamrgde/Documents/gitrepos/ros_scream_int/scream/gstscream/ros2_bridge/src/install/audio_msgs/share/audio_msgs/cmake/ament_cmake_export_targets-extras.cmake\n'}
+[3.737445] (audio_msgs) StdoutLine: {'line': b'-- Installing: /home/eamrgde/Documents/gitrepos/ros_scream_int/scream/gstscream/ros2_bridge/src/install/audio_msgs/share/audio_msgs/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake\n'}
+[3.737640] (audio_msgs) StdoutLine: {'line': b'-- Installing: /home/eamrgde/Documents/gitrepos/ros_scream_int/scream/gstscream/ros2_bridge/src/install/audio_msgs/share/audio_msgs/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake\n'}
+[3.737860] (audio_msgs) StdoutLine: {'line': b'-- Installing: /home/eamrgde/Documents/gitrepos/ros_scream_int/scream/gstscream/ros2_bridge/src/install/audio_msgs/share/audio_msgs/cmake/audio_msgsConfig.cmake\n'}
+[3.738047] (audio_msgs) StdoutLine: {'line': b'-- Installing: /home/eamrgde/Documents/gitrepos/ros_scream_int/scream/gstscream/ros2_bridge/src/install/audio_msgs/share/audio_msgs/cmake/audio_msgsConfig-version.cmake\n'}
+[3.738202] (audio_msgs) StdoutLine: {'line': b'-- Installing: /home/eamrgde/Documents/gitrepos/ros_scream_int/scream/gstscream/ros2_bridge/src/install/audio_msgs/share/audio_msgs/package.xml\n'}
+[3.740369] (audio_msgs) CommandEnded: {'returncode': 0}
+[3.753432] (audio_msgs) JobEnded: {'identifier': 'audio_msgs', 'rc': 0}
+[3.754344] (gst_bridge) JobStarted: {'identifier': 'gst_bridge'}
+[3.759725] (gst_bridge) JobProgress: {'identifier': 'gst_bridge', 'progress': 'cmake'}
+[3.760097] (gst_bridge) Command: {'cmd': ['/usr/bin/cmake', '/home/eamrgde/Documents/gitrepos/ros_scream_int/scream/gstscream/ros2_bridge/src/ros-gst-bridge/gst_bridge', '-DCMAKE_INSTALL_PREFIX=/home/eamrgde/Documents/gitrepos/ros_scream_int/scream/gstscream/ros2_bridge/src/install/gst_bridge'], 'cwd': '/home/eamrgde/Documents/gitrepos/ros_scream_int/scream/gstscream/ros2_bridge/src/build/gst_bridge', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('TMUX', '/tmp/tmux-7462898/default,21252,0'), ('LANGUAGE', 'en_AU:en'), ('USER', 'eamrgde'), ('LC_TIME', 'sv_SE.UTF-8'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '2'), ('LD_LIBRARY_PATH', '/home/eamrgde/Documents/gitrepos/ros_scream_int/scream/gstscream/ros2_bridge/src/install/audio_msgs/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/eamrgde'), ('OLDPWD', '/home/eamrgde/Documents/gitrepos/ros_scream_int/scream/gstscream/ros2_bridge/src/ros-gst-bridge'), ('TERM_PROGRAM_VERSION', '3.2a'), ('DESKTOP_SESSION', 'ubuntu'), ('CUPS_USER', 'gerasimos.damigos@ericsson.com'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'sv_SE.UTF-8'), ('SYSTEMD_EXEC_PID', '8929'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/7462898/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'eamrgde'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'eamrgde'), ('TERM', 'screen'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/home/eamrgde/.local/bin:/opt/ros/humble/bin:/home/eamrgde/.cargo/bin:/home/eamrgde/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin:/usr/bin:/opt/puppetlabs/bin:/usr/bin'), ('SESSION_MANAGER', 'local/elx-5cg2292ctb:@/tmp/.ICE-unix/3802,unix/elx-5cg2292ctb:/tmp/.ICE-unix/3802'), ('PAPERSIZE', 'a4'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'sv_SE.UTF-8'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/2e7ebc78_9bc3_4fe7_88be_8a8007f59e80'), ('XDG_RUNTIME_DIR', '/run/user/7462898'), ('DISPLAY', ':1'), ('LANG', 'en_AU.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'sv_SE.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/7462898/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.119'), ('TERM_PROGRAM', 'tmux'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/7462898/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/eamrgde/Documents/gitrepos/ros_scream_int/scream/gstscream/ros2_bridge/src/install/audio_msgs:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'sv_SE.UTF-8'), ('KRB5CCNAME', 'FILE:/var/tmp/krb5cc_7462898_4P2mdm'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'sv_SE.UTF-8'), ('GPG_AGENT_INFO', '/run/user/7462898/gnupg/S.gpg-agent:0:1'), ('LC_IDENTIFICATION', 'sv_SE.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/eamrgde/Documents/gitrepos/ros_scream_int/scream/gstscream/ros2_bridge/src/build/gst_bridge'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/eamrgde/Documents/gitrepos/ros_scream_int/scream/gstscream/ros2_bridge/src/install/audio_msgs/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'sv_SE.UTF-8'), ('LC_PAPER', 'sv_SE.UTF-8'), ('COLCON', '1'), ('MANPATH', ':/opt/puppetlabs/puppet/share/man'), ('VTE_VERSION', '6800'), ('TMUX_PANE', '%3'), ('CMAKE_PREFIX_PATH', '/home/eamrgde/Documents/gitrepos/ros_scream_int/scream/gstscream/ros2_bridge/src/install/audio_msgs:/opt/ros/humble')]), 'shell': False}
+[3.803417] (gst_bridge) StdoutLine: {'line': b'-- The C compiler identification is GNU 11.4.0\n'}
+[3.809401] (-) TimerEvent: {}
+[3.846400] (gst_bridge) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 11.4.0\n'}
+[3.852143] (gst_bridge) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[3.909556] (-) TimerEvent: {}
+[3.912808] (gst_bridge) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[3.918392] (gst_bridge) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[3.918599] (gst_bridge) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[3.918935] (gst_bridge) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[3.921688] (gst_bridge) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[3.987653] (gst_bridge) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[3.993439] (gst_bridge) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[3.993613] (gst_bridge) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[3.993910] (gst_bridge) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[3.995882] (gst_bridge) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.11 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[4.009626] (-) TimerEvent: {}
+[4.109868] (-) TimerEvent: {}
+[4.115960] (gst_bridge) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter \n'}
+[4.194722] (gst_bridge) StdoutLine: {'line': b'-- Found rclcpp: 16.0.12 (/opt/ros/humble/share/rclcpp/cmake)\n'}
+[4.209995] (-) TimerEvent: {}
+[4.226861] (gst_bridge) StdoutLine: {'line': b'-- Found rosidl_generator_c: 3.1.6 (/opt/ros/humble/share/rosidl_generator_c/cmake)\n'}
+[4.230268] (gst_bridge) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.6 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[4.236021] (gst_bridge) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 3.1.6 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)\n'}
+[4.245204] (gst_bridge) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[4.256524] (gst_bridge) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[4.296377] (gst_bridge) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)\n'}
+[4.298927] (gst_bridge) StdoutLine: {'line': b'-- Found rmw_fastrtps_cpp: 6.2.7 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)\n'}
+[4.310073] (-) TimerEvent: {}
+[4.377306] (gst_bridge) StdoutLine: {'line': b'-- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  \n'}
+[4.398263] (gst_bridge) StdoutLine: {'line': b'-- Found FastRTPS: /opt/ros/humble/include  \n'}
+[4.410177] (-) TimerEvent: {}
+[4.428248] (gst_bridge) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[4.436653] (gst_bridge) StdoutLine: {'line': b'-- Looking for pthread.h\n'}
+[4.496498] (gst_bridge) StdoutLine: {'line': b'-- Looking for pthread.h - found\n'}
+[4.496906] (gst_bridge) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD\n'}
+[4.510311] (-) TimerEvent: {}
+[4.557399] (gst_bridge) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success\n'}
+[4.558322] (gst_bridge) StdoutLine: {'line': b'-- Found Threads: TRUE  \n'}
+[4.607146] (gst_bridge) StdoutLine: {'line': b"-- Checking for module 'gstreamer-1.0 >= 1.8.3'\n"}
+[4.610416] (-) TimerEvent: {}
+[4.620832] (gst_bridge) StdoutLine: {'line': b'--   Found gstreamer-1.0 , version 1.20.3\n'}
+[4.655189] (gst_bridge) StdoutLine: {'line': b"-- Checking for module 'gstreamer-base-1.0 >= 1.8.3'\n"}
+[4.666596] (gst_bridge) StdoutLine: {'line': b'--   Found gstreamer-base-1.0 , version 1.20.3\n'}
+[4.699235] (gst_bridge) StdoutLine: {'line': b"-- Checking for module 'gstreamer-app-1.0 >= 1.8.3'\n"}
+[4.710537] (-) TimerEvent: {}
+[4.710833] (gst_bridge) StdoutLine: {'line': b'--   Found gstreamer-app-1.0 , version 1.20.1\n'}
+[4.745067] (gst_bridge) StdoutLine: {'line': b"-- Checking for module 'gstreamer-audio-1.0 >= 1.8.3'\n"}
+[4.757673] (gst_bridge) StdoutLine: {'line': b'--   Found gstreamer-audio-1.0 , version 1.20.1\n'}
+[4.791027] (gst_bridge) StdoutLine: {'line': b"-- Checking for module 'gstreamer-fft-1.0 >= 1.8.3'\n"}
+[4.802108] (gst_bridge) StdoutLine: {'line': b'--   Found gstreamer-fft-1.0 , version 1.20.1\n'}
+[4.810648] (-) TimerEvent: {}
+[4.835121] (gst_bridge) StdoutLine: {'line': b"-- Checking for module 'gstreamer-gl-1.0 >= 1.8.3'\n"}
+[4.850759] (gst_bridge) StdoutLine: {'line': b'--   Found gstreamer-gl-1.0 , version 1.20.1\n'}
+[4.890720] (gst_bridge) StdoutLine: {'line': b"-- Checking for module 'gstreamer-mpegts-1.0>=1.4.0'\n"}
+[4.902435] (gst_bridge) StdoutLine: {'line': b'--   Found gstreamer-mpegts-1.0, version 1.20.3\n'}
+[4.910747] (-) TimerEvent: {}
+[4.938537] (gst_bridge) StdoutLine: {'line': b"-- Checking for module 'gstreamer-pbutils-1.0 >= 1.8.3'\n"}
+[4.952024] (gst_bridge) StdoutLine: {'line': b'--   Found gstreamer-pbutils-1.0 , version 1.20.1\n'}
+[4.986914] (gst_bridge) StdoutLine: {'line': b"-- Checking for module 'gstreamer-tag-1.0 >= 1.8.3'\n"}
+[4.997720] (gst_bridge) StdoutLine: {'line': b'--   Found gstreamer-tag-1.0 , version 1.20.1\n'}
+[5.010847] (-) TimerEvent: {}
+[5.029861] (gst_bridge) StdoutLine: {'line': b"-- Checking for module 'gstreamer-video-1.0 >= 1.8.3'\n"}
+[5.042233] (gst_bridge) StdoutLine: {'line': b'--   Found gstreamer-video-1.0 , version 1.20.1\n'}
+[5.077541] (gst_bridge) StdoutLine: {'line': b"-- Checking for module 'gstreamer-codecparsers-1.0 >= 1.8.3'\n"}
+[5.096903] (gst_bridge) StdoutLine: {'line': b'--   Found gstreamer-codecparsers-1.0 , version 1.20.3\n'}
+[5.110961] (-) TimerEvent: {}
+[5.133554] (gst_bridge) StdoutLine: {'line': b'-- Found GStreamer: GSTREAMER_INCLUDE_DIRS;GSTREAMER_LIBRARIES;GSTREAMER_VERSION;GSTREAMER_BASE_INCLUDE_DIRS;GSTREAMER_BASE_LIBRARIES;GSTREAMER_APP_INCLUDE_DIRS;GSTREAMER_APP_LIBRARIES;GSTREAMER_PBUTILS_INCLUDE_DIRS;GSTREAMER_PBUTILS_LIBRARIES;GSTREAMER_AUDIO_INCLUDE_DIRS;GSTREAMER_AUDIO_LIBRARIES;GSTREAMER_FFT_INCLUDE_DIRS;GSTREAMER_FFT_LIBRARIES;GSTREAMER_NET_INCLUDE_DIRS;GSTREAMER_NET_LIBRARIES (Required is at least version "1.8.3") \n'}
+[5.211075] (-) TimerEvent: {}
+[5.222284] (gst_bridge) StdoutLine: {'line': b'-- Found GLIB: /usr/include/glib-2.0;/usr/lib/x86_64-linux-gnu/glib-2.0/include (found suitable version "2.72.4", minimum required is "2.28") \n'}
+[5.222922] (gst_bridge) StdoutLine: {'line': b'-- Found audio_msgs: 0.0.0 (/home/eamrgde/Documents/gitrepos/ros_scream_int/scream/gstscream/ros2_bridge/src/install/audio_msgs/share/audio_msgs/cmake)\n'}
+[5.233969] (gst_bridge) StdoutLine: {'line': b'-- Found sensor_msgs: 4.8.0 (/opt/ros/humble/share/sensor_msgs/cmake)\n'}
+[5.311188] (-) TimerEvent: {}
+[5.411549] (-) TimerEvent: {}
+[5.452195] (gst_bridge) StdoutLine: {'line': b'-- Configuring done\n'}
+[5.511630] (-) TimerEvent: {}
+[5.611878] (-) TimerEvent: {}
+[5.711360] (gst_bridge) StdoutLine: {'line': b'-- Generating done\n'}
+[5.711943] (-) TimerEvent: {}
+[5.730198] (gst_bridge) StdoutLine: {'line': b'-- Build files have been written to: /home/eamrgde/Documents/gitrepos/ros_scream_int/scream/gstscream/ros2_bridge/src/build/gst_bridge\n'}
+[5.740458] (gst_bridge) CommandEnded: {'returncode': 0}
+[5.741544] (gst_bridge) JobProgress: {'identifier': 'gst_bridge', 'progress': 'build'}
+[5.742234] (gst_bridge) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/eamrgde/Documents/gitrepos/ros_scream_int/scream/gstscream/ros2_bridge/src/build/gst_bridge', '--', '-j8', '-l8'], 'cwd': '/home/eamrgde/Documents/gitrepos/ros_scream_int/scream/gstscream/ros2_bridge/src/build/gst_bridge', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('TMUX', '/tmp/tmux-7462898/default,21252,0'), ('LANGUAGE', 'en_AU:en'), ('USER', 'eamrgde'), ('LC_TIME', 'sv_SE.UTF-8'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '2'), ('LD_LIBRARY_PATH', '/home/eamrgde/Documents/gitrepos/ros_scream_int/scream/gstscream/ros2_bridge/src/install/audio_msgs/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/eamrgde'), ('OLDPWD', '/home/eamrgde/Documents/gitrepos/ros_scream_int/scream/gstscream/ros2_bridge/src/ros-gst-bridge'), ('TERM_PROGRAM_VERSION', '3.2a'), ('DESKTOP_SESSION', 'ubuntu'), ('CUPS_USER', 'gerasimos.damigos@ericsson.com'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'sv_SE.UTF-8'), ('SYSTEMD_EXEC_PID', '8929'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/7462898/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'eamrgde'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'eamrgde'), ('TERM', 'screen'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/home/eamrgde/.local/bin:/opt/ros/humble/bin:/home/eamrgde/.cargo/bin:/home/eamrgde/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin:/usr/bin:/opt/puppetlabs/bin:/usr/bin'), ('SESSION_MANAGER', 'local/elx-5cg2292ctb:@/tmp/.ICE-unix/3802,unix/elx-5cg2292ctb:/tmp/.ICE-unix/3802'), ('PAPERSIZE', 'a4'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'sv_SE.UTF-8'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/2e7ebc78_9bc3_4fe7_88be_8a8007f59e80'), ('XDG_RUNTIME_DIR', '/run/user/7462898'), ('DISPLAY', ':1'), ('LANG', 'en_AU.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'sv_SE.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/7462898/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.119'), ('TERM_PROGRAM', 'tmux'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/7462898/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/eamrgde/Documents/gitrepos/ros_scream_int/scream/gstscream/ros2_bridge/src/install/audio_msgs:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'sv_SE.UTF-8'), ('KRB5CCNAME', 'FILE:/var/tmp/krb5cc_7462898_4P2mdm'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'sv_SE.UTF-8'), ('GPG_AGENT_INFO', '/run/user/7462898/gnupg/S.gpg-agent:0:1'), ('LC_IDENTIFICATION', 'sv_SE.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/eamrgde/Documents/gitrepos/ros_scream_int/scream/gstscream/ros2_bridge/src/build/gst_bridge'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/eamrgde/Documents/gitrepos/ros_scream_int/scream/gstscream/ros2_bridge/src/install/audio_msgs/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'sv_SE.UTF-8'), ('LC_PAPER', 'sv_SE.UTF-8'), ('COLCON', '1'), ('MANPATH', ':/opt/puppetlabs/puppet/share/man'), ('VTE_VERSION', '6800'), ('TMUX_PANE', '%3'), ('CMAKE_PREFIX_PATH', '/home/eamrgde/Documents/gitrepos/ros_scream_int/scream/gstscream/ros2_bridge/src/install/audio_msgs:/opt/ros/humble')]), 'shell': False}
+[5.801298] (gst_bridge) StdoutLine: {'line': b'[  6%] \x1b[32mBuilding CXX object CMakeFiles/rosgstbridge.dir/src/rosgstbridgeplugin.cpp.o\x1b[0m\n'}
+[5.801568] (gst_bridge) StdoutLine: {'line': b'[ 26%] \x1b[32mBuilding CXX object CMakeFiles/rosgstbridge.dir/src/rosbasesrc.cpp.o\x1b[0m\n'}
+[5.801655] (gst_bridge) StdoutLine: {'line': b'[ 26%] \x1b[32mBuilding CXX object CMakeFiles/rosgstbridge.dir/src/gst_bridge.cpp.o\x1b[0m\n'}
+[5.801724] (gst_bridge) StdoutLine: {'line': b'[ 26%] \x1b[32mBuilding CXX object CMakeFiles/rosgstbridge.dir/src/rosbasesink.cpp.o\x1b[0m\n'}
+[5.806902] (gst_bridge) StdoutLine: {'line': b'[ 33%] \x1b[32mBuilding CXX object CMakeFiles/rosgstbridge.dir/src/rosimagesink.cpp.o\x1b[0m\n'}
+[5.807179] (gst_bridge) StdoutLine: {'line': b'[ 46%] \x1b[32mBuilding CXX object CMakeFiles/rosgstbridge.dir/src/rostextsink.cpp.o\x1b[0m\n'}
+[5.807261] (gst_bridge) StdoutLine: {'line': b'[ 53%] \x1b[32mBuilding CXX object CMakeFiles/rosgstbridge.dir/src/rosaudiosink.cpp.o\x1b[0m\n'}
+[5.807746] (gst_bridge) StdoutLine: {'line': b'[ 53%] \x1b[32mBuilding CXX object CMakeFiles/gst_bridge.dir/src/gst_bridge.cpp.o\x1b[0m\n'}
+[5.813611] (-) TimerEvent: {}
+[5.914262] (-) TimerEvent: {}
+[6.014689] (-) TimerEvent: {}
+[6.115040] (-) TimerEvent: {}
+[6.215423] (-) TimerEvent: {}
+[6.316577] (-) TimerEvent: {}
+[6.416989] (-) TimerEvent: {}
+[6.520226] (-) TimerEvent: {}
+[6.620636] (-) TimerEvent: {}
+[6.721061] (-) TimerEvent: {}
+[6.821499] (-) TimerEvent: {}
+[6.921924] (-) TimerEvent: {}
+[7.022334] (-) TimerEvent: {}
+[7.124577] (-) TimerEvent: {}
+[7.224964] (-) TimerEvent: {}
+[7.325356] (-) TimerEvent: {}
+[7.425763] (-) TimerEvent: {}
+[7.526160] (-) TimerEvent: {}
+[7.626578] (-) TimerEvent: {}
+[7.728592] (-) TimerEvent: {}
+[7.828977] (-) TimerEvent: {}
+[7.929367] (-) TimerEvent: {}
+[8.029773] (-) TimerEvent: {}
+[8.130625] (-) TimerEvent: {}
+[8.234570] (-) TimerEvent: {}
+[8.334959] (-) TimerEvent: {}
+[8.435378] (-) TimerEvent: {}
+[8.535796] (-) TimerEvent: {}
+[8.636220] (-) TimerEvent: {}
+[8.736660] (-) TimerEvent: {}
+[8.837070] (-) TimerEvent: {}
+[8.937473] (-) TimerEvent: {}
+[9.037862] (-) TimerEvent: {}
+[9.138276] (-) TimerEvent: {}
+[9.241576] (-) TimerEvent: {}
+[9.341967] (-) TimerEvent: {}
+[9.442360] (-) TimerEvent: {}
+[9.542811] (-) TimerEvent: {}
+[9.643235] (-) TimerEvent: {}
+[9.653881] (gst_bridge) StderrLine: {'line': b'\x1b[01m\x1b[K/home/eamrgde/Documents/gitrepos/ros_scream_int/scream/gstscream/ros2_bridge/src/ros-gst-bridge/gst_bridge/src/rosimagesink.cpp:\x1b[m\x1b[K In function \xe2\x80\x98\x1b[01m\x1b[KGstFlowReturn rosimagesink_render(RosBaseSink*, GstBuffer*, rclcpp::Time)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[9.654199] (gst_bridge) StderrLine: {'line': b'\x1b[01m\x1b[K/home/eamrgde/Documents/gitrepos/ros_scream_int/scream/gstscream/ros2_bridge/src/ros-gst-bridge/gst_bridge/src/rosimagesink.cpp:315:102:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter \xe2\x80\x98\x1b[01m\x1b[Kmsg_time\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter\x07-Wunused-parameter\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[9.654324] (gst_bridge) StderrLine: {'line': b'  315 | static GstFlowReturn rosimagesink_render (RosBaseSink * ros_base_sink, GstBuffer * buf, \x1b[01;35m\x1b[Krclcpp::Time msg_time\x1b[m\x1b[K)\n'}
+[9.654415] (gst_bridge) StderrLine: {'line': b'      |                                                                                         \x1b[01;35m\x1b[K~~~~~~~~~~~~~^~~~~~~~\x1b[m\x1b[K\n'}
+[9.745578] (-) TimerEvent: {}
+[9.845991] (-) TimerEvent: {}
+[9.946378] (-) TimerEvent: {}
+[10.046779] (-) TimerEvent: {}
+[10.147166] (-) TimerEvent: {}
+[10.249570] (-) TimerEvent: {}
+[10.349967] (-) TimerEvent: {}
+[10.450366] (-) TimerEvent: {}
+[10.550775] (-) TimerEvent: {}
+[10.651179] (-) TimerEvent: {}
+[10.751577] (-) TimerEvent: {}
+[10.853569] (-) TimerEvent: {}
+[10.953941] (-) TimerEvent: {}
+[11.023004] (gst_bridge) StdoutLine: {'line': b'[ 60%] \x1b[32m\x1b[1mLinking CXX shared library libgst_bridge.so\x1b[0m\n'}
+[11.054072] (-) TimerEvent: {}
+[11.127555] (gst_bridge) StdoutLine: {'line': b'[ 66%] \x1b[32mBuilding CXX object CMakeFiles/rosgstbridge.dir/src/rosimusink.cpp.o\x1b[0m\n'}
+[11.157576] (-) TimerEvent: {}
+[11.257973] (-) TimerEvent: {}
+[11.358355] (-) TimerEvent: {}
+[11.458766] (-) TimerEvent: {}
+[11.528374] (gst_bridge) StdoutLine: {'line': b'[ 73%] \x1b[32mBuilding CXX object CMakeFiles/rosgstbridge.dir/src/rosaudiosrc.cpp.o\x1b[0m\n'}
+[11.558886] (-) TimerEvent: {}
+[11.659425] (-) TimerEvent: {}
+[11.725513] (gst_bridge) StdoutLine: {'line': b'[ 80%] \x1b[32mBuilding CXX object CMakeFiles/rosgstbridge.dir/src/rosimagesrc.cpp.o\x1b[0m\n'}
+[11.761568] (-) TimerEvent: {}
+[11.861911] (-) TimerEvent: {}
+[11.948596] (gst_bridge) StdoutLine: {'line': b'[ 86%] \x1b[32mBuilding CXX object CMakeFiles/rosgstbridge.dir/src/rostextsrc.cpp.o\x1b[0m\n'}
+[11.962033] (-) TimerEvent: {}
+[12.062420] (-) TimerEvent: {}
+[12.163569] (-) TimerEvent: {}
+[12.265759] (-) TimerEvent: {}
+[12.366873] (-) TimerEvent: {}
+[12.467665] (-) TimerEvent: {}
+[12.568044] (-) TimerEvent: {}
+[12.670616] (-) TimerEvent: {}
+[12.717980] (gst_bridge) StdoutLine: {'line': b'[ 86%] Built target gst_bridge\n'}
+[12.732321] (gst_bridge) StdoutLine: {'line': b'[ 93%] \x1b[32mBuilding CXX object CMakeFiles/rosgstbridge.dir/src/rosimusrc.cpp.o\x1b[0m\n'}
+[12.770738] (-) TimerEvent: {}
+[12.871139] (-) TimerEvent: {}
+[12.971736] (-) TimerEvent: {}
+[13.074717] (-) TimerEvent: {}
+[13.175104] (-) TimerEvent: {}
+[13.275562] (-) TimerEvent: {}
+[13.375964] (-) TimerEvent: {}
+[13.476368] (-) TimerEvent: {}
+[13.576769] (-) TimerEvent: {}
+[13.677182] (-) TimerEvent: {}
+[13.779916] (-) TimerEvent: {}
+[13.880320] (-) TimerEvent: {}
+[13.980710] (-) TimerEvent: {}
+[14.081113] (-) TimerEvent: {}
+[14.181649] (-) TimerEvent: {}
+[14.282293] (-) TimerEvent: {}
+[14.384751] (-) TimerEvent: {}
+[14.485168] (-) TimerEvent: {}
+[14.588576] (-) TimerEvent: {}
+[14.688997] (-) TimerEvent: {}
+[14.789386] (-) TimerEvent: {}
+[14.889803] (-) TimerEvent: {}
+[14.990205] (-) TimerEvent: {}
+[15.090582] (-) TimerEvent: {}
+[15.190965] (-) TimerEvent: {}
+[15.291370] (-) TimerEvent: {}
+[15.393008] (-) TimerEvent: {}
+[15.444770] (gst_bridge) StderrLine: {'line': b'\x1b[01m\x1b[K/home/eamrgde/Documents/gitrepos/ros_scream_int/scream/gstscream/ros2_bridge/src/ros-gst-bridge/gst_bridge/src/rosimusink.cpp:\x1b[m\x1b[K In function \xe2\x80\x98\x1b[01m\x1b[KGstFlowReturn rosimusink_render(RosBaseSink*, GstBuffer*, rclcpp::Time)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[15.445068] (gst_bridge) StderrLine: {'line': b'\x1b[01m\x1b[K/home/eamrgde/Documents/gitrepos/ros_scream_int/scream/gstscream/ros2_bridge/src/ros-gst-bridge/gst_bridge/src/rosimusink.cpp:205:100:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter \xe2\x80\x98\x1b[01m\x1b[Kmsg_time\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter\x07-Wunused-parameter\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[15.445176] (gst_bridge) StderrLine: {'line': b'  205 | static GstFlowReturn rosimusink_render (RosBaseSink * ros_base_sink, GstBuffer * buf, \x1b[01;35m\x1b[Krclcpp::Time msg_time\x1b[m\x1b[K)\n'}
+[15.445270] (gst_bridge) StderrLine: {'line': b'      |                                                                                       \x1b[01;35m\x1b[K~~~~~~~~~~~~~^~~~~~~~\x1b[m\x1b[K\n'}
+[15.493372] (-) TimerEvent: {}
+[15.596576] (-) TimerEvent: {}
+[15.696971] (-) TimerEvent: {}
+[15.797357] (-) TimerEvent: {}
+[15.897762] (-) TimerEvent: {}
+[15.998162] (-) TimerEvent: {}
+[16.098552] (-) TimerEvent: {}
+[16.148455] (gst_bridge) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/logging.hpp:24\x1b[m\x1b[K,\n'}
+[16.148736] (gst_bridge) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40\x1b[m\x1b[K,\n'}
+[16.148832] (gst_bridge) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24\x1b[m\x1b[K,\n'}
+[16.148908] (gst_bridge) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20\x1b[m\x1b[K,\n'}
+[16.148981] (gst_bridge) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25\x1b[m\x1b[K,\n'}
+[16.149053] (gst_bridge) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18\x1b[m\x1b[K,\n'}
+[16.149124] (gst_bridge) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20\x1b[m\x1b[K,\n'}
+[16.149225] (gst_bridge) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37\x1b[m\x1b[K,\n'}
+[16.149307] (gst_bridge) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25\x1b[m\x1b[K,\n'}
+[16.149388] (gst_bridge) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21\x1b[m\x1b[K,\n'}
+[16.149469] (gst_bridge) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155\x1b[m\x1b[K,\n'}
+[16.149576] (gst_bridge) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/eamrgde/Documents/gitrepos/ros_scream_int/scream/gstscream/ros2_bridge/src/ros-gst-bridge/gst_bridge/include/gst_bridge/gst_bridge.h:27\x1b[m\x1b[K,\n'}
+[16.149658] (gst_bridge) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/eamrgde/Documents/gitrepos/ros_scream_int/scream/gstscream/ros2_bridge/src/ros-gst-bridge/gst_bridge/include/gst_bridge/rosaudiosrc.h:24\x1b[m\x1b[K,\n'}
+[16.149774] (gst_bridge) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/eamrgde/Documents/gitrepos/ros_scream_int/scream/gstscream/ros2_bridge/src/ros-gst-bridge/gst_bridge/src/rosaudiosrc.cpp:33\x1b[m\x1b[K:\n'}
+[16.149851] (gst_bridge) StderrLine: {'line': b'\x1b[01m\x1b[K/home/eamrgde/Documents/gitrepos/ros_scream_int/scream/gstscream/ros2_bridge/src/ros-gst-bridge/gst_bridge/src/rosaudiosrc.cpp:\x1b[m\x1b[K In function \xe2\x80\x98\x1b[01m\x1b[Kvoid rosaudiosrc_sub_cb(Rosaudiosrc*, audio_msgs::msg::Audio_<std::allocator<void> >::ConstSharedPtr)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[16.149931] (gst_bridge) StderrLine: {'line': b'\x1b[01m\x1b[K/home/eamrgde/Documents/gitrepos/ros_scream_int/scream/gstscream/ros2_bridge/src/ros-gst-bridge/gst_bridge/src/rosaudiosrc.cpp:559:42:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kformat \xe2\x80\x98\x1b[01m\x1b[K%s\x1b[m\x1b[K\xe2\x80\x99 expects argument of type \xe2\x80\x98\x1b[01m\x1b[Kchar*\x1b[m\x1b[K\xe2\x80\x99, but argument 5 has type \xe2\x80\x98\x1b[01m\x1b[Kstd::string\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Kstd::__cxx11::basic_string<char>\x1b[m\x1b[K\xe2\x80\x99} [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wformat=\x07-Wformat=\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[16.150030] (gst_bridge) StderrLine: {'line': b'  559 |       RCLCPP_ERROR(ros_base_src->logger, \x1b[01;35m\x1b[K"audio format changed during playback, encoding %s != %s"\x1b[m\x1b[K,\n'}
+[16.150109] (gst_bridge) StderrLine: {'line': b'      |                                          \x1b[01;35m\x1b[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[16.150174] (gst_bridge) StderrLine: {'line': b'  560 |         \x1b[32m\x1b[Kgst_bridge::getRosEncoding(GST_AUDIO_INFO_FORMAT(&(src->audio_info)))\x1b[m\x1b[K, msg->encoding.c_str()); // XXX account for the override\n'}
+[16.150238] (gst_bridge) StderrLine: {'line': b'      |         \x1b[32m\x1b[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[16.150320] (gst_bridge) StderrLine: {'line': b'      |                                   \x1b[32m\x1b[K|\x1b[m\x1b[K\n'}
+[16.150390] (gst_bridge) StderrLine: {'line': b'      |                                   \x1b[32m\x1b[Kstd::string {aka std::__cxx11::basic_string<char>}\x1b[m\x1b[K\n'}
+[16.150457] (gst_bridge) StderrLine: {'line': b'\x1b[01m\x1b[K/home/eamrgde/Documents/gitrepos/ros_scream_int/scream/gstscream/ros2_bridge/src/ros-gst-bridge/gst_bridge/src/rosaudiosrc.cpp:559:7:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kin expansion of macro \xe2\x80\x98\x1b[01m\x1b[KRCLCPP_ERROR\x1b[m\x1b[K\xe2\x80\x99\n'}
+[16.150539] (gst_bridge) StderrLine: {'line': b'  559 |       \x1b[01;36m\x1b[KRCLCPP_ERROR\x1b[m\x1b[K(ros_base_src->logger, "audio format changed during playback, encoding %s != %s",\n'}
+[16.150608] (gst_bridge) StderrLine: {'line': b'      |       \x1b[01;36m\x1b[K^~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[16.150704] (gst_bridge) StderrLine: {'line': b'\x1b[01m\x1b[K/home/eamrgde/Documents/gitrepos/ros_scream_int/scream/gstscream/ros2_bridge/src/ros-gst-bridge/gst_bridge/src/rosaudiosrc.cpp:559:91:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kformat string is defined here\n'}
+[16.150788] (gst_bridge) StderrLine: {'line': b'  559 |       RCLCPP_ERROR(ros_base_src->logger, "audio format changed during playback, encoding \x1b[01;36m\x1b[K%s\x1b[m\x1b[K != %s",\n'}
+[16.150868] (gst_bridge) StderrLine: {'line': b'      |                                                                                          \x1b[01;36m\x1b[K~^\x1b[m\x1b[K\n'}
+[16.150950] (gst_bridge) StderrLine: {'line': b'      |                                                                                           \x1b[01;36m\x1b[K|\x1b[m\x1b[K\n'}
+[16.151028] (gst_bridge) StderrLine: {'line': b'      |                                                                                           \x1b[01;36m\x1b[Kchar*\x1b[m\x1b[K\n'}
+[16.200795] (-) TimerEvent: {}
+[16.301215] (-) TimerEvent: {}
+[16.401637] (-) TimerEvent: {}
+[16.502043] (-) TimerEvent: {}
+[16.602460] (-) TimerEvent: {}
+[16.702882] (-) TimerEvent: {}
+[16.803263] (-) TimerEvent: {}
+[16.904125] (-) TimerEvent: {}
+[17.004498] (-) TimerEvent: {}
+[17.104876] (-) TimerEvent: {}
+[17.205279] (-) TimerEvent: {}
+[17.305712] (-) TimerEvent: {}
+[17.406124] (-) TimerEvent: {}
+[17.506543] (-) TimerEvent: {}
+[17.606932] (-) TimerEvent: {}
+[17.707334] (-) TimerEvent: {}
+[17.807747] (-) TimerEvent: {}
+[17.908164] (-) TimerEvent: {}
+[18.008781] (-) TimerEvent: {}
+[18.109182] (-) TimerEvent: {}
+[18.209575] (-) TimerEvent: {}
+[18.309975] (-) TimerEvent: {}
+[18.410391] (-) TimerEvent: {}
+[18.510822] (-) TimerEvent: {}
+[18.611214] (-) TimerEvent: {}
+[18.711580] (-) TimerEvent: {}
+[18.811982] (-) TimerEvent: {}
+[18.912460] (-) TimerEvent: {}
+[19.012852] (-) TimerEvent: {}
+[19.113257] (-) TimerEvent: {}
+[19.213665] (-) TimerEvent: {}
+[19.314079] (-) TimerEvent: {}
+[19.414530] (-) TimerEvent: {}
+[19.514914] (-) TimerEvent: {}
+[19.615301] (-) TimerEvent: {}
+[19.715696] (-) TimerEvent: {}
+[19.816110] (-) TimerEvent: {}
+[19.916420] (-) TimerEvent: {}
+[20.016776] (-) TimerEvent: {}
+[20.117349] (-) TimerEvent: {}
+[20.217756] (-) TimerEvent: {}
+[20.318175] (-) TimerEvent: {}
+[20.418576] (-) TimerEvent: {}
+[20.518986] (-) TimerEvent: {}
+[20.619396] (-) TimerEvent: {}
+[20.719798] (-) TimerEvent: {}
+[20.820221] (-) TimerEvent: {}
+[20.920634] (-) TimerEvent: {}
+[21.021002] (-) TimerEvent: {}
+[21.121395] (-) TimerEvent: {}
+[21.221803] (-) TimerEvent: {}
+[21.322184] (-) TimerEvent: {}
+[21.422574] (-) TimerEvent: {}
+[21.522967] (-) TimerEvent: {}
+[21.623356] (-) TimerEvent: {}
+[21.723748] (-) TimerEvent: {}
+[21.824131] (-) TimerEvent: {}
+[21.924770] (-) TimerEvent: {}
+[22.025311] (-) TimerEvent: {}
+[22.125681] (-) TimerEvent: {}
+[22.226058] (-) TimerEvent: {}
+[22.326437] (-) TimerEvent: {}
+[22.426841] (-) TimerEvent: {}
+[22.527200] (-) TimerEvent: {}
+[22.627589] (-) TimerEvent: {}
+[22.727971] (-) TimerEvent: {}
+[22.828343] (-) TimerEvent: {}
+[22.928729] (-) TimerEvent: {}
+[23.029088] (-) TimerEvent: {}
+[23.129460] (-) TimerEvent: {}
+[23.229852] (-) TimerEvent: {}
+[23.330221] (-) TimerEvent: {}
+[23.430573] (-) TimerEvent: {}
+[23.530974] (-) TimerEvent: {}
+[23.631372] (-) TimerEvent: {}
+[23.731765] (-) TimerEvent: {}
+[23.832186] (-) TimerEvent: {}
+[23.932578] (-) TimerEvent: {}
+[24.032964] (-) TimerEvent: {}
+[24.133370] (-) TimerEvent: {}
+[24.233775] (-) TimerEvent: {}
+[24.334180] (-) TimerEvent: {}
+[24.434581] (-) TimerEvent: {}
+[24.534975] (-) TimerEvent: {}
+[24.635333] (-) TimerEvent: {}
+[24.735727] (-) TimerEvent: {}
+[24.836119] (-) TimerEvent: {}
+[24.936524] (-) TimerEvent: {}
+[25.036943] (-) TimerEvent: {}
+[25.137340] (-) TimerEvent: {}
+[25.237740] (-) TimerEvent: {}
+[25.338114] (-) TimerEvent: {}
+[25.438472] (-) TimerEvent: {}
+[25.538874] (-) TimerEvent: {}
+[25.639273] (-) TimerEvent: {}
+[25.739685] (-) TimerEvent: {}
+[25.840070] (-) TimerEvent: {}
+[25.940444] (-) TimerEvent: {}
+[26.040813] (-) TimerEvent: {}
+[26.141161] (-) TimerEvent: {}
+[26.241473] (-) TimerEvent: {}
+[26.341768] (-) TimerEvent: {}
+[26.442123] (-) TimerEvent: {}
+[26.542505] (-) TimerEvent: {}
+[26.642869] (-) TimerEvent: {}
+[26.743228] (-) TimerEvent: {}
+[26.843605] (-) TimerEvent: {}
+[26.944006] (-) TimerEvent: {}
+[27.044430] (-) TimerEvent: {}
+[27.144888] (-) TimerEvent: {}
+[27.245384] (-) TimerEvent: {}
+[27.345800] (-) TimerEvent: {}
+[27.446094] (-) TimerEvent: {}
+[27.546382] (-) TimerEvent: {}
+[27.646757] (-) TimerEvent: {}
+[27.747112] (-) TimerEvent: {}
+[27.847459] (-) TimerEvent: {}
+[27.947814] (-) TimerEvent: {}
+[28.048170] (-) TimerEvent: {}
+[28.148569] (-) TimerEvent: {}
+[28.248967] (-) TimerEvent: {}
+[28.349343] (-) TimerEvent: {}
+[28.449648] (-) TimerEvent: {}
+[28.550027] (-) TimerEvent: {}
+[28.650384] (-) TimerEvent: {}
+[28.750788] (-) TimerEvent: {}
+[28.830620] (gst_bridge) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX shared library librosgstbridge.so\x1b[0m\n'}
+[28.850922] (-) TimerEvent: {}
+[28.951377] (-) TimerEvent: {}
+[29.051697] (-) TimerEvent: {}
+[29.152008] (-) TimerEvent: {}
+[29.252288] (-) TimerEvent: {}
+[29.352652] (-) TimerEvent: {}
+[29.453003] (-) TimerEvent: {}
+[29.553304] (-) TimerEvent: {}
+[29.653569] (-) TimerEvent: {}
+[29.753923] (-) TimerEvent: {}
+[29.854209] (-) TimerEvent: {}
+[29.954583] (-) TimerEvent: {}
+[30.054843] (-) TimerEvent: {}
+[30.155122] (-) TimerEvent: {}
+[30.255417] (-) TimerEvent: {}
+[30.269943] (gst_bridge) StdoutLine: {'line': b'[100%] Built target rosgstbridge\n'}
+[30.280593] (gst_bridge) CommandEnded: {'returncode': 0}
+[30.281144] (gst_bridge) JobProgress: {'identifier': 'gst_bridge', 'progress': 'install'}
+[30.281877] (gst_bridge) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/eamrgde/Documents/gitrepos/ros_scream_int/scream/gstscream/ros2_bridge/src/build/gst_bridge'], 'cwd': '/home/eamrgde/Documents/gitrepos/ros_scream_int/scream/gstscream/ros2_bridge/src/build/gst_bridge', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('TMUX', '/tmp/tmux-7462898/default,21252,0'), ('LANGUAGE', 'en_AU:en'), ('USER', 'eamrgde'), ('LC_TIME', 'sv_SE.UTF-8'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '2'), ('LD_LIBRARY_PATH', '/home/eamrgde/Documents/gitrepos/ros_scream_int/scream/gstscream/ros2_bridge/src/install/audio_msgs/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/eamrgde'), ('OLDPWD', '/home/eamrgde/Documents/gitrepos/ros_scream_int/scream/gstscream/ros2_bridge/src/ros-gst-bridge'), ('TERM_PROGRAM_VERSION', '3.2a'), ('DESKTOP_SESSION', 'ubuntu'), ('CUPS_USER', 'gerasimos.damigos@ericsson.com'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'sv_SE.UTF-8'), ('SYSTEMD_EXEC_PID', '8929'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/7462898/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'eamrgde'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'eamrgde'), ('TERM', 'screen'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/home/eamrgde/.local/bin:/opt/ros/humble/bin:/home/eamrgde/.cargo/bin:/home/eamrgde/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin:/usr/bin:/opt/puppetlabs/bin:/usr/bin'), ('SESSION_MANAGER', 'local/elx-5cg2292ctb:@/tmp/.ICE-unix/3802,unix/elx-5cg2292ctb:/tmp/.ICE-unix/3802'), ('PAPERSIZE', 'a4'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'sv_SE.UTF-8'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/2e7ebc78_9bc3_4fe7_88be_8a8007f59e80'), ('XDG_RUNTIME_DIR', '/run/user/7462898'), ('DISPLAY', ':1'), ('LANG', 'en_AU.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'sv_SE.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/7462898/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.119'), ('TERM_PROGRAM', 'tmux'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/7462898/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/eamrgde/Documents/gitrepos/ros_scream_int/scream/gstscream/ros2_bridge/src/install/audio_msgs:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'sv_SE.UTF-8'), ('KRB5CCNAME', 'FILE:/var/tmp/krb5cc_7462898_4P2mdm'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'sv_SE.UTF-8'), ('GPG_AGENT_INFO', '/run/user/7462898/gnupg/S.gpg-agent:0:1'), ('LC_IDENTIFICATION', 'sv_SE.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/eamrgde/Documents/gitrepos/ros_scream_int/scream/gstscream/ros2_bridge/src/build/gst_bridge'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/eamrgde/Documents/gitrepos/ros_scream_int/scream/gstscream/ros2_bridge/src/install/audio_msgs/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'sv_SE.UTF-8'), ('LC_PAPER', 'sv_SE.UTF-8'), ('COLCON', '1'), ('MANPATH', ':/opt/puppetlabs/puppet/share/man'), ('VTE_VERSION', '6800'), ('TMUX_PANE', '%3'), ('CMAKE_PREFIX_PATH', '/home/eamrgde/Documents/gitrepos/ros_scream_int/scream/gstscream/ros2_bridge/src/install/audio_msgs:/opt/ros/humble')]), 'shell': False}
+[30.289722] (gst_bridge) StdoutLine: {'line': b'-- Install configuration: "RelWithDebInfo"\n'}
+[30.289919] (gst_bridge) StdoutLine: {'line': b'-- Installing: /home/eamrgde/Documents/gitrepos/ros_scream_int/scream/gstscream/ros2_bridge/src/install/gst_bridge/share/gst_bridge/environment/library_path.sh\n'}
+[30.290104] (gst_bridge) StdoutLine: {'line': b'-- Installing: /home/eamrgde/Documents/gitrepos/ros_scream_int/scream/gstscream/ros2_bridge/src/install/gst_bridge/share/gst_bridge/environment/library_path.dsv\n'}
+[30.290251] (gst_bridge) StdoutLine: {'line': b'-- Installing: /home/eamrgde/Documents/gitrepos/ros_scream_int/scream/gstscream/ros2_bridge/src/install/gst_bridge/include\n'}
+[30.290351] (gst_bridge) StdoutLine: {'line': b'-- Installing: /home/eamrgde/Documents/gitrepos/ros_scream_int/scream/gstscream/ros2_bridge/src/install/gst_bridge/include/gst_bridge\n'}
+[30.290440] (gst_bridge) StdoutLine: {'line': b'-- Installing: /home/eamrgde/Documents/gitrepos/ros_scream_int/scream/gstscream/ros2_bridge/src/install/gst_bridge/include/gst_bridge/rosbasesink.h\n'}
+[30.290538] (gst_bridge) StdoutLine: {'line': b'-- Installing: /home/eamrgde/Documents/gitrepos/ros_scream_int/scream/gstscream/ros2_bridge/src/install/gst_bridge/include/gst_bridge/rosaudiosink.h\n'}
+[30.290658] (gst_bridge) StdoutLine: {'line': b'-- Installing: /home/eamrgde/Documents/gitrepos/ros_scream_int/scream/gstscream/ros2_bridge/src/install/gst_bridge/include/gst_bridge/rosimagesink.h\n'}
+[30.290796] (gst_bridge) StdoutLine: {'line': b'-- Installing: /home/eamrgde/Documents/gitrepos/ros_scream_int/scream/gstscream/ros2_bridge/src/install/gst_bridge/include/gst_bridge/gst_bridge.h\n'}
+[30.290955] (gst_bridge) StdoutLine: {'line': b'-- Installing: /home/eamrgde/Documents/gitrepos/ros_scream_int/scream/gstscream/ros2_bridge/src/install/gst_bridge/include/gst_bridge/rosimagesrc.h\n'}
+[30.291105] (gst_bridge) StdoutLine: {'line': b'-- Installing: /home/eamrgde/Documents/gitrepos/ros_scream_int/scream/gstscream/ros2_bridge/src/install/gst_bridge/include/gst_bridge/rosbasesrc.h\n'}
+[30.291240] (gst_bridge) StdoutLine: {'line': b'-- Installing: /home/eamrgde/Documents/gitrepos/ros_scream_int/scream/gstscream/ros2_bridge/src/install/gst_bridge/include/gst_bridge/rostextsrc.h\n'}
+[30.291390] (gst_bridge) StdoutLine: {'line': b'-- Installing: /home/eamrgde/Documents/gitrepos/ros_scream_int/scream/gstscream/ros2_bridge/src/install/gst_bridge/include/gst_bridge/rosimusrc.h\n'}
+[30.291540] (gst_bridge) StdoutLine: {'line': b'-- Installing: /home/eamrgde/Documents/gitrepos/ros_scream_int/scream/gstscream/ros2_bridge/src/install/gst_bridge/include/gst_bridge/rosimusink.h\n'}
+[30.291667] (gst_bridge) StdoutLine: {'line': b'-- Installing: /home/eamrgde/Documents/gitrepos/ros_scream_int/scream/gstscream/ros2_bridge/src/install/gst_bridge/include/gst_bridge/rosaudiosrc.h\n'}
+[30.291792] (gst_bridge) StdoutLine: {'line': b'-- Installing: /home/eamrgde/Documents/gitrepos/ros_scream_int/scream/gstscream/ros2_bridge/src/install/gst_bridge/include/gst_bridge/rostextsink.h\n'}
+[30.291942] (gst_bridge) StdoutLine: {'line': b'-- Installing: /home/eamrgde/Documents/gitrepos/ros_scream_int/scream/gstscream/ros2_bridge/src/install/gst_bridge/share/gst_bridge/config\n'}
+[30.292025] (gst_bridge) StdoutLine: {'line': b'-- Installing: /home/eamrgde/Documents/gitrepos/ros_scream_int/scream/gstscream/ros2_bridge/src/install/gst_bridge/share/gst_bridge/config/example.config.yaml\n'}
+[30.292176] (gst_bridge) StdoutLine: {'line': b'-- Installing: /home/eamrgde/Documents/gitrepos/ros_scream_int/scream/gstscream/ros2_bridge/src/install/gst_bridge/share/gst_bridge/launch\n'}
+[30.292257] (gst_bridge) StdoutLine: {'line': b'-- Installing: /home/eamrgde/Documents/gitrepos/ros_scream_int/scream/gstscream/ros2_bridge/src/install/gst_bridge/share/gst_bridge/launch/example.launch.py\n'}
+[30.292458] (gst_bridge) StdoutLine: {'line': b'-- Installing: /home/eamrgde/Documents/gitrepos/ros_scream_int/scream/gstscream/ros2_bridge/src/install/gst_bridge/lib/libgst_bridge.so\n'}
+[30.292986] (gst_bridge) StdoutLine: {'line': b'-- Set runtime path of "/home/eamrgde/Documents/gitrepos/ros_scream_int/scream/gstscream/ros2_bridge/src/install/gst_bridge/lib/libgst_bridge.so" to ""\n'}
+[30.293134] (gst_bridge) StdoutLine: {'line': b'-- Installing: /home/eamrgde/Documents/gitrepos/ros_scream_int/scream/gstscream/ros2_bridge/src/install/gst_bridge/lib/gst_bridge/librosgstbridge.so\n'}
+[30.323191] (gst_bridge) StdoutLine: {'line': b'-- Set runtime path of "/home/eamrgde/Documents/gitrepos/ros_scream_int/scream/gstscream/ros2_bridge/src/install/gst_bridge/lib/gst_bridge/librosgstbridge.so" to ""\n'}
+[30.323455] (gst_bridge) StdoutLine: {'line': b'-- Installing: /home/eamrgde/Documents/gitrepos/ros_scream_int/scream/gstscream/ros2_bridge/src/install/gst_bridge/share/ament_index/resource_index/package_run_dependencies/gst_bridge\n'}
+[30.323726] (gst_bridge) StdoutLine: {'line': b'-- Installing: /home/eamrgde/Documents/gitrepos/ros_scream_int/scream/gstscream/ros2_bridge/src/install/gst_bridge/share/ament_index/resource_index/parent_prefix_path/gst_bridge\n'}
+[30.324124] (gst_bridge) StdoutLine: {'line': b'-- Installing: /home/eamrgde/Documents/gitrepos/ros_scream_int/scream/gstscream/ros2_bridge/src/install/gst_bridge/share/gst_bridge/environment/ament_prefix_path.sh\n'}
+[30.324254] (gst_bridge) StdoutLine: {'line': b'-- Installing: /home/eamrgde/Documents/gitrepos/ros_scream_int/scream/gstscream/ros2_bridge/src/install/gst_bridge/share/gst_bridge/environment/ament_prefix_path.dsv\n'}
+[30.324430] (gst_bridge) StdoutLine: {'line': b'-- Installing: /home/eamrgde/Documents/gitrepos/ros_scream_int/scream/gstscream/ros2_bridge/src/install/gst_bridge/share/gst_bridge/environment/path.sh\n'}
+[30.324517] (gst_bridge) StdoutLine: {'line': b'-- Installing: /home/eamrgde/Documents/gitrepos/ros_scream_int/scream/gstscream/ros2_bridge/src/install/gst_bridge/share/gst_bridge/environment/path.dsv\n'}
+[30.324705] (gst_bridge) StdoutLine: {'line': b'-- Installing: /home/eamrgde/Documents/gitrepos/ros_scream_int/scream/gstscream/ros2_bridge/src/install/gst_bridge/share/gst_bridge/local_setup.bash\n'}
+[30.324900] (gst_bridge) StdoutLine: {'line': b'-- Installing: /home/eamrgde/Documents/gitrepos/ros_scream_int/scream/gstscream/ros2_bridge/src/install/gst_bridge/share/gst_bridge/local_setup.sh\n'}
+[30.325103] (gst_bridge) StdoutLine: {'line': b'-- Installing: /home/eamrgde/Documents/gitrepos/ros_scream_int/scream/gstscream/ros2_bridge/src/install/gst_bridge/share/gst_bridge/local_setup.zsh\n'}
+[30.325309] (gst_bridge) StdoutLine: {'line': b'-- Installing: /home/eamrgde/Documents/gitrepos/ros_scream_int/scream/gstscream/ros2_bridge/src/install/gst_bridge/share/gst_bridge/local_setup.dsv\n'}
+[30.325512] (gst_bridge) StdoutLine: {'line': b'-- Installing: /home/eamrgde/Documents/gitrepos/ros_scream_int/scream/gstscream/ros2_bridge/src/install/gst_bridge/share/gst_bridge/package.dsv\n'}
+[30.325767] (gst_bridge) StdoutLine: {'line': b'-- Installing: /home/eamrgde/Documents/gitrepos/ros_scream_int/scream/gstscream/ros2_bridge/src/install/gst_bridge/share/ament_index/resource_index/packages/gst_bridge\n'}
+[30.326008] (gst_bridge) StdoutLine: {'line': b'-- Installing: /home/eamrgde/Documents/gitrepos/ros_scream_int/scream/gstscream/ros2_bridge/src/install/gst_bridge/share/gst_bridge/cmake/ament_cmake_export_include_directories-extras.cmake\n'}
+[30.326211] (gst_bridge) StdoutLine: {'line': b'-- Installing: /home/eamrgde/Documents/gitrepos/ros_scream_int/scream/gstscream/ros2_bridge/src/install/gst_bridge/share/gst_bridge/cmake/ament_cmake_export_libraries-extras.cmake\n'}
+[30.326410] (gst_bridge) StdoutLine: {'line': b'-- Installing: /home/eamrgde/Documents/gitrepos/ros_scream_int/scream/gstscream/ros2_bridge/src/install/gst_bridge/share/gst_bridge/cmake/gst_bridgeConfig.cmake\n'}
+[30.326593] (gst_bridge) StdoutLine: {'line': b'-- Installing: /home/eamrgde/Documents/gitrepos/ros_scream_int/scream/gstscream/ros2_bridge/src/install/gst_bridge/share/gst_bridge/cmake/gst_bridgeConfig-version.cmake\n'}
+[30.326790] (gst_bridge) StdoutLine: {'line': b'-- Installing: /home/eamrgde/Documents/gitrepos/ros_scream_int/scream/gstscream/ros2_bridge/src/install/gst_bridge/share/gst_bridge/package.xml\n'}
+[30.328775] (gst_bridge) CommandEnded: {'returncode': 0}
+[30.340059] (gst_bridge) JobEnded: {'identifier': 'gst_bridge', 'rc': 0}
+[30.340785] (-) EventReactorShutdown: {}

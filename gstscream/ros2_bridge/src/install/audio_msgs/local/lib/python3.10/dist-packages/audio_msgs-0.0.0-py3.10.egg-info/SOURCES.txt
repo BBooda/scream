@@ -1,0 +1,6 @@
+setup.py
+audio_msgs/__init__.py
+audio_msgs.egg-info/PKG-INFO
+audio_msgs.egg-info/SOURCES.txt
+audio_msgs.egg-info/dependency_links.txt
+audio_msgs.egg-info/top_level.txt

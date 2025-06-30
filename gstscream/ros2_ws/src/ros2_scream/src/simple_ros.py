@@ -20,7 +20,7 @@ class GStreamerROS2Bridge(Node):
         # Define the GStreamer pipeline
         pipeline_str = """
             appsrc name=mysource is-live=true format=TIME caps=video/x-raw,format=RGB,width=1280,height=720,framerate=30/1 !
-            videoconvert ! x264enc tune=zerolatency ! rtph264pay ! udpsink host=127.0.0.1 port=3150
+            videoconvert ! x264enc tune=zerolatency ! rtph264pay ! udpsink host=127.0.0.1 port=30000
         """
         self.pipeline = Gst.parse_launch(pipeline_str)
         self.appsrc = self.pipeline.get_by_name("mysource")
@@ -80,7 +80,7 @@ def main():
     rclpy.init()
 
     # Create the node and pass the topic name
-    topic_name = 'depth_image_topic'
+    topic_name = '/husky1/camera/color/image_raw'
     # topic_name = 'husky1/camera/color/image_raw'
     node = GStreamerROS2Bridge(topic_name)
 

@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: gst-pipeline
+Version: 0.0.0
+Summary: Run GStreamer pipelines in ROS
+Home-page: UNKNOWN
+Maintainer: brettrd
+Maintainer-email: brettrd@brettrd.com
+License: TODO: License declaration
+Platform: UNKNOWN
+License-File: LICENSE.md
+
+UNKNOWN
+

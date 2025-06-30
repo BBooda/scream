@@ -1,0 +1,6 @@
+{
+  "package_name": "audio_msgs",
+  "non_idl_tuples": [
+    "/home/eamrgde/Documents/gitrepos/ros_scream_int/scream/gstscream/ros2_bridge/src/ros-gst-bridge/audio_msgs:msg/Audio.msg"
+  ]
+}

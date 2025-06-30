@@ -1,0 +1,3 @@
+[console_scripts]
+pipeline_node = gst_pipeline.pipeline_node:main
+

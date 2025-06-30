@@ -2,7 +2,9 @@
 SCRIPT_PATH=$(realpath  $0)
 export SCRIPT_DIR=$(dirname  $SCRIPT_PATH)
 source $SCRIPT_DIR/env.sh
+# exit
 # export GST_PLUGIN_PATH=/home/eamrgde/Documents/gitrepos/eri_l4s_ros2/install/gst_bridge/lib/gst_bridge/
+source ~/Documents/gitrepos/jacob_l4s_ros/ros2_ws/src/install/setup.bash
 
 echo THIS IS THE PLUGIN PATH $GST_PLUGIN_PATH
 
@@ -25,8 +27,9 @@ fi
 #VIDEOSRC="videotestsrc is-live=true pattern=snow ! video/x-raw,format=I420,width=1280,height=720,framerate=50/1"
 
 # simple integration with the ROS 2 script
-VIDEOSRC="udpsrc port=3150 caps=\"application/x-rtp,media=video,encoding-name=H264\" ! rtph264depay ! decodebin ! videoconvert ! video/x-raw,format=I420,width=1280,height=720,framerate=30/1"
-# VIDEOSRC="rosimagesrc ros-topic="image_raw" ! video/x-raw,format=I420,width=1280,height=720,framerate=30/1"
+# VIDEOSRC="udpsrc port=3150 caps=\"application/x-rtp,media=video,encoding-name=H264\" ! rtph264depay ! decodebin ! videoconvert ! video/x-raw,format=I420,width=1280,height=720,framerate=30/1"
+# VIDEOSRC="rosimagesrc ros-topic="husky1/camera/color/image_raw" ! videoconvert ! video/x-raw,format=I420,width=1280,height=720,framerate=30/1"
+VIDEOSRC="rosimagesrc ros-topic="husky1/camera/color/image_raw" ! videoconvert ! video/x-raw,format=I420,width=1280,height=720,framerate=30/1"
 
 export SENDPIPELINE="rtpbin name=r \
 $VIDEOSRC ! $ENCODER name=encoder0 bitrate=$INIT_ENC_BITRATE ! rtph${ENC_ID}pay config-interval=-1 ! $SCREAMTX0 r.send_rtp_sink_0 r.send_rtp_src_0 ! udpsink host=$RECEIVER_IP port=$PORT0_RTP sync=false $SET_ECN \

@@ -23,6 +23,13 @@ VIDEOSINK="tee name=t ! queue ! videoconvert ! fpsdisplaysink video-sink=\"ximag
 VIDEOSINK="tee name=t ! queue ! videoconvert ! fpsdisplaysink video-sink=\"ximagesink\" \
            t. ! queue ! videoconvert ! jpegenc ! rtpjpegpay ! udpsink host=127.0.0.1 port=5004"
 
+# VIDEOSINK="tee name=t ! queue ! videoconvert ! fpsdisplaysink video-sink=\"ximagesink\" \
+#            t. ! queue ! videoconvert ! rosimagesink ros-topic="/gst_bridge/received_image""
+#
+# VIDEOSINK="tee name=t ! queue ! videoconvert ! fpsdisplaysink video-sink=\"ximagesink\" \
+#            t. ! queue ! videoconvert ! videorate ! video/x-raw,framerate=30/1 ! rosimagesink ros-topic="/gst_bridge/received_image""
+
+# VIDEOSINK=" videoconvert ! rosimagesink ros-topic="/received_bridge""
 
 
 #VIDEOSINK="glupload ! glcolorconvert ! fpsdisplaysink video-sink=\"glimagesinkelement\""
