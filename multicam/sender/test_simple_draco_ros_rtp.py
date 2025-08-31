@@ -25,7 +25,7 @@ class PointCloudRtpSender(Node):
         # ROS subscription
         self.subscription = self.create_subscription(
             PointCloud2,
-            '/husky1/ouster/points',
+            '/husky/ouster/points',
             self.listener_callback,
             10)
 
@@ -35,6 +35,8 @@ class PointCloudRtpSender(Node):
         if points.size == 0:
             self.get_logger().warn('No points in incoming cloud.')
             return
+        
+        points = points[points[:,0] > 0]
 
         # 2) Draco compress
         min_vals = points.min(axis=0)
