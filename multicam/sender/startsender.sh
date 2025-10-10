@@ -25,7 +25,7 @@
 export GST_PLUGIN_PATH=/usr/local/lib/gstreamer-1.0/
 
 # Settings for video encoding and streaming
-RECEIVER_IP=192.168.1.150 #Change to applicable receiver address
+RECEIVER_IP=192.168.1.80 #Change to applicable receiver address
 UDP_PORT_VIDEO=51000
 NETWORK_QUEUE_DELAY_TARGET=0.06
 MAX_TOTAL_RATE=60000

@@ -18,14 +18,14 @@ class PointCloudCompressor(Node):
 
         # --- PARAMETERS ---
         # You can also declare/get these via self.declare_parameter + get_parameter
-        self.quant_bits   = [8, 12, 16, 20, 24]
-        self.comp_levels  = [0, 3, 6, 9]
+        self.quant_bits   = [8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24]
+        self.comp_levels  = [0,1,2,3,4,5,6,7,8,9]
         self.scan_rate_hz = 10.0  # for bits/sec calculation
 
         # CSV setup
         self.csv_path = os.path.join(
             os.path.expanduser('~'),
-            'draco_bench.csv'
+            'draco_bench_v1.csv'
         )
         is_new = not os.path.exists(self.csv_path)
         self.csv_file = open(self.csv_path, 'a', newline='')
@@ -47,7 +47,7 @@ class PointCloudCompressor(Node):
         # ROS subscriptions / publishers
         self.subscription = self.create_subscription(
             PointCloud2,
-            '/husky1/lidar_points',
+            '/husky1/ouster/points',
             self.listener_callback,
             10
         )
@@ -144,6 +144,9 @@ class PointCloudCompressor(Node):
             x = struct.unpack_from('f', data, i + offsets['x'])[0]
             y = struct.unpack_from('f', data, i + offsets['y'])[0]
             z = struct.unpack_from('f', data, i + offsets['z'])[0]
+
+            if np.isnan(x) or np.isnan(y) or np.isnan(z):
+                continue
             pts.append([x, y, z])
         return np.array(pts, dtype=np.float32)
 

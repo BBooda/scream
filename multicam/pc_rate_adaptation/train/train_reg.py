@@ -6,7 +6,7 @@ from sklearn.preprocessing import PolynomialFeatures
 import joblib
 
 # load
-df = pd.read_csv('draco_bench.csv')
+df = pd.read_csv('draco_bench_v1.csv')
 
 # features & target
 X = df[['quant_bits','comp_level','num_points']]
@@ -29,4 +29,4 @@ print("Test  R²:", lr.score(Xte,yte))
 # lr   = your fitted LinearRegression
 
 # Dump them both into a single file
-joblib.dump((poly, lr), 'draco_model.pkl')
+joblib.dump((poly, lr), 'draco_model_v1.pkl')

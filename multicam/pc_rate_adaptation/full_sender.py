@@ -23,7 +23,7 @@ class AdaptivePointCloudRtpSender(Node):
 
         # 1) Load your trained poly + linear model
         # Update this path if needed
-        model_path = '/home/eamrgde/Documents/gitrepos/pc_rate_adaptation/ros2_ws/src/pc_rate_adaptation/pc_rate_adaptation/train/draco_model.pkl'
+        model_path = '/home/eamrgde/Documents/gitrepos/ros_scream_int/scream/multicam/pc_rate_adaptation/train/draco_model_v1.pkl'
         try:
             self.poly, self.lr = joblib.load(model_path)
             self.get_logger().info(f"Loaded model from: {model_path}")
@@ -32,15 +32,15 @@ class AdaptivePointCloudRtpSender(Node):
             raise
 
         # 2) Grid as used in training (same as your first script)
-        self._quant_bits_list  = np.array([8, 12, 16, 20, 24])
-        self._comp_levels_list = np.array([0,  3,   6,   9])
+        self._quant_bits_list  = np.array([8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24])
+        self._comp_levels_list = np.array([0,1,2,3,4,5,6,7,8,9])
 
         self._grid = np.array([[q, c]
                                for q in self._quant_bits_list
                                for c in self._comp_levels_list])  # (20,2)
 
         # 3) Pre-predict bps for the grid (mirrors your first script)
-        fake_n = 19800
+        fake_n = 32185
         grid3 = np.hstack([self._grid, np.full((len(self._grid), 1), fake_n)])
         Xg = self.poly.transform(grid3)
         self._pred_bps = self.lr.predict(Xg)  # shape=(20,)
@@ -124,7 +124,8 @@ class AdaptivePointCloudRtpSender(Node):
         enc_ms = (time.time() - t0) * 1e3
 
         self.get_logger().info(
-            f"Compressed {points.shape[0]} pts → {len(compressed)} B in {enc_ms:.1f} ms "
+            # f"Compressed {points.shape[0]} pts → {len(compressed)} B in {enc_ms:.1f} ms "
+            f"Compressed {points.shape[0]} pts → {len(compressed)*8*10*10**(-6)} Mbps in {enc_ms:.1f} ms "
             f"(q={self.quant_bits}, lvl={self.comp_level})"
         )
 
@@ -180,6 +181,9 @@ class AdaptivePointCloudRtpSender(Node):
             x = struct.unpack_from('f', data, base + offsets['x'])[0]
             y = struct.unpack_from('f', data, base + offsets['y'])[0]
             z = struct.unpack_from('f', data, base + offsets['z'])[0]
+
+            if np.isnan(x) or np.isnan(y) or np.isnan(z):
+                continue
             pts[i] = (x, y, z)
         return pts
 

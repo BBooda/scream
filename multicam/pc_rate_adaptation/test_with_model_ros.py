@@ -22,12 +22,12 @@ class AdaptivePointCloudCompressor(Node):
         #     '/home/eamrgde/Documents/gitrepos/pc_rate_adaptation/ros2_ws/src/pc_rate_adaptation/pc_rate_adaptation/train/draco_model.pkl'
         # )
         self.get_logger().info("draco node started!...")
-        model_path = '/home/eamrgde/Documents/gitrepos/pc_rate_adaptation/ros2_ws/src/pc_rate_adaptation/pc_rate_adaptation/train/draco_model.pkl'
+        model_path = '/home/eamrgde/Documents/gitrepos/ros_scream_int/scream/multicam/pc_rate_adaptation/train/draco_model_v1.pkl'
         self.poly, self.lr = joblib.load(model_path)
 
         # these define the sweep you used in training
-        self._quant_bits_list  = np.array([8, 12, 16, 20, 24])
-        self._comp_levels_list = np.array([0,  3,   6,   9])
+        self._quant_bits_list  = np.array([8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24])
+        self._comp_levels_list = np.array([0,1,2,3,4,5,6,7,8,9])
 
         # Pre-build the grid of (q,c)
         self._grid = np.array([
@@ -44,7 +44,7 @@ class AdaptivePointCloudCompressor(Node):
         # per callback as in the “Analysis” above.
 
         # If you trained on a 3-col feature ([q,c,n_pts]) do something like:
-        fake_n = 19800
+        fake_n = 32185 
         grid3 = np.hstack([self._grid, np.full((len(self._grid),1), fake_n)])
         Xg = self.poly.transform(grid3)
         self._pred_unit_bps = self.lr.predict(Xg)
@@ -105,7 +105,16 @@ class AdaptivePointCloudCompressor(Node):
         if pts.size == 0:
             return
         
-        pts = pts[pts[:,0] > 0]
+        # self.get_logger().info(f"size before: {pts.shape}")
+        # self.get_logger().info(f"NaN points: {np.sum(~np.isfinite(pts))}")
+
+        # self.get_logger().info(f"what is left: {pts[pts[:,0] < -265]}")
+        # pts = pts[pts[:,0] >= -265]
+
+
+
+        # self.get_logger().info(f"size after: {pts.shape}")
+
         # compute quantization range & origin
         mins = pts.min(axis=0)
         maxs = pts.max(axis=0)
@@ -130,7 +139,8 @@ class AdaptivePointCloudCompressor(Node):
         dur = time.time() - t0
         self.get_logger().info(
             f'Compressed {pts.shape[0]} pts → '
-            f'{len(compressed)} B in {dur*1e3:.1f}ms '
+            f'{len(compressed) * 8 * 10*10**(-6)} Mbps in {dur*1e3:.1f}ms '
+            # f'{len(compressed) } B in {dur*1e3:.1f}ms '
             f'(q={self.quant_bits},lvl={self.comp_level})'
         )
 
@@ -148,9 +158,14 @@ class AdaptivePointCloudCompressor(Node):
 
         pts = []
         for i in range(0, len(data), step):
+
             x = struct.unpack_from('f', data, i + offsets['x'])[0]
             y = struct.unpack_from('f', data, i + offsets['y'])[0]
             z = struct.unpack_from('f', data, i + offsets['z'])[0]
+
+            if np.isnan(x) or np.isnan(y) or np.isnan(z):
+                continue
+            
             pts.append([x, y, z])
         return np.array(pts, dtype=np.float32)
 
