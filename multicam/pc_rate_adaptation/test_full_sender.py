@@ -6,6 +6,7 @@ import struct
 import time
 import socket
 import random
+import math
 
 import rclpy
 from rclpy.node import Node
@@ -72,6 +73,13 @@ class AdaptivePointCloudRtpSender(Node):
         self.decoded_pub = self.create_publisher(PointCloud2, '/husky1/lidar_points_decoded', 10)
 
         self.get_logger().info("Ready. Waiting for /husky1/lidar_points and /desired_bps…")
+
+        # in __init__
+        self.rtp_clock   = 90000
+        self.frame_rate  = 10.0
+        self.frame_period = 1.0 / self.frame_rate    # 0.1 s
+        self.timestamp_step = int(self.rtp_clock / self.frame_rate)  # 9000
+        self.pacing_safety = 0.9   # spread packets across ~90% of the frame
 
     # ------------------ ROS callbacks ------------------
     def _on_desired_bps(self, msg: Float32):
@@ -143,28 +151,30 @@ class AdaptivePointCloudRtpSender(Node):
 
     # ------------------ RTP helpers ------------------
     def _send_rtp(self, payload: bytes):
-        """Split payload into chunks, prepend RTP header, and send over UDP."""
+        bytes_per_sec = max(1.0, self.desired_bps / 8.0)  # bps → B/s
         offset = 0
         while offset < len(payload):
-            chunk = payload[offset:offset + self.max_payload]
-
-            # RTP header: V=2,P=0,X=0,CC=0 => 0x80 ; M=0, PT=96
-            rtp_header = struct.pack(
-                '!BBHII',
-                0x80,           # V=2
-                96,             # Payload type (dynamic)
-                self.sequence_number & 0xFFFF,
-                self.timestamp & 0xFFFFFFFF,
-                self.ssrc
-            )
-            packet = rtp_header + chunk
-            self.sock.sendto(packet, self.dst_addr)
-
-            self.sequence_number += 1
+            chunk = payload[offset : offset + self.max_payload]
             offset += len(chunk)
+            is_last = (offset >= len(payload))
 
-        # Advance timestamp per-frame (choose a scheme that fits your pipeline)
-        self.timestamp += 3000
+            b1 = 0x80
+            b2 = (0x80 if is_last else 0x00) | 96
+            hdr = struct.pack('!BBHII', b1, b2,
+                              self.sequence_number & 0xFFFF,
+                              self.timestamp & 0xFFFFFFFF,
+                              self.ssrc)
+            t0 = time.perf_counter()
+            self.sock.sendto(hdr + chunk, self.dst_addr)
+            self.sequence_number = (self.sequence_number + 1) & 0xFFFF
+
+            # pacing based on bitrate target
+            send_budget = len(chunk) / bytes_per_sec  # seconds
+            elapsed = time.perf_counter() - t0
+            if send_budget > elapsed:
+                time.sleep(send_budget - elapsed)
+
+        self.timestamp = (self.timestamp + self.timestamp_step) & 0xFFFFFFFF
 
     # ------------------ Utility ------------------
     def _pointcloud2_to_xyz(self, cloud_msg: PointCloud2) -> np.ndarray:
