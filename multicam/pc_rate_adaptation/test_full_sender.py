@@ -137,14 +137,14 @@ class AdaptivePointCloudRtpSender(Node):
             f"(q={self.quant_bits}, lvl={self.comp_level})"
         )
 
-        # Optional: decode & publish for visual/debug
-        try:
-            decoded = decode(compressed)
-            dpts = np.array(decoded.points, dtype=np.float32)
-            out = point_cloud2.create_cloud_xyz32(msg.header, dpts.tolist())
-            self.decoded_pub.publish(out)
-        except Exception as e:
-            self.get_logger().warn(f"Decode/republish failed: {e}")
+        # # Optional: decode & publish for visual/debug
+        # try:
+        #     decoded = decode(compressed)
+        #     dpts = np.array(decoded.points, dtype=np.float32)
+        #     out = point_cloud2.create_cloud_xyz32(msg.header, dpts.tolist())
+        #     self.decoded_pub.publish(out)
+        # except Exception as e:
+        #     self.get_logger().warn(f"Decode/republish failed: {e}")
 
         # RTP send
         self._send_rtp(compressed)
